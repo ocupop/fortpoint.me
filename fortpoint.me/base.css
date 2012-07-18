@@ -9,7 +9,6 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #666;
-	background:url(images/bgRepeat.png) repeat;
     text-shadow: 1px 1px 1px rgba(255,255,255, .9);
     text-align:justify;
 }
