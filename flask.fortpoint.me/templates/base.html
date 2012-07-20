@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fort Point Legal</title>
+<meta name="author" content="danstgermain.com" />
+<meta name="description" content="Fort Point Legal seeks to be a trusted business advisor to its clients, not just a "necessary expense" in running a business. Because of that philosophy our fees are charged on a flat fee per project basis, or a monthly subscription model based upon the necessary scope of work. We work closely with our client and are available to them when and where we are needed." />
+<meta name="keywords" content="Fort Point Legal, traditional legal model, Joel G. Kinney, trusted business advisor, running a business, funding, licensing, leasing, telecommunication aggregation services, home grown start ups, Legal Services, Business Lawyer, Boston Small business lawyer, Lawyer, Small business help" />
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/static/base.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/static/style.css" />
+<script type="text/javascript" src="/static/tinyfader.js"></script>
+<!--[if lte IE 7]>
+<style>#slideshow {overflow:hidden;}  </style>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="container">
+<header>
+
+<!-- Classes here need to vary depending on which view we're on.-->
+<div class="logo"><a href="/"><img src="/static/images/Fort_Point_Logo.gif" alt="Fort Point Legal" height="90" style="background:display:block;" /></a></div>
+
+<ul class="nav">
+{% for view in ['home', 'story', 'companies', 'team'] %}
+    <li><a href="/{{view}}/" {% if view == active %}class="current"{% endif %}>{{ view }}</a></li>
+    {% if not loop.last %}<li>&nbsp;|&nbsp;</li>{% endif %}
+{% endfor %}
+</ul>
+
+<!-- end .header --> 
+</header>
+<div class="hrLine"></div>
+{% block content %}
+{% endblock %}
+<div class="them"><a href="http://bostonbuilt.org/"><img src="/static/images/BuiltinBoston.png" /></a><a href="http://creativecommons.org/"><img src="/static/images/ccCopy.png" /></a></div>
+<div class="Me"><a href="http://www.danstgermain.com">::siteby::danstgermain.com::</a></div>
+<p>&nbsp;</p>
+<!-- end .footer --></div>
+<!-- footer content: and here--> <!-- end .container --></div>
+<p>&nbsp;</p>
+</body>
+</html>

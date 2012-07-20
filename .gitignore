@@ -3,3 +3,4 @@
 *~
 local_settings.*py
 *.sublime*
+fabfile.py
