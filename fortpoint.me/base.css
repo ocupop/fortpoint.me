@@ -134,7 +134,7 @@ ul.nav a {
 	text-decoration: none;
 	color: #000;
 	opacity: .4;
-	background:url(images/Black_Arrow.gif) no-repeat 50% 50px;
+	background:url(/static/images/Black_Arrow.gif) no-repeat 50% 50px;
 	transition:all .5s;
     transition-timing-function: ease-in-out;
    /* Firefox 4 */
