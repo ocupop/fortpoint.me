@@ -1,57 +1,88 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="content"><!-- main content: between here --> <section> <!-- top section phrase here --> Fort Point Legal represents the open source, internet startup and entrepreneur communities.  We take pride in partnering with clients providing cost effective legal solutions.
-<!-- end of top section --> </section> <!-- don't touch the next part unless your just updating the images in the slideshow-->
-<div id="wrapper">
-<div>
-<div class="sliderbutton"><img src="/static/images/left.gif" width="32" height="38" alt="Previous" onclick="slideshow.move(-1)" /></div>
-<div id="slideshow">
-<ul id="slides">
-<!--
-<li id="content"></li>
--->
-<li id="content">
-<div class="slideSection1"><img src="/static/images/jQuerySlide.jpg" /></div>
-<div class="slideSection2"><!--about slide Here-->
-<h3>The jQuery Foundation is the official steward of the popular JavaScript library.  We help guide the Foundation as it pursues its goals of developing and supporting this important open source project.</h3>
-</div>
-</li>
-<li id="content">
-<div class="slideSection1"><img src="/static/images/BocoupSlide.jpg" /></div>
-<div class="slideSection2"><!--about slide Here-->
-<h3>Bocoup is committed to open source and open platform web technologies and facilitating their adoption. We work closely with Bocoup to make sure its legal documents accurately reflect its business goals.</h3>
-</div>
-</li>
-<li id="content">
-<div class="slideSection1"><img src="/static/images/ZephyrSlide.jpg" /></div>
-<div class="slideSection2"><!--about slide Here-->
-<h4>Zephyr Technology Ventures is a Venture Accelerator that provides a full range of advisory and development services to middle market technology companies &amp; startups. Fort Point Legal helps to reduce its transactions to documents which are easy to understand and reflective of its unique investment and advisory model.</h4>
-</div>
-</li>
-<li id="content">
-<div class="slideSection1"><img src="/static/images/GatherSlide.jpg" /></div>
-<div class="slideSection2"><!--about slide Here-->
-<h3>gather.at is developing geodesic situational awareness technology on an open source platform.   We are available for its licensing and open source questions, and for the occasional midday bike ride escape.</h3>
-</div>
-</li>
-</ul>
-</div>
-<div class="sliderbutton" style="margin:-170px 865px;"><img src="/static/images/right.gif" width="32" height="38" alt="Next" onclick="slideshow.move(1)" /></div>
-</div>
-</div>
-<div style="float:left; height:15px; width:850px;"></div>
-<script type="text/javascript"><!--
-var slideshow=new TINY.fader.fade('slideshow',{
-    id:'slides',
-    auto:9,
-    resume:true,
-    activeclass:'current',
-    visible:true,
-    position:0
-});
-// --></script>
-<!-- main content: and here --> <!-- end .content --></div>
-<div class="footer">
+        <div class="entry clearfix">
+            <p>Fort Point Legal represents the open source, internet startup and entrepreneur communities.  We take pride in partnering with clients providing cost effective legal solutions.</p>
+        </div><!--// end #entry -->
+        
+            
+    </div><!-- end #content-main -->
+    <div class="clearfix"></div>
+</div><!-- end #content -->
+
+<div id="carousel">
+    
+    <div id="scroller-left">
+        <a id="scroll-left"  class="arrow"></a>
+    </div>
+    <div id="scroller-right">
+        <a id="scroll-right"  class="arrow"></a>
+    </div>
+
+    <div id="slides" class="clearfix">
+    <ul id="slidelist" class="activated">
+                    <li class="slide" id="slide-1" >
+                <div class="image">
+                    <img src="/images/jQuerySlide.jpg" />
+                    <div style="flat: right; width: 20em;">Ass</div>
+                </div>
+                
+                <div class="details">
+                    <p class="left">
+                        <a class="company-name" href="http://jquery.org/" alt="jQuery.org" title="RaNA">jQuery.org</a> <span class="pipe">|</span> Cambridge, MA
+                        </p>
+                    
+                    <p class="right"><a class="slide-name" href="http://jquery.org/" alt="The Write More, Do Less, Javascript Library." title="The Write More, Do Less, Javascript Library.">The Write More, Do Less, Javascript Library.</a></p>
+                </div>
+            </li>
+        
+                <li class="slide" id="slide-2" style="display:none;">
+                <div class="image">
+                    <img src="/images/BocoupSlide.jpg" />
+                    <div>Bocoup is committed to open source and open platform web technologies and facilitating their adoption. We work closely with Bocoup to make sure its legal documents accurately reflect its business goals.</div>
+                </div>
+                
+                <div class="details">
+                    <p class="left"><a class="company-name" href="http://www.bocoup.com/" alt="Bocoup" title="Bocoup">Bocoup</a> <span class="pipe">|</span> Boston, MA</p>
+                    
+                    <p class="right"><a class="slide-name" href="Boston" alt="Boston" title="Open Web Technology by and for Programmers">Open Web Technology by and for Programmers</a></p>
+                </div>
+            </li>
+        
+                <li class="slide" id="slide-3" style="display:none;">
+                <div class="image">
+                    <img src="images/ZephyrSlide.jpg" />
+                </div>
+                
+                <div class="details">
+                    <p class="left"><a class="company-name" href="https://gather.at/" alt="Gather" title="Gather">Zephyr</a> <span class="pipe">|</span>Boston, MA</p>
+                    
+                    <p class="right"><a class="slide-name" href="#" alt="Zephyr" title="Description goes here">Description goes here</a></p>
+                </div>
+            </li>
+        
+                <li class="slide" id="slide-4" style="display:none;">
+                <div class="image">
+                    <img src="images/GatherSlide.jpg" />
+                </div>
+                
+                <div class="details">
+                    <p class="left"><a class="company-name" href="https://gather.at/" alt="Gather" title="Gather">Gather.at</a> <span class="pipe">|</span>Boston, MA</p>
+                    
+                    <p class="right"><a class="slide-name" href="https://gather.at/" alt="Gather" title="Bring People Together">Bring People Together</a></p>
+                </div>
+                </div>
+            </li>    
+        </ul>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
 <hr />
 <br /> 
 <table width="850px">

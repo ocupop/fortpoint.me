@@ -1,7 +1,7 @@
 from flask import Flask, Response, request, render_template
 from flask import redirect, url_for
 
-app = Flask(__name__)
+app = Flask(__name__, static_path='')
 app.debug = True
 
 
