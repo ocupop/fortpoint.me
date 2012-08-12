@@ -11,7 +11,7 @@
     <link href="/static/css/print.css" type="text/css" rel="stylesheet" media="print" />
     <link rel="shortcut icon" type="/image/x-icon" href="#">
     <!--[if lte IE 7]>
-        <link href="http://www.atlasventure.com/static/wp-content/themes/atlas/css/ie.css" type="text/css" rel="stylesheet" media="all" />
+        <link href="/static/css/ie.css" type="text/css" rel="stylesheet" media="all" />
     <![endif]-->
     
     <script type="text/javascript" src="/static/js/jquery.min.js"></script>
@@ -20,10 +20,10 @@
     
     <link rel="alternate" type="application/rss+xml" title="Atlas Venture &raquo; Homepage Comments Feed" href="homepage/feed/index.html" />
 
-<link rel='prev' title='Story' href='story/index.html' />
-<link rel='next' title='Press' href='press/index.html' />
+<link rel='prev' title='Story' href='story/' />
+<link rel='next' title='Press' href='press/' />
 
-<link rel="canonical" href="index.html" />
+<link rel="canonical" href="/" />
         
     <script type="text/javascript" src="/static/js/cufon-yui-1_09.js"></script>
     <script type="text/javascript" src="/static/js/fonts/gotham_500.font.js"></script>
@@ -61,7 +61,7 @@
 <div id="header">
 
     <div id="branding">
-        <h1 id="logo"><a href="index.html"><span class="hidden">Fort Point Legal</span></a></h1>
+        <h1 id="logo"><a href="/"><span class="hidden">Fort Point Legal</span></a></h1>
         <div id="searchbox">
             <form method="get" class="search-form clearfix" id="search-form" action="index.html">
     <input class="search-text" type="text" name="s" id="search-text" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
@@ -76,18 +76,10 @@
             <div id="sidebar-left">
                     <div id="navigation" class="clearfix">
         <ul id="coded-menu">
-            <li id="team-item" class="first menu-item menu-item-type-post_type menu-item-13"><a class="primary" href="team/">Team</a></li>
-            <li id="companies-item" class="menu-item menu-item-type-post_type current-menu-item page_item page-item-37 menu-item-39"><a class="primary" href="companies/index.html">Companies</a>
-                
-                                    <ul id="sectors-nav">
-                        <li><a class="active" href="companies/index.html#" sector="all">All</a></li>
-                        <li id='item-1'><a href='companies/index.html?i=1' sector='Technology'>Technology</a></li><li id='item-2'><a href='companies/index.html?i=2' sector='Life Sciences'>Life Sciences</a></li>  
-                        
-                       <li><a href="exits/index.html" id="exits-link">Exits</a></li>
-                    </ul>
-                    </li>
+            <li id="team-item" class="first menu-item menu-item-type-post_type menu-item-13"><a {% if active=="team" %}class="primary"{% endif %} href="/team/">Team</a></li>
+            <li id="companies-item" class="menu-item menu-item-type-post_type current-menu-item page_item page-item-37 menu-item-39"><a {% if active=="companies" %}class="primary"{% endif %} href="/companies/">Companies</a>
             <li id="story-item">
-                <a class="primary" href="story/index.html">Story</a>
+                <a {% if active=="story" %}class="primary"{% endif %} href="/story/">Story</a>
                     
             </li>
         </ul>                   
@@ -104,33 +96,27 @@
     <div id="content-main" class="clearfix">
 {% block content %}
 {% endblock %}
+
 <div id="footer">
     {% block extrafooter %}
     {% endblock %}
 
     <div id="site-info" class="clearfix">
-        <p id="copyright">&copy; Copyright 2012 Atlas Venture</p>
-        
-            <ul id="footer-menu" class="menu"><li class="first menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="press/index.html">Press</a></li>
-<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="faqs/index.html">FAQs</a></li>
-<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="contact/index.html">Contact</a></li>
-<li class="last menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="sitemap/index.html">Sitemap</a></li>
-</ul>           <a id="site-manager" href="https://investors.atlasventure.com/EPrivateEquity-Atlas/Utility/eWebLPLogin.aspx" title="Login to LP Extranet">LOGIN</a></li>
+        <p id="copyright">&copy; Copyright 2012 Fort Point Legal</p>
+            <ul id="footer-menu" class="menu">
+                <li class="first menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="press/index.html">Press</a></li>
+                <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="faqs/index.html">FAQs</a></li>
+                <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="contact/index.html">Contact</a></li>
+                <li class="last menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="sitemap/index.html">Sitemap</a></li>
+            </ul>
         </div>
 
         <p id="social-links">
-            <!--
-<a href="http://www.flickr.com/" target="_blank" title="See our photos on Flickr">
-                <img src="http://www.atlasventure.com/static/wp-content/themes/atlas/images/icon-flickr.png"/>
-            </a>
--->
-            <a href="http://twitter.com/#!/venturemaven/atlas-venture" target="_blank" title="Follow Atlas Venture on Twitter">
+            <a href="https://twitter.com/#!/hackercounsel" target="_blank" title="Follow Hackercounsel on Twitter">
                 <img src="/static/images/icon-twitter.png"/>
             </a>
-            <a href="http://www.facebook.com/pages/Atlas-Venture/108053525889990" target="_blank" title="Like Atlas Venture on Facebook">
-                <img src="/static/images/icon-facebook.png"/>
-            </a>
-                
+            <a href="http://creativecommons.org/"><img src="/static/images/ccCopy.png" /></a>
+            <a href="http://bostonbuilt.org/"><img src="/static/images/BuiltinBoston.png" /></a>
         </p>
 
 </div><!--// end #footer -->

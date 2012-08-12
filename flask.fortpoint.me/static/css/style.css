@@ -780,7 +780,7 @@ a:hover,a:active {
 	height: 335px;
 	display: block;
 	padding-bottom: 4px;
-	background: url(/static/static/images/carousel-shadow.gif) repeat-x bottom left;
+	background: url(/static/images/carousel-shadow.gif) repeat-x bottom left;
 	overflow: hidden;
 }
 
@@ -1222,7 +1222,7 @@ ul#companies {
 
 #exits_table th a.desc {
 	background: url(/static/images/exit_arrow_desc.gif) no-repeat right;	
-}
+
 
 #exits_table td {
 	padding: 10px;
@@ -1239,3 +1239,63 @@ ul#companies {
 .slug-exits li#companies-item exits-link {
     color: #BC492C;
 }
+
+.buttons {padding:5px 0px; width:30px; float:left;}
+
+.containerbuttons {
+	margin:0 0 0 110px ;
+}
+
+#fpl-contact { 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article {
+	float:left;
+	width:55%;
+}
+aside {
+	float:left;
+	width:40%;
+	font-family: Times, serif;
+	margin: 0 15px;
+}
+
+article.fpl-companies {
+	float:left;
+	width:55%;
+}
+aside.fpl-companies {
+	float:left;
+	width:40%;
+	font-family: Times, serif;
+	margin: 0 15px;
+}
+
+aside.fpl-companies p {font-size:22px; text-align:left; line-height:150%; padding: 0 5px 0 5px;}
+
+article.fpl-companies span {float:left; padding:5px; width:220px; height:100px;}
+
+article.fpl-companies a span {
+	text-decoration:none;
+	opacity:.5;
+    transition:all .5s;
+    transition-timing-function: ease-in-out;
+   /* Firefox 4 */
+    -moz-transition:all .5s;
+    -moz-transition-timing-function: ease-in-out;
+   /* Safari and Chrome */
+   -webkit-transition:background .5s;
+   -webkit-transition-timing-function: ease-in-out;
+    /* Opera */
+    -o-transition:all .5s;
+    -o-transition-timing-function: ease-in-out;
+	/* MS */
+    -ms-transition:all .5s;
+    -ms-transition-timing-function: ease-in-out;
+	cursor:pointer;
+	}
+
+article.fpl-companies a:hover span { opacity:.9; }
+
