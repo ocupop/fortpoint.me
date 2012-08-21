@@ -781,7 +781,7 @@ a:hover,a:active {
 	display: block;
 	padding-bottom: 4px;
 	background: url(/static/images/carousel-shadow.gif) repeat-x bottom left;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 #carousel #scroller-left, #carousel #scroller-right, #carousel #scroll-left, #carousel #scroll-right {
@@ -809,9 +809,12 @@ a:hover,a:active {
 #carousel .image {
 	display: block;
 	margin: 0;
-	font-size: 0;
-	line-height:0;
 }
+
+.imagetext {
+	width: 90%;
+}
+
 #carousel #slidelist, #carousel #slidelist .slide {
 	width:100%!important;
 }
