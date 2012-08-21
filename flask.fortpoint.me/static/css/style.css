@@ -1,4 +1,4 @@
-/* 
+/*
 Theme Name: Atlas Venture
 Theme URL: http://www.freshtilledsoil.com
 Description: A FreshTilledSoil made theme for Atlas Venture.
@@ -155,15 +155,15 @@ html, body {
 	margin:0;
 }
 
-#navigation li.current_page_item ul, 
-#navigation li.current_page_ancestor ul, 
+#navigation li.current_page_item ul,
+#navigation li.current_page_ancestor ul,
 #companies-page #navigation li#companies-item ul,
 .slug-exits #navigation li#companies-item ul,
 #team-page #navigation li#team-item ul {
 	display: block;
 }
 
-#navigation li.current_page_item a, 
+#navigation li.current_page_item a,
 #navigation li.current_page_ancestor a,
 #navigation li ul a.current_page_item,
 #navigation li ul a.current_page_ancestor,
@@ -181,17 +181,17 @@ html, body {
 	color:#bc492c;
 }
 
-#navigation li.current_page_item ul a, 
+#navigation li.current_page_item ul a,
 #navigation li.current_page_ancestor ul a {
 	color:#335D7F;
 }
 
-#navigation li.current_page_item ul a:hover, 
+#navigation li.current_page_item ul a:hover,
 #navigation li.current_page_ancestor ul a:hover {
 	color:#146bb2;
 }
 
-#team-page #navigation li#team-item a.primary, 
+#team-page #navigation li#team-item a.primary,
 .post-type-team_bio li#team-item a.primary {
 	color:#bc492c;
 }
@@ -639,7 +639,7 @@ form#commentform input[type="submit"] {
 	text-transform:uppercase;
 }
 form#commentform input[type="submit"]:hover {
-	
+
 }
 form#commentform textarea {
 	width:94%;
@@ -881,7 +881,7 @@ a:hover,a:active {
 }
 #footer #social-links {
 	position: absolute;
-	right: 0;
+	left: 0;
 }
 #footer #social-links a {
 	display: inline;
@@ -999,7 +999,7 @@ a:hover,a:active {
 	margin-bottom: 5px;
 }
 
-ul#companies { 
+ul#companies {
 	margin-bottom: 100px;
 }
 #partnersort {
@@ -1202,7 +1202,7 @@ ul#companies {
 }
 
 #exits_table {
-	
+
 }
 
 #exits_table th {
@@ -1221,7 +1221,7 @@ ul#companies {
 }
 
 #exits_table th a.desc {
-	background: url(/static/images/exit_arrow_desc.gif) no-repeat right;	
+	background: url(/static/images/exit_arrow_desc.gif) no-repeat right;
 
 
 #exits_table td {
@@ -1246,7 +1246,7 @@ ul#companies {
 	margin:0 0 0 110px ;
 }
 
-#fpl-contact { 
+#fpl-contact {
 	margin-left: auto;
 	margin-right: auto;
 }

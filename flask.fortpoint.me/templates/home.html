@@ -75,13 +75,6 @@
         </ul>
     </div>
 
-
-
-
-
-
-
-
 <hr />
 <br />
 <table style="margin-left: auto; margin-right: auto;" width="850px">
@@ -94,9 +87,9 @@
     <div class="buttons"><a href="http://www.linkedin.com/in/joelgkinney"><img src="/static/images/Linked-In-Logo1.jpg" width="15px" /></a></div>
     <div class="buttons"><a href="https://twitter.com/#!/hackercounsel"><img src="/static/images/twitter_newbird_boxed_whiteonblue.png" width="15px" /></a></div>
     <div class="buttons">
-        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
         <script type="IN/FollowCompany" data-id="2664289" data-counter="right"></script>
     </div>
+    <div class="fb-like" data-href="http://fortpoint.me/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
 </div>
 </td>
 <td width="212px">
@@ -115,4 +108,18 @@
 </table>
 Communication Policy<br /><span style="color: #999999;"> While we are happy to have you contact us by electronic mail, telephone, surface mail or facsimile transmission, merely communicating with Fort Point Legal and Attorney Joel G. Kinney will not create a lawyer-client relationship. Such a relationship will not arise unless and until the firm agrees with you in writing to handle a particular matter. Importantly, unless and until this has occurred, you should not convey to us any information you regard as personal or confidential, because any such information will not be treated by us as confidential or subject to any confidentiality requirements.</span><br /><br /> LEGAL DISCLAIMER<br /><span style="color: #999999;"> This Web site provides information about our firm and certain topics that we feel users of the Web site may find of interest. This information may be considered advertising under the rules of professional conduct applicable to our legal practice. Any information we receive from you prior to the formal establishment of such a relationship will not be confidential. The content provided on the Web site is for informational purposes only. Before you make any decision that may have legal implications, you should consult with a qualified legal professional for specific legal advice tailored to your situation. Your use of the Web site is not an invitation to enter into and does not create an attorney-client relationship. Please do not convey to us any information you regard as confidential unless and until a formal lawyer-client relationship has been established. Any information we receive from you prior to the formal establishment of such a relationship will not be confidential. </span><br /><br />
 <!--</div>-->
+{% endblock %}
+
+{% block extra_js %}
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+$('td.pls').remove();
+</script>
 {% endblock %}
