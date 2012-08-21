@@ -1,0 +1,15 @@
+.clearfix { zoom:1 } /* For IE hasLayout */
+
+/* Alpha Filters */
+#signup li a {
+	filter: alpha(opacity=66);
+}
+#signup li a:hover {
+	filter: alpha(opacity=99);
+}
+#wrapper {
+	overflow: visible;
+}
+.list-page .col li a {
+	float:left;
+}
