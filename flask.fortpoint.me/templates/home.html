@@ -1,14 +1,12 @@
 {% extends 'base.html' %}
-{% block content %}
+
+{% block contenttop %}
         <div class="entry clearfix">
             <p>Fort Point Legal represents the open source, internet startup and entrepreneur communities.  We take pride in partnering with clients providing cost effective legal solutions.</p>
         </div><!--// end #entry -->
+{% endblock %}
 
-
-    </div><!-- end #content-main -->
-    <div class="clearfix"></div>
-</div><!-- end #content -->
-
+{% block content %}
 <div id="carousel">
 
     <div id="scroller-left">
@@ -22,8 +20,14 @@
         <ul id="slidelist" class="activated">
             <li class="slide" id="slide-1" >
                 <div class="image">
-                    <img src="/static/images/jQuerySlide.jpg" />
-                    <div class="imagetext entry clearfix" style="float: right; width: 20em;">JQuery blurb goes here!</div>
+                    <div class="image-wrapper">
+                        <img src="/static/images/jQuerySlide.jpg" />
+                    </div>
+                    <div class="imagetext entry clearfix">
+                    <div class='text'>
+The jQuery Foundation is the official steward of the popular JavaScript library. We help guide the Foundation as it pursues its goals of developing and supporting this important open source project.
+                    </div>
+                    </div>
                 </div>
 
                 <div class="details">
@@ -38,7 +42,8 @@
                 <li class="slide" id="slide-2" style="display:none;">
                 <div class="image">
                     <img src="/static/images/BocoupSlide.jpg" />
-                    <div id="cow">Bocoup is committed to open source and open platform web technologies and facilitating their adoption. We work closely with Bocoup to make sure its legal documents accurately reflect its business goals.</div>
+                    <div class="imagetext entry clearfix">
+                        <div class='text'>Bocoup is committed to open source and open platform web technologies and facilitating their adoption. We work closely with Bocoup to make sure its legal documents accurately reflect its business goals.</div></div>
                 </div>
 
                 <div class="details">
@@ -51,18 +56,28 @@
                 <li class="slide" id="slide-3" style="display:none;">
                 <div class="image">
                     <img src="/static/images/ZephyrSlide.jpg" />
+                    <div class="imagetext entry clearfix">
+                        <div class='text'>
+                        Zephyr Technology Ventures is a Venture Accelerator that provides a full range of advisory and development services to middle market technology companies & startups. Fort Point Legal helps to reduce its transactions to documents which are easy to understand and reflective of its unique investment and advisory model.
+                        </div>
+                    </div>
                 </div>
 
                 <div class="details">
                     <p class="left"><a class="company-name" href="https://gather.at/" alt="Gather" title="Gather">Zephyr</a> <span class="pipe">|</span>Boston, MA</p>
 
-                    <p class="right"><a class="slide-name" href="#" alt="Zephyr" title="Description goes here">Description goes here</a></p>
+                    <p class="right"><a class="slide-name" href="#" alt="Zephyr" title="Description goes here">Zephyr Technology Ventures</a></p>
                 </div>
             </li>
 
                 <li class="slide" id="slide-4" style="display:none;">
                 <div class="image">
                     <img src="/static/images/GatherSlide.jpg" />
+                    <div class="imagetext entry clearfix">
+                        <div class='text'>
+                    gather.at is developing geodesic situational awareness technology on an open source platform. We are available for its licensing and open source questions, and for the occasional midday bike ride escape.
+                        </div>
+                    </div>
                 </div>
 
                 <div class="details">
@@ -75,39 +90,9 @@
         </ul>
     </div>
 
-<hr />
-<br />
-<table style="margin-left: auto; margin-right: auto;" width="850px">
-<tbody>
-<tr align="center" valign="top">
-<td width="212px">
-<h3>Connect</h3>
-<br /> Joel G. Kinney, Esq.<br /> joel(at)fortpoint(dot)me<br />
-<div class="containerbuttons">
-    <div class="buttons"><a href="http://www.linkedin.com/in/joelgkinney"><img src="/static/images/Linked-In-Logo1.jpg" width="15px" /></a></div>
-    <div class="buttons"><a href="https://twitter.com/#!/hackercounsel"><img src="/static/images/twitter_newbird_boxed_whiteonblue.png" width="15px" /></a></div>
-    <div class="buttons">
-        <script type="IN/FollowCompany" data-id="2664289" data-counter="right"></script>
-    </div>
-    <div class="fb-like" data-href="http://fortpoint.me/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
+<div style="padding-top: 5em;">
+<p>Communication Policy<br /><span style="color: #999999;"> While we are happy to have you contact us by electronic mail, telephone, surface mail or facsimile transmission, merely communicating with Fort Point Legal and Attorney Joel G. Kinney will not create a lawyer-client relationship. Such a relationship will not arise unless and until the firm agrees with you in writing to handle a particular matter. Importantly, unless and until this has occurred, you should not convey to us any information you regard as personal or confidential, because any such information will not be treated by us as confidential or subject to any confidentiality requirements.</span><br /><br /> LEGAL DISCLAIMER<br /><span style="color: #999999;"> This Web site provides information about our firm and certain topics that we feel users of the Web site may find of interest. This information may be considered advertising under the rules of professional conduct applicable to our legal practice. Any information we receive from you prior to the formal establishment of such a relationship will not be confidential. The content provided on the Web site is for informational purposes only. Before you make any decision that may have legal implications, you should consult with a qualified legal professional for specific legal advice tailored to your situation. Your use of the Web site is not an invitation to enter into and does not create an attorney-client relationship. Please do not convey to us any information you regard as confidential unless and until a formal lawyer-client relationship has been established. Any information we receive from you prior to the formal establishment of such a relationship will not be confidential. </span></p>
 </div>
-</td>
-<td width="212px">
-<div class="line"></div>
-<h3>Visit</h3>
-<br /> Fort Point Legal<br /> Bocoup Loft<br /> 355 Congress Street<br /> Boston, MA 02210<br /></td>
-<td width="212px">
-<div class="line"></div>
-<h3>Call</h3>
-<br />
-<p>857.498.1150 (main)<br /> 484.993.2271 (direct fax)</p>
-<p>&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
-Communication Policy<br /><span style="color: #999999;"> While we are happy to have you contact us by electronic mail, telephone, surface mail or facsimile transmission, merely communicating with Fort Point Legal and Attorney Joel G. Kinney will not create a lawyer-client relationship. Such a relationship will not arise unless and until the firm agrees with you in writing to handle a particular matter. Importantly, unless and until this has occurred, you should not convey to us any information you regard as personal or confidential, because any such information will not be treated by us as confidential or subject to any confidentiality requirements.</span><br /><br /> LEGAL DISCLAIMER<br /><span style="color: #999999;"> This Web site provides information about our firm and certain topics that we feel users of the Web site may find of interest. This information may be considered advertising under the rules of professional conduct applicable to our legal practice. Any information we receive from you prior to the formal establishment of such a relationship will not be confidential. The content provided on the Web site is for informational purposes only. Before you make any decision that may have legal implications, you should consult with a qualified legal professional for specific legal advice tailored to your situation. Your use of the Web site is not an invitation to enter into and does not create an attorney-client relationship. Please do not convey to us any information you regard as confidential unless and until a formal lawyer-client relationship has been established. Any information we receive from you prior to the formal establishment of such a relationship will not be confidential. </span><br /><br />
-<!--</div>-->
 {% endblock %}
 
 {% block extra_js %}

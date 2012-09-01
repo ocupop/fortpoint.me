@@ -118,7 +118,7 @@ html, body {
 }
 
 #navigation ul li {
-	margin-bottom: 12px;
+	margin-bottom: 4px;
 }
 
 #navigation ul li ul {
@@ -781,7 +781,6 @@ a:hover,a:active {
 	display: block;
 	padding-bottom: 4px;
 	background: url(/static/images/carousel-shadow.gif) repeat-x bottom left;
-	/*overflow: hidden;*/
 }
 
 #carousel #scroller-left, #carousel #scroller-right, #carousel #scroll-left, #carousel #scroll-right {
@@ -807,17 +806,42 @@ a:hover,a:active {
 	z-index: 100;
 }
 #carousel .image {
+	position: relative;
 	display: block;
 	margin: 0;
 }
 
-.imagetext {
-	width: 90%;
+/*.image-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+*/
+
+
+/*div.imagetext {
+	position: relative;
+	float: right;
+	max-width: 55%;
+}
+*/
+div.imagetext {
+	position: absolute;
+	top: 30%;
+	right: 0;
+	max-width: 55%;
+}
+
+.imagetext .text {
+	position: relative;
+	font-size: 12pt;
+	color: #87878C;
 }
 
 #carousel #slidelist, #carousel #slidelist .slide {
 	width:100%!important;
 }
+
 #carousel .details {
 	border:1px solid #e2e1e1;
 	border-top: 0 none;
@@ -1302,3 +1326,6 @@ article.fpl-companies a span {
 
 article.fpl-companies a:hover span { opacity:.9; }
 
+.disclaimer {
+	padding-top: 5em;
+}

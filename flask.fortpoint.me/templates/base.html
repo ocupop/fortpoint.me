@@ -66,10 +66,10 @@
     </div>
 
 </div> <!-- end header -->
-            <div id="content">
 
-            <div id="sidebar-left">
-                    <div id="navigation" class="clearfix">
+<div id="content">
+
+    <div id="sidebar-left"><div id="navigation" class="clearfix">
         <ul id="coded-menu">
             <li id="team-item" class="first menu-item menu-item-type-post_type menu-item-13"><a {% if active=="team" %}class="primary"{% endif %} href="/team/">Team</a></li>
             <li id="companies-item" class="menu-item menu-item-type-post_type current-menu-item page_item page-item-37 menu-item-39"><a {% if active=="companies" %}class="primary"{% endif %} href="/companies/">Companies</a>
@@ -77,18 +77,21 @@
                 <a {% if active=="story" %}class="primary"{% endif %} href="/story/">Story</a>
 
             </li>
-        </ul>
+            <li id="connect-item">
+                <a {% if active=="connect" %}class="primary"{% endif %} href="/connect/">Connect</a>
 
-    </div>
-
-    <div id="left-sidebar-widgets">
-        <ul>
+            </li>
         </ul>
     </div>
-            </div><!-- end #sidebar-left -->
+    </div><!-- end #sidebar-left -->
 
+<div id="content-main" class="clearfix">
+    {% block contenttop %}
+    {% endblock %}
+    </div><!-- end #content-main -->
+    <div class="clearfix"></div>
+</div><!-- end #content -->
 
-    <div id="content-main" class="clearfix">
 {% block content %}
 {% endblock %}
 
@@ -97,10 +100,7 @@
     {% endblock %}
         <p id="social-links">
             <a href="http://bostonbuilt.org/"><img src="/static/images/BuiltinBoston.png" /></a>
-            <a href="https://twitter.com/#!/hackercounsel" target="_blank" title="Follow Hackercounsel on Twitter">
-                <img src="/static/images/icon-twitter.png"/>
-            </a>
-            <a href="http://creativecommons.org/"><img src="/static/images/ccCopy.png" /></a>
+            <a href="http://creativecommons.org/licenses/by/3.0/"><img src="/static/images/ccCopy.png" /></a>
         </p>
 
 </div><!--// end #footer -->

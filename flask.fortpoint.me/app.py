@@ -30,5 +30,11 @@ def team():
     return render_template('team.html', active='team')
 
 
+@app.route('/connect/')
+def connect():
+    return render_template('connect.html', active='team')
+
+
+
 if __name__ == '__main__':
     app.run()
