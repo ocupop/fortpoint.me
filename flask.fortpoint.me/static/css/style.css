@@ -804,11 +804,8 @@ a:hover,a:active {
 	margin-right: 30px;
 }
 
-#carousel .imagetext {
+#carousel .logo-text {
 	padding-top: 110px;
-}
-
-.imagetext .text {
 	font-size: 12pt;
 	color: #87878C;
 }
