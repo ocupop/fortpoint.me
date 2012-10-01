@@ -771,7 +771,7 @@ a:hover,a:active {
 	position: relative;
 	width:100%;
 	max-width: 1140px;
-	height: 349px;
+	height: 335px;
 	display: block;
 	padding-bottom: 4px;
 	background: url(/static/images/carousel-shadow.gif) repeat-x bottom left;
@@ -799,31 +799,12 @@ a:hover,a:active {
 	right:2px;
 	z-index: 100;
 }
-#carousel .image {
-	position: relative;
-	display: block;
-	margin: 0;
-}
 #carousel .logo {
 	float: left;
 	margin-right: 30px;
 }
 
-/*.image-wrapper {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-*/
-
-
-/*div.imagetext {
-	position: relative;
-	float: right;
-	max-width: 55%;
-}
-*/
-div.imagetext {
+#carousel .imagetext {
 	padding-top: 110px;
 }
 
