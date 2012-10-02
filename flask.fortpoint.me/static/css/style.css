@@ -1271,28 +1271,15 @@ ul#companies {
 	margin-right: auto;
 }
 
-article {
-	display: inline;
-	float:left;
-	width:30em;
-}
-aside {
-	float:left;
-	width:40%;
-	font-family: Times, serif;
-	margin: 0 15px;
-}
-
-article.fpl-companies {
-	float:left;
-	width:30%;
-}
-
 aside.fpl-companies {
-	float:left;
-	width:40%;
 	font-family: Times, serif;
 	margin: 0 15px;
+}
+
+article.fpl-companies .company {
+	margin-right: 15px;
+	float: left;
+	display: inline-block;
 }
 
 aside.fpl-companies p {font-size:22px; text-align:left; line-height:150%; padding: 0 5px 0 5px;}
