@@ -6,9 +6,6 @@
 @import '/static/css/forms.css';
 
 /* General Layout */
-.{
-	position:relative;
-}
 .hidden {
 	display: none;
 }
@@ -1244,6 +1241,7 @@ ul#companies {
 
 #exits_table th a.desc {
 	background: url(/static/images/exit_arrow_desc.gif) no-repeat right;
+}
 
 
 #exits_table td {
