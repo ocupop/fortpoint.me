@@ -862,6 +862,7 @@ a:hover,a:active {
 	padding:0 10px;
 	height: 16px;
 }
+
 #footer #site-manager {
 	float: left;
 	display: inline;
@@ -1261,9 +1262,17 @@ article.fpl-companies .company {
 	display: inline-block;
 }
 
-aside.fpl-companies p {font-size:22px; text-align:left; line-height:150%; padding: 0 5px 0 5px;}
+aside.fpl-companies p {
+	font-size: 20px;
+	text-align:left;
+	line-height:150%;
+	padding: 0 5px 0 5px;}
 
-article.fpl-companies span {float:left; padding:5px; width:220px; height:100px;}
+article.fpl-companies span {
+	float:left;
+	padding:5px;
+	width:220px;
+	height:100px;}
 
 article.fpl-companies a span {
 	text-decoration:none;
@@ -1293,4 +1302,9 @@ article.fpl-companies a:hover span { opacity:.9; }
 
 .grey {
 	color: #87878C;
+}
+
+.bigger {
+	font-size: 16px;
+	line-height: 28px;
 }
