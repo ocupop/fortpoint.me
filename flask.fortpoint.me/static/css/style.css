@@ -235,7 +235,7 @@ html, body {
 
 .home #content-main .entry p {
 	font-size: 16px;
-	color: #474039;
+	color: #87878C;
 	width: 520px;
 	margin-bottom: 0;
 	line-height: 28px;
@@ -756,6 +756,7 @@ a:hover,a:active {
 	font-size:11px;
 	margin-bottom:30px;
 }
+
 #sidebar li form,ul.navigation li,blockquote p,#copyright {
 	margin:0;
 }
@@ -1285,3 +1286,11 @@ article.fpl-companies a span {
 	}
 
 article.fpl-companies a:hover span { opacity:.9; }
+
+.spiffy {
+	font-family: 'Numans', sans-serif;
+}
+
+.grey {
+	color: #87878C;
+}
