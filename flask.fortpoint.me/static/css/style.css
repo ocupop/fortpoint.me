@@ -799,35 +799,13 @@ a:hover,a:active {
 	right:2px;
 	z-index: 100;
 }
-#carousel .image {
-	position: relative;
-	display: block;
-	margin: 0;
+#carousel .logo {
+	float: left;
+	margin-right: 30px;
 }
 
-/*.image-wrapper {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-*/
-
-
-/*div.imagetext {
-	position: relative;
-	float: right;
-	max-width: 55%;
-}
-*/
-div.imagetext {
-	position: absolute;
-	top: 30%;
-	right: 0;
-	max-width: 55%;
-}
-
-.imagetext .text {
-	position: relative;
+#carousel .logo-text {
+	padding-top: 110px;
 	font-size: 12pt;
 	color: #87878C;
 }
