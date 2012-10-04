@@ -58,37 +58,29 @@ html, body {
 	display:inline;
 	margin:0 5px 0 0;
 }
-#sidebar-left {
-	width:250px;
-	float: left;
-	margin-bottom: 20px;
-	text-align: right;
-}
-
-#sidebar-left p {
-	font-size: 13px;
-	padding-right: 30px;
-}
 
 /*////////////////////////////////*/
 /* Navigation */
 /*////////////////////////////////*/
 
-#navigation {
-	height: 96px;
+#page-nav {
+	width:220px;
+	float: left;
+	margin-bottom: 20px;
+	text-align: right;
 	border-right: 1px solid #e2e2e2;
 	padding-right: 29px;
 }
 
-#navigation ul {
+#page-nav ul {
 	margin: 0;
 }
 
-#navigation ul li {
+#page-nav ul li {
 	margin-bottom: 4px;
 }
 
-#navigation li a {
+#page-nav li a {
 	font-size: 24px;
 	margin: 0;
 	text-transform: uppercase;
