@@ -709,7 +709,7 @@ a:hover,a:active {
 }
 #footer {
 	margin: 0;
-	padding: 30px 0;
+	/*padding: 15px 0;*/
 	position: absolute;
 	bottom: -20px;
 	width: 100%;
@@ -745,9 +745,9 @@ a:hover,a:active {
 	background: #e6e6e6;
 }
 #footer #social-links {
-	position: absolute;
+	/*position: absolute;*/
 	left: 0;
-	bottom: 1px;
+	/*bottom: 1px;*/
 }
 #footer #social-links a {
 	display: inline;
