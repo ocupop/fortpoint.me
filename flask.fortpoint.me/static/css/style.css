@@ -44,15 +44,6 @@ html, body {
 	border-bottom: 1px solid #e2e2e2;
 	padding: 25px 0;
 }
-#branding #searchbox {
-	float:right;
-	display:inline;
-	width: 217px;
-}
-#branding #signup li {
-	display:inline;
-	margin:0 5px 0 0;
-}
 
 /*////////////////////////////////*/
 /* Navigation */
