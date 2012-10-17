@@ -25,22 +25,23 @@ html, body {
 	max-width: 1140px;
 	margin: 0 auto 50px auto;
 }
-#logo {
-	float: left;
-	display:inline;
-}
-#logo a {
-	background: url(/static/images/Fort_Point_Logo.gif) no-repeat top left;
-	width: 382px;
-	height: 85px;
-	display: block;
-}
 #page-header {
 	position:relative;
 	clear:both;
 	margin-bottom: 28px;
 	border-bottom: 1px solid #e2e2e2;
 	padding: 25px 0;
+}
+#page-header .logo {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#page-header .title {
+    display: inline;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 /*////////////////////////////////*/
