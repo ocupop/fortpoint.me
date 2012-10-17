@@ -707,6 +707,9 @@ a:hover,a:active {
 	vertical-align: middle;
 	margin-left: 12px;
 }
+#page-footer .social-links .social-link:first-child {
+    margin-left: 0;
+}
 #page-footer .social-links .social-link img {
 	padding:2px;
 }
