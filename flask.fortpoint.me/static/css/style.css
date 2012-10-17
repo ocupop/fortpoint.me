@@ -64,7 +64,11 @@ html, body {
 	margin-bottom: 20px;
 	text-align: right;
 	border-right: 1px solid #e2e2e2;
-	padding-right: 29px;
+	/* In order to properly-align with the content, the top padding should be
+	 * relative to the content's line-height by the following formula:
+	 *   ( (content line-height) - (content font-size) ) / 2
+	 */
+	padding: 6px 29px 0 0;
 }
 
 #page-nav ul {
@@ -95,21 +99,10 @@ html, body {
 	float: left;
 	padding-left:26px;
 	margin-bottom: 30px;
-	padding-top: 10px;
 }
 .single-company #content-main {
 	padding-left:10px;
 	width:700px;
-}
-
-
-.blog #content-main,
-.singular #content-main {
-	padding-top: 0;
-}
-
-.home #content-main {
-	padding-top: 8px;
 }
 
 .home #content-main .entry {
