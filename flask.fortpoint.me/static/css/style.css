@@ -718,12 +718,13 @@ a:hover,a:active {
 	height: 16px;
 }
 
-#page-footer #social-links a {
+#page-footer .social-links .social-link {
 	display: inline;
+	cursor: pointer;
 	vertical-align: middle;
 	margin-left: 12px;
 }
-#page-footer #social-links a img {
+#page-footer .social-links .social-link img {
 	padding:2px;
 }
 
