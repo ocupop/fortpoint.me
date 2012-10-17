@@ -33,15 +33,15 @@ html, body {
 	padding: 25px 0;
 }
 #page-header .logo {
-    display: inline;
-    vertical-align: middle;
-    margin-right: 10px;
+	display: inline;
+	vertical-align: middle;
+	margin-right: 10px;
 }
 #page-header .title {
-    display: inline;
-    vertical-align: middle;
-    text-transform: uppercase;
-    font-weight: normal;
+	display: inline;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: normal;
 }
 
 /*////////////////////////////////*/
@@ -708,7 +708,7 @@ a:hover,a:active {
 	margin-left: 12px;
 }
 #page-footer .social-links .social-link:first-child {
-    margin-left: 0;
+	margin-left: 0;
 }
 #page-footer .social-links .social-link img {
 	padding:2px;
@@ -1022,9 +1022,9 @@ ul#companies {
 }
 
 #exits-link {
-    background: url(/static/images/icons/exit-arrow.png) center right no-repeat;
-    padding-right: 13px;
-    padding-top: 2px;
+	background: url(/static/images/icons/exit-arrow.png) center right no-repeat;
+	padding-right: 13px;
+	padding-top: 2px;
 }
 
 .buttons {padding:5px 0px; width:30px; float:left;}
@@ -1064,20 +1064,20 @@ article.fpl-companies span {
 article.fpl-companies a span {
 	text-decoration:none;
 	opacity:.5;
-    transition:all .5s;
-    transition-timing-function: ease-in-out;
-   /* Firefox 4 */
-    -moz-transition:all .5s;
-    -moz-transition-timing-function: ease-in-out;
-   /* Safari and Chrome */
-   -webkit-transition:background .5s;
-   -webkit-transition-timing-function: ease-in-out;
-    /* Opera */
-    -o-transition:all .5s;
-    -o-transition-timing-function: ease-in-out;
+	transition:all .5s;
+	transition-timing-function: ease-in-out;
+	/* Firefox 4 */
+	-moz-transition:all .5s;
+	-moz-transition-timing-function: ease-in-out;
+	/* Safari and Chrome */
+	-webkit-transition:background .5s;
+	-webkit-transition-timing-function: ease-in-out;
+	/* Opera */
+	-o-transition:all .5s;
+	-o-transition-timing-function: ease-in-out;
 	/* MS */
-    -ms-transition:all .5s;
-    -ms-transition-timing-function: ease-in-out;
+	-ms-transition:all .5s;
+	-ms-transition-timing-function: ease-in-out;
 	cursor:pointer;
 	}
 
