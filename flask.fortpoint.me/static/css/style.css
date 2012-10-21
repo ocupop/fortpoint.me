@@ -25,38 +25,23 @@ html, body {
 	max-width: 1140px;
 	margin: 0 auto 50px auto;
 }
-#logo {
-	float: left;
-	display:inline;
-}
-#logo a {
-	background: url(/static/images/Fort_Point_Logo.gif) no-repeat top left;
-	width: 382px;
-	height: 85px;
-	display: block;
-}
-#header {
+#page-header {
 	position:relative;
 	clear:both;
 	margin-bottom: 28px;
-}
-#footer {
-	position:relative;
-	clear:both;
-	margin-bottom:30px;
-}
-#branding {
 	border-bottom: 1px solid #e2e2e2;
 	padding: 25px 0;
 }
-#branding #searchbox {
-	float:right;
-	display:inline;
-	width: 217px;
+#page-header .logo {
+	display: inline;
+	vertical-align: middle;
+	margin-right: 10px;
 }
-#branding #signup li {
-	display:inline;
-	margin:0 5px 0 0;
+#page-header .title {
+	display: inline;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: normal;
 }
 
 /*////////////////////////////////*/
@@ -69,7 +54,11 @@ html, body {
 	margin-bottom: 20px;
 	text-align: right;
 	border-right: 1px solid #e2e2e2;
-	padding-right: 29px;
+	/* In order to properly-align with the content, the top padding should be
+	 * relative to the content's line-height by the following formula:
+	 *   ( (content line-height) - (content font-size) ) / 2
+	 */
+	padding: 6px 29px 0 0;
 }
 
 #page-nav ul {
@@ -100,21 +89,10 @@ html, body {
 	float: left;
 	padding-left:26px;
 	margin-bottom: 30px;
-	padding-top: 10px;
 }
 .single-company #content-main {
 	padding-left:10px;
 	width:700px;
-}
-
-
-.blog #content-main,
-.singular #content-main {
-	padding-top: 0;
-}
-
-.home #content-main {
-	padding-top: 8px;
 }
 
 .home #content-main .entry {
@@ -617,13 +595,6 @@ a:hover,a:active {
 	font-size:13px;
 	margin:1.2em 0 0.8em;
 }
-/* Footer */
-#footer {
-	color:#999;
-	font-size:11px;
-	margin-bottom:30px;
-}
-
 #sidebar li form,ul.navigation li,blockquote p,#copyright {
 	margin:0;
 }
@@ -707,54 +678,39 @@ a:hover,a:active {
 #carousel .details .pipe {
 	margin: 0 3px;
 }
-#footer {
-	margin: 0;
-	/*padding: 15px 0;*/
-	position: absolute;
-	bottom: -20px;
-	width: 100%;
+
+/* Footer */
+#page-footer {
+	padding: 15px 0;
 	background: #fff;
+	color: #999;
+	font-size:11px;
 }
-#footer #copyright, #footer-menu, #footer-menu li, #footer #site-info {
+#page-footer #copyright, #page-footer-menu, #page-footer-menu li, #page-footer #site-info {
 	float: left;
 	margin: 0;
 	line-height: 16px;
 	display: inline;
 }
-#footer-menu {
+#page-footer-menu {
 	margin: 0 10px 0 5px;
 }
-#footer-menu li {
+#page-footer-menu li {
 	border-right: 1px solid #b6b6b6;
 	padding:0 10px;
 	height: 16px;
 }
 
-#footer #site-manager {
-	float: left;
+#page-footer .social-links .social-link {
 	display: inline;
-	vertical-align: middle;
-	padding:0 5px;
-	line-height: 18px;
-	position: relative;
-	top:-2px;
-	border:1px solid #e6e6e6;
-	font-size: 10px;
-}
-#footer #site-manager:hover {
-	background: #e6e6e6;
-}
-#footer #social-links {
-	/*position: absolute;*/
-	left: 0;
-	/*bottom: 1px;*/
-}
-#footer #social-links a {
-	display: inline;
+	cursor: pointer;
 	vertical-align: middle;
 	margin-left: 12px;
 }
-#footer #social-links a img {
+#page-footer .social-links .social-link:first-child {
+	margin-left: 0;
+}
+#page-footer .social-links .social-link img {
 	padding:2px;
 }
 
@@ -1066,9 +1022,9 @@ ul#companies {
 }
 
 #exits-link {
-    background: url(/static/images/icons/exit-arrow.png) center right no-repeat;
-    padding-right: 13px;
-    padding-top: 2px;
+	background: url(/static/images/icons/exit-arrow.png) center right no-repeat;
+	padding-right: 13px;
+	padding-top: 2px;
 }
 
 .buttons {padding:5px 0px; width:30px; float:left;}
@@ -1108,20 +1064,20 @@ article.fpl-companies span {
 article.fpl-companies a span {
 	text-decoration:none;
 	opacity:.5;
-    transition:all .5s;
-    transition-timing-function: ease-in-out;
-   /* Firefox 4 */
-    -moz-transition:all .5s;
-    -moz-transition-timing-function: ease-in-out;
-   /* Safari and Chrome */
-   -webkit-transition:background .5s;
-   -webkit-transition-timing-function: ease-in-out;
-    /* Opera */
-    -o-transition:all .5s;
-    -o-transition-timing-function: ease-in-out;
+	transition:all .5s;
+	transition-timing-function: ease-in-out;
+	/* Firefox 4 */
+	-moz-transition:all .5s;
+	-moz-transition-timing-function: ease-in-out;
+	/* Safari and Chrome */
+	-webkit-transition:background .5s;
+	-webkit-transition-timing-function: ease-in-out;
+	/* Opera */
+	-o-transition:all .5s;
+	-o-transition-timing-function: ease-in-out;
 	/* MS */
-    -ms-transition:all .5s;
-    -ms-transition-timing-function: ease-in-out;
+	-ms-transition:all .5s;
+	-ms-transition-timing-function: ease-in-out;
 	cursor:pointer;
 	}
 
