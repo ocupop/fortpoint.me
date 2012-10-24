@@ -1,3 +1,10 @@
+'''To use this file, just create a local_settings.py folder in the same
+directory with contents like this:
+
+HOSTS = ["blah"]
+
+Where "blah" is the name of Joel's server in your ssh config.
+'''
 from fabric.api import *
 
 import settings_local
@@ -7,8 +14,6 @@ env.update(
     use_ssh_config=True,
     hosts=settings_local.HOSTS,
     repo_dir='/home/joelgkinney/fortpoint.me',
-    venv_name='2.7',
-    venv_dir='.virtualenvs',
     )
 
 
