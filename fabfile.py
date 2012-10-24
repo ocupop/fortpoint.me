@@ -1,4 +1,4 @@
-'''To use this file, just create a local_settings.py folder in the same
+'''To use this file, just create a settings_local.py folder in the same
 directory with contents like this:
 
 HOSTS = ["blah"]
