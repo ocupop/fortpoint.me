@@ -1,6 +1,5 @@
 *.pyc
 *.DS_Store
 *~
-local_settings.*py
+settings_local.*py
 *.sublime*
-fabfile.py
