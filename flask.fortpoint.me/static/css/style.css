@@ -157,6 +157,15 @@ html, body {
 	margin-right: 3px;
 }
 
+.contact-methods .contact-method {
+    margin-bottom: 0.5em;
+}
+.contact-methods .mailing-address {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
 
 /*////////////////////////////////*/
 /* Sidebar */
@@ -493,9 +502,6 @@ body {
 	color:#555;
 	margin:0;
 	padding:0;
-}
-hr,p,ul,ol,dl,pre,address,table,form {
-	margin-bottom:.8em;
 }
 .entry hr,.entry p,.entry ul,.entry ol,.entry dl,.entry pre,.entry address,.entry table,.entry form {
 	margin-bottom:1.6em;
@@ -905,6 +911,32 @@ ul#companies {
 }
 #three-column .entry {
 	margin: 35px 0 40px 0;
+}
+
+.team-member {
+    margin-bottom: 50px;
+}
+.team-member-name {
+    margin-bottom: 1em;
+}
+.team-member .credentials {
+    font-size: 14px;
+    float: right;
+    width: 300px;
+    margin: 0 0 20px 20px;
+}
+.team-member .contact-methods {
+    text-align: center;
+    margin-top: 0.8em;
+}
+.team-member .contact-methods .contact-method {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 0;
+    /* Trigger hasLayout in legacy IE */
+    zoom: 1;
+    /* Target IE6 and 7 only */
+    *display: inline;
 }
 
 /*////////////////////////////////*/
