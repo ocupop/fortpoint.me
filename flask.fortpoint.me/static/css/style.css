@@ -2,9 +2,6 @@
 /* CSS Reset */
 @import '/static/css/reset.css';
 
-/* Form Styles */
-@import '/static/css/forms.css';
-
 /* General Layout */
 .hidden {
 	display: none;
