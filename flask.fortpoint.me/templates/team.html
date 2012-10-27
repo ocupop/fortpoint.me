@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% from 'macros.html' import contact_methods %}
+
 {% block contenttop %}
 <ul class="col teasers">
 
@@ -13,13 +15,17 @@
         State of New York
       </div>
       <p>Joel has been representing the entrepreneur community in Boston since 2001, working closely with his clients to provide collaborative and cost effective legal solutions.  His clients include world class innovators in many local businesses in everything from low tech greenhouses to high tech telecommunication aggregation services, local farms to international specialty food companies, and customized software design to cutting edge HTML 5 gaming.  Joel has been the go-to attorney for businesses of all sizes from home grown start ups to national corporations, including seed round of funding, licensing, leasing and employment matters. His experience is in representation of businesses and individuals in a variety of transactions including contract negotiations, the purchase and disposition of business assets, and his extensive network makes him uniquely able to assist in growing his client's enterprises.</p>
-    <ul class="contact-methods">
-      <li class="contact-method"><i class="icon-phone"></i> Mobile: <a href="tel:857-498-1150"> 857-498-1150</a></li>
-      <li class="contact-method"><i class="icon-envelope"></i> Email: <a href="mailto:joel@fortpointlegal.com">joel@fortpointlegal.com</a></li>
-      <li class="contact-method"><i class="icon-twitter"></i> Twitter: <a href="http://twitter.com/hackercounsel/" target="_blank">@hackercounsel</a></li>
-      <li class="contact-method"><i class="icon-github"></i> Github: <a href="http://github.com/joelgkinney/" target="_blank">joelgkinney</a></li>
-      <li class="contact-method"><i class="icon-linkedin"></i> LinkedIn: <a href="http://www.linkedin.com/in/joelgkinney" target="_blank">Joel G. Kinney</a></li>
-    </ul>
+
+    {{ contact_methods(
+      ['phone', '857-498-1150'],
+      ['email', 'joel@fortpointlegal.com'],
+      ['twitter', 'hackercounsel'],
+      ['github', 'joelgkinney'],
+      ['linkedin', {
+        'human': 'Joel G. Kinney',
+        'machine': 'joelgkinney'
+      }]
+    ) }}
   </li>
 
   <li class="team-member spiffy bigger grey">
@@ -33,11 +39,14 @@
       <p>Commonwealth of Massachusetts
     </aside>
     <p>Dan is an experienced corporate and tax attorney who often serves as an outsourced in-house counsel for technology companies. Dan has deep experience in both private and public practice having worked both in a boutique Boston firm and the legislature for the State of Vermont. Dan focuses his practice on Start-up companies, software and professional services contracts, licensing and distribution agreements.</p>
-    <ul class="contact-methods">
-      <li class="contact-method"><i class="icon-phone"></i> Mobile: <a href="tel:857-498-1150">617-470-5049</a></li>
-      <li class="contact-method"><i class="icon-envelope"></i> Email: <a href="mailto:dan@fortpointlegal.com">dan@fortpointlegal.com</a></li>
-      <li class="contact-method"><i class="icon-linkedin"></i> LinkedIn: <a href="http://www.linkedin.com/in/danparadis" target="_blank">Daniel Paradis</a></li>
-    </ul>
+    {{ contact_methods(
+      ['phone', '617-470-5049'],
+      ['email', 'dan@fortpointlegal.com'],
+      ['linkedin', {
+        'human': 'Daniel Paradis',
+        'machine': 'danparadis'
+      }]
+    ) }}
   </li>
 
   <li class="team-member spiffy bigger grey">
@@ -51,10 +60,10 @@
       State of New York
     </aside>
     <p class='spiffy bigger'>Thom is an attorney and software engineer available to discuss technical issues and strategies related to e-discovery, data-mining, computer forensic analysis, workflow engineering and automation, and contract drafting. His experience includes work as a legislative analyst in the New York State Assembly, as a legal editor for the New York State Court of Appeals, and as a web developer for a large-scale, open source public information project.</p>
-    <ul class="contact-methods">
-      <li class="contact-method"><i class="icon-twitter"></i> Twitter: <a href="https://twitter.com/twneale" target="_blank">@twneale</a></li>
-      <li class="contact-method"><i class="icon-github"></i> Github: <a href="https://github.com/twneale" target="_blank">twneale</a></li>
-    </ul>
+    {{ contact_methods(
+      ['twitter', 'twneale'],
+      ['github', 'twneale']
+    ) }}
 
   </li>
 

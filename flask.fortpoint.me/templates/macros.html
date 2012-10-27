@@ -1,0 +1,84 @@
+{#- connect_methods expects a list of lists, each containing two members: a
+   `type` and a `value`. Markup will be intelligently created based on the
+   `type`, but specific aspects of the generated HTML can be overridden by
+   specifying a dict as the `value` (see the contact_method` macro for details
+   on this) -#}
+{%- macro contact_methods() -%}
+  <ul class="contact-methods">
+    {%- for type, value in varargs -%}
+    {{ contact_method(type, value) }}
+    {%- endfor -%}
+  </ul>
+{%- endmacro -%}
+
+{%- macro contact_method(type, value) -%}
+
+{%- set icons = {
+  'phone': 'phone',
+  'fax': 'phone',
+  'mail': 'home',
+  'email': 'envelope',
+  'twitter': 'twitter',
+  'facebook': 'facebook',
+  'github': 'github',
+  'linkedin': 'linkedin',
+  '_default': 'star'
+} -%}
+{%- set method_names = {
+  'phone': 'Mobile',
+  'fax': 'Facsmilie',
+  'email': 'E-mail',
+  'twitter': 'Twitter',
+  'facebook': 'Facebook',
+  'github': 'GitHub',
+  'linkedin': 'LinkedIn'
+} -%}
+{%- set href_prefixes = {
+  'phone': 'tel:',
+  'fax': 'tel:',
+  'email': 'mailto:',
+  'twitter': 'https://twitter.com/',
+  'facebook': 'http://facebook.com/',
+  'github': 'https://github.com/',
+  'linkedin': 'http://linkedin.com/in/',
+  '_default': ''
+} -%}
+{%- set human_prefixes = {
+  'twitter': '@',
+  '_default': ''
+} -%}
+
+{#- Allow for explicit setting of various attributes by supplying a dict in
+   place of the machine value -#}
+{%- if value is mapping -%}
+  {%- set machine_value = value.machine -%}
+  {%- set human_value = value.human -%}
+  {%- set method_name = value.method_name -%}
+  {%- set icon = value.icon -%}
+  {%- set href = value.href -%}
+{%- else -%}
+  {%- set machine_value = value -%}
+{%- endif -%}
+
+{%- set human_value = human_value or
+  ((human_prefixes[type] or human_prefixes._default) + machine_value) -%}
+
+{%- set method_name = method_name or method_names[type] or type|title -%}
+{%- set icon = icon or icons[type] or icons._default -%}
+
+<li class="contact-method">
+  <i class="icon-{{ icon }}"></i>&nbsp;{{ method_name }}:&nbsp;
+
+{%- if type == 'mail' -%}
+  <ul class="mailing-address">
+    {%- for address_line in human_value -%}
+      <li>{{ address_line }}</li>
+    {%- endfor -%}
+  </ul>
+{%- else -%}
+  {%- set href = href or
+    ((href_prefixes[type] or href_prefixes._default) + machine_value) -%}
+  <a href="{{ href }}">{{ human_value }}</a>
+{%- endif %}
+</li>
+{% endmacro -%}
