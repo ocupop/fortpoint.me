@@ -1,7 +1,10 @@
 from flask import Flask, Response, request, render_template
-from flask import redirect, url_for
-from subprocess import call
+from flask import redirect, url_for, request
+from subprocess import Popen
 from os.path import abspath, dirname, join
+import json
+import settings
+import re
 
 HERE = dirname(abspath(__file__))
 
@@ -40,10 +43,39 @@ def connect():
 
 @app.route('/github-webhook', methods=['POST'])
 def pull_latest():
-    github_ips = ['207.97.227.253', '50.57.128.197', '108.171.174.178']
-    if request.remote_addr in github_ips:
-        script = join('..', HERE, 'pull-latest.sh')
-        call(script, shell=True)
+
+    # Ignore requests that don't specify the expected GitHub secret (preventing
+    # unauthorized triggering of site updates)
+    if request.args['secret'] != settings.github_secret:
+        return ''
+
+    payload = json.loads(request.form['payload'])
+
+    # Only consider the "master" branch and branches that are prefixed with
+    # "preview-"
+    match = re.search('^refs/heads/(preview-[a-zA-Z0-9_/-]+|master)$',
+        payload['ref'])
+
+    if not match:
+        return ''
+
+    # Check out branches when they change. If they are deleted, then revert to
+    # the master branch
+    if not(payload['deleted'] and payload['forced']):
+        branchname = match.group(1)
+    else:
+        branchname = 'master'
+
+    script = join(HERE, '..', 'pull-and-restart.sh')
+
+    # Fork a new process to update the site so that this request can be
+    # correctly terminated
+    try:
+        Popen([script, branchname], shell=True)
+    except:
+        pass
+
+    return ''
 
 if __name__ == '__main__':
     app.run()
