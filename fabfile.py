@@ -15,5 +15,5 @@ env.update(
     repo_dir='/home/joelgkinney/fortpoint.me',
     )
 
-def deploy():
-    run('%(repo_dir)s/pull-latest.sh' % env)
+def deploy(branch_name="master"):
+    run('%s/pull-and-restart.sh %s' % (env.repo_dir, branch_name))
