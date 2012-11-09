@@ -416,6 +416,7 @@ a:hover,a:active {
 	width: 3.5em;
 	height: 3.5em;
 	cursor: pointer;
+	z-index: 100;
 }
 	.carousel .scroller {
 		border: 1px solid #e2e1e1;
@@ -424,20 +425,17 @@ a:hover,a:active {
 
 .carousel .scroller-left {
 	background: url(/static/images/arrow-left.png) no-repeat center;
-	/*border-right: 1px solid #e2e1e1;*/
-	z-index: 100;
 	float: left;
 }
 .carousel .scroller-right {
 	background: url(/static/images/arrow-right.png) no-repeat center;
-	/*border-left: 1px solid #e2e1e1;*/
-	z-index: 100;
 	float: right;
 }
 .carousel img {
 	display: block;
 	width: 100%;
 	height: auto;
+	z-index: 10;
 }
 
 .carousel ul {
@@ -455,8 +453,9 @@ a:hover,a:active {
 	padding: 1em 0;
 }
 
-.carousel #slidelist, .carousel #slidelist .slide {
-	width: 100% !important;
+.carousel .slides, .carousel #slidelist .slide {
+	width: 100%;
+	clear: both;
 }
 
 .carousel .details {
@@ -494,6 +493,11 @@ footer {
 	background: #fff;
 	color: #999;
 	padding: 1.5em;
+}
+
+footer .social-links {
+	padding: 0;
+	margin: 0;
 }
 
 footer .social-links li {

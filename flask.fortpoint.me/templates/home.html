@@ -1,20 +1,53 @@
 {% extends 'base.html' %}
 
+{% block extra_js %}
+<script type="text/javascript"><!--
+    (function($){
+        $(function(){
+
+            $('.slides').cycle({
+                fx:     'fade',
+                speed:  '500',
+                timeout: 2000,
+                slideResize: 0,
+                next: $('.scroll-right'),
+                prev: $('.scroll-left'),
+                cssBefore: {  
+                    width: '100%', 
+                    height: 'auto',
+                },
+                cssBefore: {  
+                    width: '100%', 
+                    height: 'auto',
+                }, 
+            });
+
+            $('.scroll-right, .scroll-left').click(function() {
+                $('#slidelist').cycle('pause');
+            });
+
+        });
+    })(jQuery);
+    -->
+    </script>
+{% endblock %}
+
 {% block contenttop %}
     Fort Point Legal represents the open source, internet startup and entrepreneur communities.  We work closely with our clients to offer critical business advice and cost effective legal solutions.
 {% endblock %}
 
 {% block content %}
-<section id="carousel" class="carousel">
+<section id="carousel" class="carousel clearfix">
 
     <div class="scroller scroller-left">
         <a class="arrow scroll-left"></a>
     </div>
+
     <div class="scroller scroller-right">
         <a class="arrow scroll-right"></a>
     </div>
 
-    <div class="clearfix">
+    <div>
         <ul class="slides" class="activated">
             <li>
                 <img src="/static/images/jQuerySlide.jpg" class="logo" alt="jQuery logo" />
