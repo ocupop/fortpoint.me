@@ -739,4 +739,91 @@ form#commentform textarea {
 form#commentform #textarea label {
 	float:none;
 	width:auto;
+=======
+>>>>>>> responsive-css
+}
+.commentlist .children li {
+	margin-left:0;
+}
+#content ol.commentlist li.bypostauthor {
+	border:1px solid #ccc;
+	z-index:5;
+	position:relative;
+}
+#content .comment #reply {
+	font-size:12px;
+	padding-top:1px;
+	text-transform:uppercase;
+	line-height:1.3em;
+	margin:0 0 10px;
+}
+.comment #respond {
+	padding-top:15px;
+	border-top:1px solid #eee;
+	margin-top:18px;
+}
+/* Comment Navigation */
+ul.navigation {
+	list-style:none;
+	margin:0;
+}
+/* Comment Form */
+form#commentform {
+	margin:0 0 4px;
+}
+#cancel-comment-reply-link {
+	float:right;
+}
+form#commentform p {
+	clear:both;
+	margin:0 0 15px;
+}
+form#commentform #submit-field {
+	margin:0;
+}
+form#commentform label {
+	display:block;
+	line-height:25px;
+}
+form#commentform input {
+	display:block;
+	margin:0;
+	border:1px solid #DDD;
+	color:#777;
+	padding:4px;
+}
+#commentform label.error {
+	display:block;
+	color:#FF4848;
+}
+#commentform small.required {
+	color:#FF4848;
+	font-weight:bold;
+}
+form#commentform input.error {
+	border-color:#FFCECE;
+	color:#FF4848;
+}
+form#commentform input[type="submit"] {
+	width:auto;
+	padding:3px 5px 2px;
+	float:left;
+	font-size:10px;
+	font-weight:500;
+	color:#fff;
+	cursor:pointer;
+	text-transform:uppercase;
+}
+form#commentform input[type="submit"]:hover {
+
+}
+form#commentform textarea {
+	width:94%;
+	padding:2%;
+	border:1px solid #DDD;
+	color:#777;
+}
+form#commentform #textarea label {
+	float:none;
+	width:auto;
 }
