@@ -33,14 +33,31 @@
     <script src="/static/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- // <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script> -->
+    <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
     
-    <script type="text/javascript" src="/static/js/pk-cycle.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.cycle.min.js"></script>
 
     <script type="text/javascript"><!--
-        
+    (function($){
+        $(function(){
+
+            $('#slidelist').cycle({
+                fx:     'fade',
+                speed:  '500',
+                timeout: 8000,
+                slideResize: 0,
+                next: '.scroll-right',
+                prev: '.scroll-left'
+            });
+
+            $('#scroll-right, #scroll-left').click(function() {
+                $('#slidelist').cycle('pause');
+            });
+
+        });
+    })(jQuery);
     -->
     </script>
 
