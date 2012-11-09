@@ -33,27 +33,14 @@
     <script src="/static/js/html5shiv.js"></script>
     <![endif]-->
 
+    <!-- // <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script> -->
+
     <link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
     
-    <script type="text/javascript" src="/static/js/jquery.cycle.min.js"></script>
+    <script type="text/javascript" src="/static/js/pk-cycle.js"></script>
 
     <script type="text/javascript"><!--
-    (function($){
-        $(function(){
-
-            $('#slidelist').cycle({
-                fx:     'fade',
-                speed:  '500',
-                timeout: 8000,
-                next: '#scroll-right',
-                prev: '#scroll-left'
-            });
-
-            $('#scroll-right, #scroll-left').click(function() {
-                $('#slidelist').cycle('pause');
-            });
-        });
-    })(jQuery);
+        
     -->
     </script>
 
@@ -85,16 +72,16 @@
                 <a {% if active=="connect" %}class="primary"{% endif %} href="/connect/">Connect</a>
             </li>
         </ul>
+
+        <section>{% block contenttop %}{% endblock %}</section>
     </nav>
 
     <section class="content clearfix">
-        {% block contenttop %}{% endblock %}
-    </section>
-
-    {% block content %}{% endblock %}
+        {% block content %}{% endblock %}
+    </section>    
 
     <footer>
-        {% block extrafooter %}{% endblock %}
+
         <ul class="social-links">
             <li>
                 <a href="/"><img src="/static/images/logo-square-25.png"></a>
@@ -106,12 +93,17 @@
                 <a href="http://creativecommons.org/licenses/by/3.0/"><img src="/static/images/ccCopy.png"></a>
             </li>
         </ul>
+        
+        <p><strong>Communication Policy</strong>:</p>
+        <p>While we are happy to have you contact us by electronic mail, telephone, surface mail or facsimile transmission, merely communicating with Fort Point Legal and Attorney Joel G. Kinney will not create a lawyer-client relationship. Such a relationship will not arise unless and until the firm agrees with you in writing to handle a particular matter. Importantly, unless and until this has occurred, you should not convey to us any information you regard as personal or confidential, because any such information will not be treated by us as confidential or subject to any confidentiality requirements.</p>
+        <p><strong>LEGAL DISCLAIMER</strong></p>
+        <p>This Web site provides information about our firm and certain topics that we feel users of the Web site may find of interest. This information may be considered advertising under the rules of professional conduct applicable to our legal practice. Any information we receive from you prior to the formal establishment of such a relationship will not be confidential. The content provided on the Web site is for informational purposes only. Before you make any decision that may have legal implications, you should consult with a qualified legal professional for specific legal advice tailored to your situation. Your use of the Web site is not an invitation to enter into and does not create an attorney-client relationship. Please do not convey to us any information you regard as confidential unless and until a formal lawyer-client relationship has been established. Any information we receive from you prior to the formal establishment of such a relationship will not be confidential.</p>
 
     </footer>
 
 </div><!--// end .container -->
 
-{% block extra_js %}{%} endblock %}
+{% block extra_js %}{% endblock %}
 
 </body>
 </html>

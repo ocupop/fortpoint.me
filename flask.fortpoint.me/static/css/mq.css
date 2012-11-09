@@ -3,6 +3,11 @@
 /* wicked large */
 @media only screen and (min-width: 1280px) {
 
+	.container {
+		margin: 0 auto;
+		padding: 0;
+	}
+
 }
 
 /* Smaller than standard 960 (devices and browsers) */
@@ -29,7 +34,7 @@
 @media only screen and (max-width: 479px) {
 
 	header {
-		padding: 1em;
+		padding: 1.2em 0 1em;
 		text-align: center;
 	}
 

@@ -15,15 +15,24 @@ body {
 	font-size: 16px;
 }
 
+.container {
+	max-width: 80em;
+	width: 95%;
+	padding: 2.5% 0;
+	margin: 0 auto;
+}
+
 header {
 	position:relative;
 	border-bottom: 1px solid #e2e2e2;
+	padding: 0;
 }
-header .logo {
+header img {
 	display: inline;
 	vertical-align: middle;
+	margin-right: 0.75em;
 }
-header .title {
+header h1 {
 	display: inline;
 	vertical-align: middle;
 	text-transform: uppercase;
@@ -34,29 +43,24 @@ header .title {
 /* Navigation */
 /*////////////////////////////////*/
 
-#page-nav {
-	/*width:220px;*/
-	float: left;
-	/*margin-bottom: 20px;*/
+nav {
 	text-align: right;
+	padding: 0.5em;
+}
+
+nav ul {
+	padding: 0 1em 0 0;
+	margin: 1em 1em 0 0;
+
 	border-right: 1px solid #e2e2e2;
-	/* In order to properly-align with the content, the top padding should be
-	 * relative to the content's line-height by the following formula:
-	 *   ( (content line-height) - (content font-size) ) / 2
-	 */
-	/*padding: 6px 29px 0 0;*/
 }
 
-#page-nav ul {
-	margin: 0;
+nav ul li {
+	margin-bottom: 1em;
 }
 
-#page-nav ul li {
-	margin-bottom: 4px;
-}
-
-#page-nav li a {
-	font-size: 1.5em;
+nav li a {
+	font-size: 1.75em;
 	margin: 0;
 	text-transform: uppercase;
 	display: block;
@@ -64,32 +68,34 @@ header .title {
 	text-align: right;
 }
 
+/* block contenttop */
+nav section {
+	padding: 1em 0 0 0;
+
+	text-align: left;
+	font-size: 1.2em;
+	line-height: 1.6em;
+}
+
 /*////////////////////////////////*/
 /* Content */
 /*////////////////////////////////*/
 
-#content-main {
+/*.content {
 	float:left;
-	/*width:684px;*/
 	position:relative;
 	float: left;
-	/*padding-left:26px;*/
-	/*margin-bottom: 30px;*/
-}
+}*/
 
-.single-company #content-main {
+/*.single-company .content {*/
 	/*padding-left:10px;*/
 	/*width:700px;*/
-}
+/*}*/
 
-.home #content-main .entry {
-	margin: 0;
-}
-
-.home #content-main .entry p {
+.content p {
 	color: #87878C;
 	/*width: 520px;*/
-	margin-bottom: 0;
+	/*margin-bottom: 0;*/
 	/*line-height: 28px;*/
 }
 
@@ -396,100 +402,110 @@ a:hover,a:active {
 /* Homepage Carousel */
 /*////////////////////////////////*/
 
-#carousel {
-	position: relative;
-	width:100%;
-	max-width: 1140px;
-	height: 335px;
+.carousel {
+	margin-top: 1em;
+	width: 95%;
+	padding: 0 2.5%;
 	display: block;
 	padding-bottom: 4px;
 	background: url(/static/images/carousel-shadow.gif) repeat-x bottom left;
 }
 
-#carousel #scroller-left, #carousel #scroller-right, #carousel #scroll-left, #carousel #scroll-right {
-	width: 35px;
-	height: 35px;
+.carousel .scroller, .carousel .scroller a {
 	display: block;
+	width: 3.5em;
+	height: 3.5em;
 	cursor: pointer;
 }
-#carousel #scroller-left {
-	background: url(/static/images/arrow-left.png) no-repeat top left;
-	border-right: 1px solid #e2e1e1;
-	position: absolute;
-	bottom:4px;
-	left:1px;
+	.carousel .scroller {
+		border: 1px solid #e2e1e1;
+		margin-bottom: 1em;
+	}
+
+.carousel .scroller-left {
+	background: url(/static/images/arrow-left.png) no-repeat center;
+	/*border-right: 1px solid #e2e1e1;*/
 	z-index: 100;
-}
-#carousel #scroller-right {
-	background: url(/static/images/arrow-right.png) no-repeat top left;
-	border-left: 1px solid #e2e1e1;
-	position: absolute;
-	bottom:4px;
-	right:2px;
-	z-index: 100;
-}
-#carousel .logo {
 	float: left;
-	margin-right: 30px;
+}
+.carousel .scroller-right {
+	background: url(/static/images/arrow-right.png) no-repeat center;
+	/*border-left: 1px solid #e2e1e1;*/
+	z-index: 100;
+	float: right;
+}
+.carousel img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
-#carousel .logo-text {
-	padding-top: 110px;
-	font-size: 12pt;
+.carousel ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+	.carousel ul li {
+		margin: 0;
+		padding: 0;
+	}
+
+.carousel .text {
 	color: #87878C;
+	padding: 1em 0;
 }
 
-#carousel #slidelist, #carousel #slidelist .slide {
-	width:100%!important;
+.carousel #slidelist, .carousel #slidelist .slide {
+	width: 100% !important;
 }
 
-#carousel .details {
+.carousel .details {
 	border:1px solid #e2e1e1;
 	border-top: 0 none;
-	height: 35px;
 	display: block;
 	background: #fcfbfa;
+	padding: 0.5em;
 }
-#carousel .details p {
+
+.carousel .details p {
 	margin: 0;
 	font-size: 11px;
 	color: #717174;
 }
-#carousel .details .left {
-	float: left;
-	padding-left: 50px;
-	line-height: 35px;
+.carousel .details .left {
+	/*float: left;*/
+	/*padding-left: 50px;*/
+	/*line-height: 35px;*/
 }
-#carousel .details .right {
-	float: right;
-	padding-right: 50px;
-	line-height: 35px;
+.carousel .details .right {
+	/*float: right;*/
+	/*padding-right: 50px;
+	line-height: 35px;*/
 }
-#carousel .details a {
+.carousel .details a {
 	text-transform: uppercase;
 }
-#carousel .details .pipe {
+.carousel .details .pipe {
 	margin: 0 3px;
 }
 
 /* Footer */
-#page-footer {
-	padding: 15px 0;
+footer {
 	background: #fff;
 	color: #999;
-	font-size:11px;
+	padding: 1.5em;
 }
 
-#page-footer .social-links .social-link {
+footer .social-links li {
 	display: inline;
 	cursor: pointer;
 	vertical-align: middle;
-	margin-left: 12px;
+	margin-right: 1.5em;
 }
-#page-footer .social-links .social-link:first-child {
+footer .social-links .social-link:first-child {
 	margin-left: 0;
 }
-#page-footer .social-links .social-link img {
+footer .social-links .social-link img {
 	padding:2px;
 }
 
