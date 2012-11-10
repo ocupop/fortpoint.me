@@ -8,7 +8,7 @@ import re
 
 HERE = dirname(abspath(__file__))
 
-app = Flask(__name__, static_path='/static')
+app = Flask(__name__, static_url_path='/static')
 app.debug = True
 
 
