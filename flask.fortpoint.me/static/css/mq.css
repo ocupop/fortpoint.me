@@ -1,46 +1,13 @@
 /* =======	media queries  ======= */
 
-/* wicked large */
-@media only screen and (min-width: 1280px) {
+
+/* small or smaller */
+@media only screen and (max-width: 479px) {
 
 	.container {
-		margin: 0 auto;
-		padding: 0;
+		width: 90%;
+		padding: 0 5%;
 	}
-
-}
-
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {
-
-}
-
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-
-	.carousel {
-		min-height: 35em;
-		max-width: 50%;
-	}
-
-}
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-
-}
-
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-	.carousel {
-		min-height: 40em;
-	}
-
-}
-
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
 
 	header {
 		padding: 1.2em 0 1em;
@@ -49,6 +16,128 @@
 
 	.carousel {
 		min-height: 35em;
+	}
+
+}
+
+/* larger than small */
+@media only screen and (min-width: 480px) {
+
+	header {
+		padding: 2.5em 0;
+		margin: 0 0 1em 0;
+		text-align: left;
+	}
+
+	nav {
+		text-align: left;
+	}
+		nav ul {
+			width: 25%;
+			float: left;
+		}
+			nav ul li {
+				margin-bottom: 0.5em;
+			}
+
+			nav li a {
+				font-size: 1.4em;
+			}
+
+		nav section {
+			font-size: 1.3em;
+			width: 65%;
+			float: left;
+			padding: 0.5em 0 0 0;
+		}
+
+}
+
+/* small to medium */
+@media only screen and (min-width: 480px) and (max-width: 679px) {
+
+	nav section {
+		font-size: 1.2em;
+	}
+
+	.carousel {
+		min-height: 42em;
+	}
+
+	.slides li .text {
+		padding: 1em 0;
+	}
+
+}
+
+/* medium and larger */
+@media only screen and (min-width: 680px) {
+
+	nav {
+
+	}
+		nav ul li {
+			margin-bottom: 0.65em;
+		}
+		nav li a {
+			font-size: 1.75em;
+		}
+
+	.container {
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.carousel {
+		min-height: 35em;
+	}
+
+	.carousel {
+		min-height: 26em;
+	}
+		.slides li img {
+			width: 45%;
+			margin-right: 2.5%;
+			float: left;
+		}
+		.slides li .text {
+			width: 50%;
+			float: left;
+			margin-top: 3em;
+			vertical-align: middle;
+		}
+		.slides li .detail {
+			
+			clear: both;
+		}
+
+	.details {
+		float: left;
+		width: 96%;
+		padding: 0.5em 1%;
+	}
+
+	.details .left {
+		float: left;
+	}
+
+	.details .right {
+		float: right;
+	}
+
+}
+
+/* wicked large */
+@media only screen and (min-width: 960px) {
+
+	nav section {
+		width: 50%;
+		font-size: 1.25em;
+	}
+
+	.slides li .text {
+		font-size: 1.5em;
+		line-height: 1.65em;
 	}
 
 }

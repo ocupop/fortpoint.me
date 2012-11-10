@@ -8,7 +8,7 @@
             $('.slides').cycle({
                 fx:     'fade',
                 speed:  '500',
-                timeout: 2000,
+                timeout: 8000,
                 slideResize: 0,
                 next: $('.scroll-right'),
                 prev: $('.scroll-left'),
@@ -19,7 +19,7 @@
                 cssBefore: {  
                     width: '100%', 
                     height: 'auto',
-                }, 
+                },
             });
 
             $('.scroll-right, .scroll-left').click(function() {
@@ -39,14 +39,6 @@
 {% block content %}
 <section id="carousel" class="carousel clearfix">
 
-    <div class="scroller scroller-left">
-        <a class="arrow scroll-left"></a>
-    </div>
-
-    <div class="scroller scroller-right">
-        <a class="arrow scroll-right"></a>
-    </div>
-
     <div>
         <ul class="slides" class="activated">
             <li>
@@ -56,7 +48,7 @@
                     The jQuery Foundation is the official steward of the popular JavaScript library. We help guide the Foundation as it pursues its goals of developing and supporting this important open source project.
                 </div>
 
-                <div class="details">
+                <div class="details clearfix">
                     <p class="left">
                         <a class="company-name" href="http://jquery.org/" alt="jQuery.org" title="RaNA">jQuery.org</a> <span class="pipe">|</span> Cambridge, MA
                         </p>
@@ -71,7 +63,7 @@
                     Bocoup is committed to open source and open platform web technologies and facilitating their adoption. We work closely with Bocoup to make sure its legal documents accurately reflect its business goals.
                 </div>
 
-                <div class="details">
+                <div class="details clearfix">
                     <p class="left"><a class="company-name" href="http://www.bocoup.com/" alt="Bocoup" title="Bocoup">Bocoup</a> <span class="pipe">|</span> Boston, MA</p>
 
                     <p class="right"><a class="slide-name" href="Boston" alt="Boston" title="Open Web Technology by and for Programmers">Open Web Technology by and for Programmers</a></p>
@@ -84,7 +76,7 @@
                     Zephyr Technology Ventures is a Venture Accelerator that provides a full range of advisory and development services to middle market technology companies &amp; startups. Fort Point Legal helps to reduce its transactions to documents which are easy to understand and reflective of its unique investment and advisory model.
                 </div>
 
-                <div class="details">
+                <div class="details clearfix">
                     <p class="left"><a class="company-name" href="https://gather.at/" alt="Gather" title="Gather">Zephyr</a> <span class="pipe">|</span>Boston, MA</p>
 
                     <p class="right"><a class="slide-name" href="#" alt="Zephyr" title="Description goes here">Zephyr Technology Ventures</a></p>
@@ -97,14 +89,22 @@
                         gather.at is developing geodesic situational awareness technology on an open source platform. We are available for its licensing and open source questions, and for the occasional midday bike ride escape.
                     </div>
 
-                <div class="details">
+                <div class="details clearfix">
                     <p class="left"><a class="company-name" href="https://gather.at/" alt="Gather" title="Gather">Gather.at</a> <span class="pipe">|</span>Boston, MA</p>
 
                     <p class="right"><a class="slide-name" href="https://gather.at/" alt="Gather" title="Bring People Together">Bring People Together</a></p>
                 </div>
-                </div>
             </li>
         </ul>
+
+        <div class="scroller scroller-left">
+            <a class="arrow scroll-left"></a>
+        </div>
+
+        <div class="scroller scroller-right">
+            <a class="arrow scroll-right"></a>
+        </div>
+
     </div>
 
 </section>

@@ -25,7 +25,7 @@ body {
 header {
 	position:relative;
 	border-bottom: 1px solid #e2e2e2;
-	padding: 0;
+	padding: 1em 0 0 0;
 }
 header img {
 	display: inline;
@@ -46,11 +46,13 @@ header h1 {
 nav {
 	text-align: right;
 	padding: 0.5em;
+	margin-bottom: 2em;
 }
 
 nav ul {
-	padding: 0 1em 0 0;
-	margin: 1em 1em 0 0;
+	width: 95%;
+	padding: 0 2.5% 0 0;
+	margin: 1em 2.5% 0 0;
 
 	border-right: 1px solid #e2e2e2;
 }
@@ -398,28 +400,36 @@ a:hover,a:active {
 	visibility:hidden;
 }
 
+nav section, .slides li .text {
+	font-family: 'Numans', sans-serif;
+	color: #87878C;
+	line-height: 1.8em;
+}
+
 /*////////////////////////////////*/
 /* Homepage Carousel */
 /*////////////////////////////////*/
 
 .carousel {
 	margin-top: 1em;
-	width: 95%;
-	padding: 0 2.5%;
+	border-top: 1px solid #e2e1e1;
+	width: 100%;
 	display: block;
 	padding-bottom: 4px;
 	background: url(/static/images/carousel-shadow.gif) repeat-x bottom left;
 }
 
 .carousel .scroller, .carousel .scroller a {
+	position: relative;
 	display: block;
-	width: 3.5em;
-	height: 3.5em;
+	width: 35px;
+	height: 35px;
 	cursor: pointer;
 	z-index: 100;
 }
 	.carousel .scroller {
 		border: 1px solid #e2e1e1;
+		border-top: 0;
 		margin-bottom: 1em;
 	}
 
@@ -463,7 +473,7 @@ a:hover,a:active {
 	border-top: 0 none;
 	display: block;
 	background: #fcfbfa;
-	padding: 0.5em;
+	padding: 0.5em 1em;
 }
 
 .carousel .details p {
@@ -492,12 +502,12 @@ a:hover,a:active {
 footer {
 	background: #fff;
 	color: #999;
-	padding: 1.5em;
+	padding: 1.5em 0;
 }
 
 footer .social-links {
 	padding: 0;
-	margin: 0;
+	margin: 0 0 5em 0;
 }
 
 footer .social-links li {
