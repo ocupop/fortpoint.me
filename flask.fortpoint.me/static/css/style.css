@@ -228,7 +228,6 @@ nav section {
 	font-size:16px;
 	font-weight:700;
 }
->>>>>>> started to reformat things, removed width, starting responsive layout from mobile upward
 /* Posts */
 .post {
 	margin-bottom:1.6em;
@@ -722,8 +721,6 @@ form#commentform textarea {
 form#commentform #textarea label {
 	float:none;
 	width:auto;
-=======
->>>>>>> responsive-css
 }
 .commentlist .children li {
 	margin-left:0;
