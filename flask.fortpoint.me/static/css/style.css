@@ -528,42 +528,59 @@ footer .social-links .social-link img {
 	margin-right: auto;
 }
 
-article.fpl-companies .company {
+/*////////////////////////////////*/
+/* Companies Page */
+/*////////////////////////////////*/
+
+.company {
+	width: 100%;
+	text-align: center;
+}
+	.company img {
+		width: 218px;
+		height: 67px;
+	}
+
+	.company h5 {
+		margin: 0.15em 0 1.5em 0;
+	}
+
+/*article.fpl-companies .company {
 	margin-right: 15px;
 	float: left;
 	display: inline-block;
-}
+}*/
 
-aside.fpl-companies p {
+/*aside.fpl-companies p {
 	font-size: 20px;
 	text-align:left;
 	line-height:150%;
 	padding: 0 5px 0 5px;}
-
-article.fpl-companies span {
+*/
+/*article.fpl-companies span {
 	float:left;
 	padding:5px;
 	width:220px;
 	height:100px;}
-
-article.fpl-companies a span {
+*/
+/*article.fpl-companies a span {
 	text-decoration:none;
 	opacity:.5;
 	transition:all .5s;
 	transition-timing-function: ease-in-out;
-	/* Firefox 4 */
+	
 	-moz-transition:all .5s;
 	-moz-transition-timing-function: ease-in-out;
-	/* Safari and Chrome */
+	
 	-webkit-transition:background .5s;
 	-webkit-transition-timing-function: ease-in-out;
-	/* Opera */
+	
 	-o-transition:all .5s;
 	-o-transition-timing-function: ease-in-out;
-	/* MS */
+	
 	-ms-transition:all .5s;
 	-ms-transition-timing-function: ease-in-out;
 	cursor:pointer;
 	}
 
-article.fpl-companies a:hover span { opacity:.9; }
+article.fpl-companies a:hover span { opacity:.9; }*/
