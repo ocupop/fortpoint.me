@@ -482,15 +482,23 @@ footer .social-links .social-link img {
 .team-member-name {
 	margin-bottom: 1em;
 }
+
 .team-member .credentials {
-	font-size: 14px;
-	float: right;
-	width: 300px;
-	margin: 0 0 20px 20px;
+	font-size: 0.9em;
+	padding: 0 0.5em;
 }
-.team-member .credentials h6 {
-	margin: 0;
-}
+	.credentials ul {
+		margin: 0.5em 0;
+	}
+	.credentials li {
+		line-height: 1.35em;
+	}
+	.credentials h5 {
+		font-size: 1em;
+		margin: 0.75em 0 0 0;
+		padding: 0;
+	}
+
 .team-member .contact-methods {
 	text-align: center;
 	margin-top: 0.8em;
