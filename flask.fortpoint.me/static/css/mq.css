@@ -32,15 +32,15 @@
 	nav {
 		text-align: left;
 	}
-		nav ul {
+		nav > ul {
 			width: 25%;
 			float: left;
 		}
-			nav ul li {
+			nav > ul li {
 				margin-bottom: 0.5em;
 			}
 
-			nav li a {
+			nav > ul li a {
 				font-size: 1.4em;
 			}
 
@@ -54,6 +54,17 @@
 	.company {
 		width: 250px;
 		float: left;	
+	}
+
+	.contact-methods .mailing-address {
+		margin: 0;
+		padding: 0;
+
+		font-size: 1em;
+
+		list-style: none;
+		width: 100%;
+		padding-left: 3em;
 	}
 
 }
@@ -81,10 +92,10 @@
 	nav {
 
 	}
-		nav ul li {
+		nav > ul li {
 			margin-bottom: 0.65em;
 		}
-		nav li a {
+		nav > ul li a {
 			font-size: 1.75em;
 		}
 

@@ -45,7 +45,7 @@ nav {
 	margin-bottom: 2em;
 }
 
-nav ul {
+nav > ul {
 	width: 95%;
 	padding: 0 2.5% 0 0;
 	margin: 1em 2.5% 0 0;
@@ -53,11 +53,11 @@ nav ul {
 	border-right: 1px solid #e2e2e2;
 }
 
-nav ul li {
+nav > ul li {
 	margin-bottom: 1em;
 }
 
-nav li a {
+nav > ul li a {
 	font-size: 1.75em;
 	margin: 0;
 	text-transform: uppercase;
@@ -125,19 +125,26 @@ nav section {
 	margin-right: 3px;
 }
 
+.contact-methods {
+	padding-left: 0;
+}
+
 .contact-methods, .contact-methods .mailing-address {
 	list-style: none;
 }
+
 .contact-methods .contact-method {
 	margin-bottom: 0.5em;
 }
 .contact-methods .mailing-address {
-	display: inline-block;
-	vertical-align: top;
-	zoom: 1;
-	*display: inline;
 	margin: 0;
 	padding: 0;
+
+	font-size: 0.9em;
+
+	list-style: none;
+	width: 80%;
+	padding-left: 20%;
 }
 
 /*////////////////////////////////*/
