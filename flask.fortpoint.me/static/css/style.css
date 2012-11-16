@@ -80,8 +80,8 @@ nav section {
 /*////////////////////////////////*/
 
 .content {
-    line-height: 2em;
-    font-size: 16px;
+	line-height: 2em;
+	font-size: 16px;
 }
 
 .content p {
@@ -126,18 +126,18 @@ nav section {
 }
 
 .contact-methods, .contact-methods .mailing-address {
-    list-style: none;
+	list-style: none;
 }
 .contact-methods .contact-method {
-    margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }
 .contact-methods .mailing-address {
-    display: inline-block;
-    vertical-align: top;
-    zoom: 1;
-    *display: inline;
-    margin: 0;
-    padding: 0;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	*display: inline;
+	margin: 0;
+	padding: 0;
 }
 
 /*////////////////////////////////*/
@@ -476,33 +476,33 @@ footer .social-links .social-link img {
 /*////////////////////////////////*/
 
 .team-member {
-    margin-bottom: 50px;
-    list-style-type: none;
+	margin-bottom: 50px;
+	list-style-type: none;
 }
 .team-member-name {
-    margin-bottom: 1em;
+	margin-bottom: 1em;
 }
 .team-member .credentials {
-    font-size: 14px;
-    float: right;
-    width: 300px;
-    margin: 0 0 20px 20px;
+	font-size: 14px;
+	float: right;
+	width: 300px;
+	margin: 0 0 20px 20px;
 }
 .team-member .credentials h6 {
-    margin: 0;
+	margin: 0;
 }
 .team-member .contact-methods {
-    text-align: center;
-    margin-top: 0.8em;
+	text-align: center;
+	margin-top: 0.8em;
 }
 .team-member .contact-methods .contact-method {
-    display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 0;
-    /* Trigger hasLayout in legacy IE */
-    zoom: 1;
-    /* Target IE6 and 7 only */
-    *display: inline;
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 0;
+	/* Trigger hasLayout in legacy IE */
+	zoom: 1;
+	/* Target IE6 and 7 only */
+	*display: inline;
 }
 
 /*////////////////////////////////*/
