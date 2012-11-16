@@ -11,10 +11,6 @@ html, body {
 	width: 100%;
 }
 
-body {
-	font-size: 16px;
-}
-
 .container {
 	max-width: 80em;
 	width: 95%;
@@ -83,6 +79,11 @@ nav section {
 /* Content */
 /*////////////////////////////////*/
 
+.content {
+    line-height: 2em;
+    font-size: 16px;
+}
+
 .content p {
 	color: #87878C;
 }
@@ -124,6 +125,9 @@ nav section {
 	margin-right: 3px;
 }
 
+.contact-methods, .contact-methods .mailing-address {
+    list-style: none;
+}
 .contact-methods .contact-method {
     margin-bottom: 0.5em;
 }
@@ -132,6 +136,8 @@ nav section {
     vertical-align: top;
     zoom: 1;
     *display: inline;
+    margin: 0;
+    padding: 0;
 }
 
 /*////////////////////////////////*/
@@ -481,6 +487,7 @@ footer .social-links .social-link img {
 
 .team-member {
     margin-bottom: 50px;
+    list-style-type: none;
 }
 .team-member-name {
     margin-bottom: 1em;
@@ -490,6 +497,9 @@ footer .social-links .social-link img {
     float: right;
     width: 300px;
     margin: 0 0 20px 20px;
+}
+.team-member .credentials h6 {
+    margin: 0;
 }
 .team-member .contact-methods {
     text-align: center;
