@@ -8,7 +8,7 @@
 
 repo_dir=/home/joelgkinney/fortpoint.me
 static_src=$repo_dir/flask.fortpoint.me/static/
-static_dest=/home/joelgkinney/webapps/static/
+static_dest=/home/joelgkinney/webapps/fpl_static/
 remote_name=origin
 branch_name=master
 
