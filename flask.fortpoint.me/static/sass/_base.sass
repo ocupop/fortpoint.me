@@ -1,0 +1,54 @@
+*
+  position: relative
+  @include box-sizing(border-box)
+
+html
+  font-size: 100%
+  font-family: $body-font
+  background-color: $medium-gray
+  color: $text-light
+  height: 100%
+
+body
+  width: $container-width + $nav-width
+  margin: 0 auto
+  padding-left: $nav-width
+  height: 100%
+
+a
+  text-decoration: none
+  color: inherit
+
+h1, h2, h3
+  font-family: $hed-font
+
+h1
+  font-size: 80px
+
+h2
+  font-size: 42px
+
+h3
+  font-size: 29px
+
+p
+  font-size: 22px
+
+figcaption
+  // caption on sliders, grids
+  font-size: 16px
+
+.page-header p
+  font-size: 24px
+
+.page-header address
+  font-size: 37px
+
+.main-content
+  width: $container-width
+  margin: 0 auto
+  background-color: $blue
+  min-height: 100%
+  border-left: 2px solid $dark-gray
+  padding: $top-padding $gutter
+  box-shadow: inset -8px 0 10px -4px #444
