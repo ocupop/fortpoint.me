@@ -13,8 +13,7 @@
   <![endif]-->
   <link rel="alternate" type="application/rss+xml" title="Atlas Venture &raquo; Homepage Comments Feed" href="homepage/feed/index.html" />
   <link rel="canonical" href="/" />
-  <!-- TYPEKIT: replace with Ocupop account -->
-  <script type="text/javascript" src="//use.typekit.net/iqz3rit.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/fzi0ttf.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script src="/static/js/modernizr.js"></script>
 </head>
@@ -26,6 +25,10 @@
     <h1 class="site-title">Fort Point Legal</h1>
   </a>
   <nav class="site-nav">
+    <header class="mobile-nav-header">
+      <label for="show-menu-mobile">Menu</label>
+    </header>
+    <input type="checkbox" id="show-menu-mobile">
     <ul>
       {% for route in ['clients', 'story', 'team', 'connect'] %}
         <li {% if active==route %}class="active"{% endif %}>

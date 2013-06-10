@@ -18,17 +18,28 @@ $text-light: #FFF
 // team subhead: 24px
 // team aside p: 19px
 // team contact: 24px
-// CONTAINER
-$container-width: 1020px
+// CONTAINERS
 $gutter: 40px
 $top-padding: 70px
 $aside-gutter: 20px
-$nav-width: 235px
+
+$nav-min: 172px
+$nav-max: 235px
+
+$container-min: 852px // container-min + $nav-min = 1024px; must not exceed
+$container-max: 1020px
+
+// BREAKPOINTS
+$phablet: 500px
+$desktop: $nav-min + $container-min // must be less than 1024px
+$widescreen: $nav-max + $container-max
+
 
 @import "base"
 @import "header"
 
 .site-footer
-  position: absolute
   bottom: 0
   left: 0
+  @media (min-width: $desktop)
+    position: absolute

@@ -10,10 +10,15 @@ html
   height: 100%
 
 body
-  width: $container-width + $nav-width
+
   margin: 0 auto
-  padding-left: $nav-width
   height: 100%
+  @media (min-width: $desktop)
+    width: $desktop
+    padding-left: $nav-min
+  @media (min-width: $widescreen)
+    width: $widescreen
+    padding-left: $nav-max
 
 a
   text-decoration: none
@@ -45,10 +50,13 @@ figcaption
   font-size: 37px
 
 .main-content
-  width: $container-width
+  max-width: $container-max
   margin: 0 auto
   background-color: $blue
   min-height: 100%
-  border-left: 2px solid $dark-gray
-  padding: $top-padding $gutter
-  box-shadow: inset -8px 0 10px -4px #444
+  box-shadow: inset 0 4px 10px -4px #444
+  padding: $aside-gutter
+  @media (min-width: $desktop)
+    border-left: 2px solid $dark-gray
+    padding: $top-padding $gutter
+    box-shadow: inset -8px 0 10px -4px #444
