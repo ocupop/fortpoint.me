@@ -1,7 +1,7 @@
 .site-header
   left: 0
   top: 0
-  color: #222
+  color: $charcoal
   @media (min-width: $desktop)
     position: absolute
     width: $nav-min
@@ -9,10 +9,7 @@
     width: $nav-max
 
 .site-title
-  font-size: 50px
   width: 100%
-  @media (min-width: $phablet)
-    font-size: 80px
   @media (min-width: $desktop)
     @include replace-text( "logo-header.png", 0, 50px)
     height: 250px

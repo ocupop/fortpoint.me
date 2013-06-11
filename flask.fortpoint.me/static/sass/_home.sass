@@ -1,0 +1,83 @@
+// slider
+.slider
+  @include clearfix
+  background-color: $dark-blue
+
+  #slider-prev, #slider-next, #slider-nav
+    cursor: pointer
+    z-index: 10
+
+  #slider-prev, #slider-next
+    float: left
+    background-image: inline-image("arrows.png")
+    height: 20px
+    width: 16px
+
+  #slider-prev
+    background-position: -2px -8px
+
+  #slider-next
+    background-position: -18px -8px
+
+
+  #slider-nav
+    float: right
+
+  #slides
+    height: 310px
+
+  #slides li
+    @include transition(opacity 2s)
+    background-color: $medium-gray
+    position: absolute
+    width: 100%
+    opacity: 0
+
+    figcaption
+      color: $charcoal
+      position: absolute
+      right: 0
+      top: 0
+      margin-top: 2em
+      width: 300px
+      font-size: 18px
+      line-height: 28px
+      margin-right: $aside-gutter
+
+    &.current
+      z-index: 1
+      opacity: 1
+
+  .company-link, .company-tagline
+    position: absolute
+    font-size: 16px
+    color: $light-gray
+    bottom: -24px
+
+  .company-tagline
+    right: 100px
+    text-transform: uppercase
+
+  .company-link
+    left: 40px
+    a
+      text-transform: uppercase
+
+  #slider-nav li
+    display: inline-block
+    height: 11px
+    width: 11px
+    margin: 0 4px 4px 0
+    background-color: $blue
+    &.current
+      background-color: $light-gray
+
+// everything else
+.legal
+  @include clearfix
+.block
+  @extend %grid-6
+  padding: 0 $aside-gutter
+  border-left: 1px solid $dark-blue
+  &:first-child
+    border: none
