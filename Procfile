@@ -1,1 +1,1 @@
-web: gunicorn flask.fortpoint.me/app:app
+web: cd flask.fortpoint.me/ &&  gunicorn app:app
