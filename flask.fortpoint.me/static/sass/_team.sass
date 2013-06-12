@@ -54,17 +54,20 @@
   .contact-methods
     @include clearfix
 
-    font-size: 20px
+    font-size: 24px
     text-transform: uppercase
     font-family: $hed-font
     padding: $aside-gutter 0
     border-top: 1px solid #222
+
     @extend %grid-12
-    div
-      @media (min-width: $phablet)
+    @media (min-width: $phablet)
+      div
         float: left
         width: 50%
-      @media (min-width: $desktop)
+    @media (min-width: $desktop)
+      font-size: 20px
+      div
         width: auto
         margin-right: 20px
 

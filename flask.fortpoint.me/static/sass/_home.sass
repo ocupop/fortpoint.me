@@ -19,12 +19,13 @@
   #slider-next
     background-position: -18px -8px
 
-
   #slider-nav
     float: right
 
   #slides
-    height: 310px
+    height: 410px
+    @media (min-width: $phablet)
+      height: 310px
 
   #slides li
     @include transition(opacity 2s)
@@ -32,17 +33,24 @@
     position: absolute
     width: 100%
     opacity: 0
+    height: 403px
+
+    @media (min-width: $phablet)
+      height: 303px
 
     figcaption
       color: $charcoal
       position: absolute
+      bottom: 0
       right: 0
-      top: 0
-      margin-top: 2em
-      width: 300px
+      padding: $aside-gutter
       font-size: 18px
-      line-height: 28px
-      margin-right: $aside-gutter
+      @media (min-width: $phablet)
+        bottom: $gutter
+        &.verbose
+          bottom: 0
+        width: 300px
+        line-height: 26px
 
     &.current
       z-index: 1
@@ -55,8 +63,11 @@
     bottom: -24px
 
   .company-tagline
-    right: 100px
-    text-transform: uppercase
+    display: none
+    @media (min-width: $phablet)
+      display: block
+      right: 100px
+      text-transform: uppercase
 
   .company-link
     left: 40px
@@ -75,9 +86,12 @@
 // everything else
 .legal
   @include clearfix
-.block
-  @extend %grid-6
-  padding: 0 $aside-gutter
-  border-left: 1px solid $dark-blue
-  &:first-child
-    border: none
+  h1
+  .block
+    @extend %grid-6
+    padding: $aside-gutter 0
+    @media (min-width: $desktop)
+      padding: 0 $aside-gutter
+      border-left: 1px solid $dark-blue
+      &:first-child
+        border: none

@@ -11,13 +11,14 @@
     width: $nav-max
 
 .site-title
+  font-size: 50px
   @media (min-width: $desktop)
     @include replace-text( "logo-header.svg", 100%, 0)
     width: 1000px
     position: absolute
     right: 0
     top: 0
-    height: 1000px
+    height: 600px
   @media (min-width: $widescreen)
     margin-right: 70px
 
@@ -29,11 +30,12 @@
     height: 37px
     background-size: 100%
     background-image: image-url("logo.png")
-    @media (min-width: $phablet)
-      width: 57px
-      height: 57px
     @media (min-width: $desktop)
       display: none
+
+.no-svg .site-title
+  @media (min-width: $desktop)
+    @include replace-text( "logo-header.png", 100%, 50px)
 
 // NAV
 
@@ -47,9 +49,6 @@
 
   label
     display: block
-
-
-
 
 // DIRRRRTY css tricks
 #show-menu-mobile
@@ -68,8 +67,8 @@
       top: 250px
   li
     text-align: center
-    font-size: 24px
-    padding: 12px
+    font-size: 20px
+    padding: 8px
     @include transition(all .2s)
     text-transform: uppercase
     background-color: $light-gray
