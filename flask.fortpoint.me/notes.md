@@ -7,3 +7,5 @@ list of needed modernizr tests
 slider images uses same source as clients page
 
 slider breakpoints
+
+mobile footer
