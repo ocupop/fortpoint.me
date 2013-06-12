@@ -1,0 +1,32 @@
+.page-clients
+  .companies
+    @include clearfix
+    margin: 0 - $aside-gutter
+  .companies li
+    float: left
+    padding: $aside-gutter
+    width: 100%
+    @media (min-width: $phablet)
+      width: 50%
+    @media (min-width: $desktop)
+      width: 33.3333%
+    a
+      display: block
+      height: 200px
+      background-color: $light-gray
+    p
+      background-color: $dark-blue
+      color: $blue + (#222)
+      text-transform: uppercase
+      font-size: 12px
+      position: absolute
+      width: 100%
+      bottom: 0
+      left: 0
+      padding: 6px
+      box-shadow: inset 0 2px 4px #444
+    img
+      width: 100%
+
+    &:hover p
+      color: $text-light

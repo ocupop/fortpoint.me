@@ -12,12 +12,6 @@ $charcoal: #6D6E71
 $blue: #4581C2
 $dark-blue: #2957A4
 $text-light: #FFF
-// TEXT SIZES
-// team/connect h2: 45px
-// story p: 24px
-// team subhead: 24px
-// team aside p: 19px
-// team contact: 24px
 // CONTAINERS
 $gutter: 40px
 $top-padding: 70px
@@ -37,21 +31,8 @@ $widescreen: $nav-max + $container-max
 @import "base"
 @import "header"
 @import "home"
-
-
-.story-content
-  @media (min-width: $desktop)
-    width: 66.6666%
-
-.site-footer
-  bottom: 0
-  left: 0
-  @media (min-width: $desktop)
-    margin: $aside-gutter
-    position: fixed
-
-  li
-    display: inline-block
-    height: 20px
-    img
-      height: 100%
+@import "story"
+@import "clients"
+@import "connect"
+@import "team"
+@import "footer"

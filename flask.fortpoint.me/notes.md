@@ -7,7 +7,3 @@ list of needed modernizr tests
 slider images uses same source as clients page
 
 slider breakpoints
-
-what is the extra js in the connect section for?
-
-make whole content area dark and header blue

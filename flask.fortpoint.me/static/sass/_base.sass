@@ -13,7 +13,6 @@
 @mixin lump-shadow
   box-shadow: 0 40px 40px -50px #222
 
-
 *
   position: relative
   @include box-sizing(border-box)
@@ -78,40 +77,39 @@ p
       right: 0
       box-shadow: -4px 0 8px #222
 
-
+.page-team, .page-connect
+  .main-content
+    background-color: $charcoal
 
 section
   padding: $gutter $aside-gutter $aside-gutter
   @media (min-width: $desktop)
     padding: $gutter $gutter $aside-gutter
   @include lump-shadow
-  &.dark
-    background-color: $charcoal
   &:last-child
     box-shadow: 0 0 0 black
-
 
 .page-header
   @include clearfix
   @include lump-shadow
-  z-index: 1
   padding: $aside-gutter
+  background-color: $blue
+  border-top: 2px solid $dark-gray
   @media (min-width: $desktop)
+    border-top: none
     padding: $top-padding $gutter $aside-gutter
 
   h1
-    padding-right: $aside-gutter
     @extend %grid-8
+    @media (min-width: $desktop)
+      padding-right: $aside-gutter
   aside
-    padding-left: $aside-gutter
     @extend %grid-4
     @media (min-width: $desktop)
+      padding-left: $aside-gutter
       border-left: 1px solid $dark-blue
     p
       font-size: 20px
       @media (min-width: $widescreen)
         font-size: 22px
         line-height: 29px
-
-  address
-    font-size: 28px
