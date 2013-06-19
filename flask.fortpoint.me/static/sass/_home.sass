@@ -29,16 +29,43 @@
 
   #slides li
     @include transition(opacity 2s)
+    @include background-image(linear-gradient(30% 0%, $light-gray, $light-gray 50%, $medium-gray 50%))
+
+
     background-color: $medium-gray
     position: absolute
     width: 100%
     opacity: 0
     height: 403px
+    line-height: 183px
+    text-align: center
+
+
+    img
+      display: inline-block
+      vertical-align: middle
+      max-width: 100%
+      max-height: 50%
+
+
 
     @media (min-width: $phablet)
       height: 303px
+      line-height: 283px
+      text-align: left
 
-    figcaption
+      img
+        margin-left: 10%
+        max-width: 50%
+        min-height: 25%
+        max-height: 100%
+        &.no-margin
+          margin-left: 0
+
+
+    .wrapper
+      text-align: left
+      line-height: 26px
       color: $charcoal
       position: absolute
       bottom: 0
@@ -46,11 +73,13 @@
       padding: $aside-gutter
       font-size: 18px
       @media (min-width: $phablet)
-        bottom: $gutter
-        &.verbose
-          bottom: 0
+        bottom: auto
+        top: 50%
+        margin-top: - 1em
         width: 300px
-        line-height: 26px
+
+        figcaption
+          @include translateY(-50%)
 
     &.current
       z-index: 1
@@ -61,6 +90,11 @@
     font-size: 16px
     color: $light-gray
     bottom: -24px
+
+  .location
+    display: none
+    @media (min-width: $phablet)
+      display: inline
 
   .company-tagline
     display: none
