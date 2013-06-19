@@ -401,7 +401,7 @@ section {
       /* line 30, ../sass/_home.sass */
       .slider #slides li {
         height: 303px;
-        line-height: 283px;
+        line-height: 303px;
         text-align: left; }
         /* line 57, ../sass/_home.sass */
         .slider #slides li img {
@@ -428,7 +428,7 @@ section {
           bottom: auto;
           top: 50%;
           margin-top: -1em;
-          width: 300px; }
+          width: 280px; }
           /* line 81, ../sass/_home.sass */
           .slider #slides li .wrapper figcaption {
             -webkit-transform: translateY(-50%);
