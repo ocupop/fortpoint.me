@@ -420,7 +420,7 @@ section {
           bottom: auto;
           top: 50%;
           margin-top: -1em;
-          width: 280px; }
+          width: 312px; }
           /* line 81, ../sass/_home.sass */
           .slider #slides li .wrapper figcaption {
             -webkit-transform: translateY(-50%);
@@ -506,25 +506,25 @@ section {
   @media (min-width: 500px) {
     /* line 5, ../sass/_clients.sass */
     .page-clients .companies li {
-      width: 50%; } }
+      width: 33.333%; } }
   @media (min-width: 1024px) {
     /* line 5, ../sass/_clients.sass */
     .page-clients .companies li {
-      width: 33.3333%; } }
+      width: 25%; } }
   /* line 13, ../sass/_clients.sass */
   .page-clients .companies li a {
     display: block;
-    height: 300px;
-    line-height: 270px;
+    height: 213px;
+    line-height: 180px;
     background-color: #e6e6e6;
     overflow: hidden;
     text-align: center; }
   /* line 21, ../sass/_clients.sass */
   .page-clients .companies li .description {
-    -webkit-transition: top 0.1s;
-    -moz-transition: top 0.1s;
-    -o-transition: top 0.1s;
-    transition: top 0.1s;
+    -webkit-transition: top 0.2s;
+    -moz-transition: top 0.2s;
+    -o-transition: top 0.2s;
+    transition: top 0.2s;
     line-height: 1.2;
     text-align: left;
     color: #6d6e71;
@@ -546,16 +546,16 @@ section {
     box-shadow: inset 0 2px 4px #444444; }
   /* line 42, ../sass/_clients.sass */
   .page-clients .companies li img {
-    -webkit-transition: top 0.1s ease;
-    -webkit-transition-delay: 0.2s;
-    -moz-transition: top 0.1s ease 0.2s;
-    -o-transition: top 0.1s ease 0.2s;
-    transition: top 0.1s ease 0.2s;
+    -webkit-transition: top 0.2s ease;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition: top 0.2s ease 0.3s;
+    -o-transition: top 0.2s ease 0.3s;
+    transition: top 0.2s ease 0.3s;
     display: inline-block;
     vertical-align: middle;
     margin: 0 auto;
     max-width: 100%;
-    padding: 40px; }
+    padding: 10px; }
     /* line 49, ../sass/_clients.sass */
     .page-clients .companies li img.wide {
       width: 100%;
@@ -563,22 +563,22 @@ section {
     /* line 52, ../sass/_clients.sass */
     .page-clients .companies li img.tall {
       width: auto;
-      height: 230px; }
+      height: 160px; }
   /* line 57, ../sass/_clients.sass */
   .page-clients .companies li:hover img {
-    -webkit-transition: top 0.1s;
-    -moz-transition: top 0.1s;
-    -o-transition: top 0.1s;
-    transition: top 0.1s;
-    top: -300px; }
+    -webkit-transition: top 0.2s;
+    -moz-transition: top 0.2s;
+    -o-transition: top 0.2s;
+    transition: top 0.2s;
+    top: -213px; }
   /* line 60, ../sass/_clients.sass */
   .page-clients .companies li:hover .description {
-    -webkit-transition: top 0.1s ease;
-    -webkit-transition-delay: 0.2s;
-    -moz-transition: top 0.1s ease 0.2s;
-    -o-transition: top 0.1s ease 0.2s;
-    transition: top 0.1s ease 0.2s;
-    top: -270px; }
+    -webkit-transition: top 0.2s ease;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition: top 0.2s ease 0.3s;
+    -o-transition: top 0.2s ease 0.3s;
+    transition: top 0.2s ease 0.3s;
+    top: -180px; }
   /* line 63, ../sass/_clients.sass */
   .page-clients .companies li:hover .company-name {
     color: white; }
