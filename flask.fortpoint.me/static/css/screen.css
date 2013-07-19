@@ -56,7 +56,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 66, icon-large/*.png */
 .icon-large-sprite, .page-connect .contact-methods .fax:before, .page-connect .contact-methods .facebook:before, .page-connect .contact-methods .twitter:before, .page-connect .contact-methods .linkedin:before {
-  background: url('/static/images/icon-large-s36f8ff8dc8.png') no-repeat; }
+  background: url('/static/images/icon-large-sdc9511bcc0.png') no-repeat; }
 
 /* line 74, icon-small/*.png */
 .icon-small-sprite, .page-team .contact-methods .mobile:before, .page-team .contact-methods .email:before, .page-team .contact-methods .twitter:before, .page-team .contact-methods .github:before, .page-team .contact-methods .linkedin:before {
@@ -610,7 +610,7 @@ section {
     .page-connect .contact-methods li:before {
       content: "";
       display: block;
-      height: 67px;
+      height: 66px;
       width: 67px;
       margin-bottom: 20px; }
     /* line 20, ../sass/_connect.sass */
