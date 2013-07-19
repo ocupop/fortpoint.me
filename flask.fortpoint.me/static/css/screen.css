@@ -605,57 +605,64 @@ section {
   @media (min-width: 1024px) {
     /* line 8, ../sass/_connect.sass */
     .page-connect .contact-methods {
-      border-bottom: 1px solid #222222; }
-      /* line 12, ../sass/_connect.sass */
-      .page-connect .contact-methods .fax {
-        border-right: 1px solid #222222;
-        margin-right: 20px; } }
-  /* line 15, ../sass/_connect.sass */
+      border-bottom: 1px solid #222222; } }
+  /* line 12, ../sass/_connect.sass */
   .page-connect .contact-methods li {
     float: left;
     width: 100%;
     padding-bottom: 40px; }
     @media (min-width: 500px) {
-      /* line 15, ../sass/_connect.sass */
+      /* line 12, ../sass/_connect.sass */
       .page-connect .contact-methods li {
         width: 50%; } }
     @media (min-width: 1024px) {
-      /* line 15, ../sass/_connect.sass */
+      /* line 12, ../sass/_connect.sass */
       .page-connect .contact-methods li {
         width: auto;
         padding-right: 20px;
-        padding-bottom: 20px; } }
-    /* line 26, ../sass/_connect.sass */
+        padding-bottom: 20px; }
+        /* line 22, ../sass/_connect.sass */
+        .page-connect .contact-methods li.fax {
+          border-right: 1px solid #222222;
+          margin-right: 20px; } }
+    @media (min-width: 1255px) {
+      /* line 12, ../sass/_connect.sass */
+      .page-connect .contact-methods li {
+        padding-right: 40px; }
+        /* line 28, ../sass/_connect.sass */
+        .page-connect .contact-methods li.fax {
+          margin-right: 40px; } }
+    /* line 31, ../sass/_connect.sass */
     .page-connect .contact-methods li:last-child {
       padding-right: 0; }
-    /* line 29, ../sass/_connect.sass */
+    /* line 34, ../sass/_connect.sass */
     .page-connect .contact-methods li:before {
       content: "";
       display: block;
       height: 66px;
       width: 70px;
       margin-bottom: 20px; }
-    /* line 35, ../sass/_connect.sass */
+    /* line 40, ../sass/_connect.sass */
     .page-connect .contact-methods li h2 {
       font-size: 32px;
       margin: 0;
       color: #d0d2d3; }
-      /* line 39, ../sass/_connect.sass */
+      /* line 44, ../sass/_connect.sass */
       .page-connect .contact-methods li h2:hover {
         color: white; }
-  /* line 42, ../sass/_connect.sass */
+  /* line 47, ../sass/_connect.sass */
   .page-connect .contact-methods .fax:before {
     background-position: 0 -65px; }
-  /* line 44, ../sass/_connect.sass */
+  /* line 49, ../sass/_connect.sass */
   .page-connect .contact-methods .facebook:before {
     background-position: 0 -195px; }
-  /* line 46, ../sass/_connect.sass */
+  /* line 51, ../sass/_connect.sass */
   .page-connect .contact-methods .twitter:before {
     background-position: 0 0; }
-  /* line 48, ../sass/_connect.sass */
+  /* line 53, ../sass/_connect.sass */
   .page-connect .contact-methods .linkedin:before {
     background-position: 0 -130px; }
-  /* line 50, ../sass/_connect.sass */
+  /* line 55, ../sass/_connect.sass */
   .page-connect .contact-methods p {
     color: #222222;
     text-transform: uppercase;
