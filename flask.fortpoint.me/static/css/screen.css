@@ -54,6 +54,14 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
+/* line 66, icon-large/*.png */
+.icon-large-sprite, .page-connect .contact-methods .fax:before, .page-connect .contact-methods .facebook:before, .page-connect .contact-methods .twitter:before, .page-connect .contact-methods .linkedin:before {
+  background: url('/static/images/icon-large-s36f8ff8dc8.png') no-repeat; }
+
+/* line 74, icon-small/*.png */
+.icon-small-sprite, .page-team .contact-methods .mobile:before, .page-team .contact-methods .email:before, .page-team .contact-methods .twitter:before, .page-team .contact-methods .github:before, .page-team .contact-methods .linkedin:before {
+  background: url('/static/images/icon-small-s2dcff406f3.png') no-repeat; }
+
 @media (min-width: 1024px) {
   /* line 2, ../sass/_base.sass */
   .page-header aside, .page-team .credentials, .legal .block, .page-header h1, .page-team .bio, .page-team .contact-methods {
@@ -587,30 +595,58 @@ section {
 .page-connect address {
   font-size: 28px;
   font-family: "futura-pt", "Futura", sans-serif;
+  font-weight: bold;
   color: #e6e6e6;
   line-height: 1.4; }
 /* line 8, ../sass/_connect.sass */
-.page-connect .contact-methods li {
-  margin-bottom: 10px; }
+.page-connect .contact-methods {
+  margin-right: -25px; }
   /* line 10, ../sass/_connect.sass */
-  .page-connect .contact-methods li h2 {
-    color: #d0d2d3; }
-    /* line 12, ../sass/_connect.sass */
-    .page-connect .contact-methods li h2:hover {
-      color: white; }
-/* line 14, ../sass/_connect.sass */
-.page-connect .contact-methods p {
-  color: #222222;
-  text-transform: uppercase; }
+  .page-connect .contact-methods li {
+    display: inline-block;
+    padding-right: 25px;
+    margin-bottom: 20px; }
+    /* line 14, ../sass/_connect.sass */
+    .page-connect .contact-methods li:before {
+      content: "";
+      display: block;
+      height: 67px;
+      width: 67px;
+      margin-bottom: 20px; }
+    /* line 20, ../sass/_connect.sass */
+    .page-connect .contact-methods li h2 {
+      font-size: 32px;
+      margin: 0;
+      color: #d0d2d3; }
+      /* line 24, ../sass/_connect.sass */
+      .page-connect .contact-methods li h2:hover {
+        color: white; }
+  /* line 27, ../sass/_connect.sass */
+  .page-connect .contact-methods .fax:before {
+    background-position: 0 -65px; }
+  /* line 29, ../sass/_connect.sass */
+  .page-connect .contact-methods .facebook:before {
+    background-position: 0 -195px; }
+  /* line 31, ../sass/_connect.sass */
+  .page-connect .contact-methods .twitter:before {
+    background-position: 0 0; }
+  /* line 33, ../sass/_connect.sass */
+  .page-connect .contact-methods .linkedin:before {
+    background-position: 0 -130px; }
+  /* line 35, ../sass/_connect.sass */
+  .page-connect .contact-methods p {
+    color: #222222;
+    text-transform: uppercase;
+    line-height: 1; }
 
 /* line 7, ../sass/_team.sass */
-.page-team .team-members li {
+.page-team .team-members .member {
   overflow: hidden;
   *zoom: 1;
   box-shadow: 0 40px 30px -50px #222222;
   margin-bottom: 40px; }
   /* line 11, ../sass/_team.sass */
-  .page-team .team-members li:last-child {
+  .page-team .team-members .member:last-child {
     box-shadow: 0 0 0 black; }
 /* line 14, ../sass/_team.sass */
 .page-team .bio {
@@ -640,6 +676,10 @@ section {
   line-height: 1.4; }
   @media (min-width: 500px) {
     /* line 37, ../sass/_team.sass */
+    .page-team .credentials img {
+      float: left;
+      padding: 0 20px 20px 0; }
+    /* line 40, ../sass/_team.sass */
     .page-team .credentials div {
       width: 50%;
       float: left; } }
@@ -647,18 +687,21 @@ section {
     /* line 30, ../sass/_team.sass */
     .page-team .credentials {
       border-top: none;
-      padding-top: 80px;
       padding-left: 20px; }
-      /* line 44, ../sass/_team.sass */
+      /* line 47, ../sass/_team.sass */
+      .page-team .credentials img {
+        float: none;
+        padding: 0; }
+      /* line 50, ../sass/_team.sass */
       .page-team .credentials div {
         width: auto;
         float: none; } }
-/* line 48, ../sass/_team.sass */
+/* line 54, ../sass/_team.sass */
 .page-team h3 {
   color: #e6e6e6;
   line-height: 1;
   margin-top: 20px; }
-/* line 54, ../sass/_team.sass */
+/* line 60, ../sass/_team.sass */
 .page-team .contact-methods {
   overflow: hidden;
   *zoom: 1;
@@ -667,33 +710,49 @@ section {
   font-family: "bebas-neue", "Bebas Neue", sans-serif;
   padding: 20px 0;
   border-top: 1px solid #222222; }
+  /* line 70, ../sass/_team.sass */
+  .page-team .contact-methods li {
+    display: block;
+    color: #d0d2d3; }
+    /* line 73, ../sass/_team.sass */
+    .page-team .contact-methods li:before {
+      content: "";
+      display: inline-block;
+      width: 22px;
+      height: 20px;
+      margin-right: 4px;
+      margin-bottom: -2px; }
+    /* line 80, ../sass/_team.sass */
+    .page-team .contact-methods li:hover {
+      color: white; }
+  /* line 83, ../sass/_team.sass */
+  .page-team .contact-methods .mobile:before {
+    background-position: 0 -60px; }
+  /* line 85, ../sass/_team.sass */
+  .page-team .contact-methods .email:before {
+    background-position: 0 0; }
+  /* line 87, ../sass/_team.sass */
+  .page-team .contact-methods .twitter:before {
+    background-position: 0 -40px; }
+  /* line 89, ../sass/_team.sass */
+  .page-team .contact-methods .github:before {
+    background-position: 0 -20px; }
+  /* line 91, ../sass/_team.sass */
+  .page-team .contact-methods .linkedin:before {
+    background-position: 0 -80px; }
   @media (min-width: 500px) {
-    /* line 65, ../sass/_team.sass */
-    .page-team .contact-methods div {
+    /* line 95, ../sass/_team.sass */
+    .page-team .contact-methods li {
       float: left;
       width: 50%; } }
   @media (min-width: 1024px) {
-    /* line 54, ../sass/_team.sass */
+    /* line 60, ../sass/_team.sass */
     .page-team .contact-methods {
       font-size: 20px; }
-      /* line 70, ../sass/_team.sass */
-      .page-team .contact-methods div {
+      /* line 100, ../sass/_team.sass */
+      .page-team .contact-methods li {
         width: auto;
-        margin-right: 20px; } }
-/* line 74, ../sass/_team.sass */
-.page-team dt {
-  display: inline-block;
-  color: #222222; }
-  /* line 77, ../sass/_team.sass */
-  .page-team dt:after {
-    content: ":"; }
-/* line 79, ../sass/_team.sass */
-.page-team dd {
-  display: inline-block;
-  color: #d0d2d3; }
-  /* line 82, ../sass/_team.sass */
-  .page-team dd:hover {
-    color: white; }
+        margin-right: 10px; } }
 
 /* line 1, ../sass/_footer.sass */
 .site-footer {

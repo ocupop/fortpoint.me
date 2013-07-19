@@ -2,15 +2,37 @@
   address
     font-size: 28px
     font-family: $body-font
+    font-weight: bold
     color: $light-gray
     line-height: 1.4
   .contact-methods
+    margin-right: -25px
     li
-      margin-bottom: 10px
+      display: inline-block
+      padding-right: 25px
+      margin-bottom: 20px
+      &:before
+        content: ""
+        display: block
+        height: 67px
+        width: 67px
+        margin-bottom: 20px
       h2
+        font-size: 32px
+        margin: 0
         color: $medium-gray
         &:hover
           color: $text-light
+
+    .fax:before
+      @include icon-large-sprite("facsimile")
+    .facebook:before
+      @include icon-large-sprite("facebook")
+    .twitter:before
+      @include icon-large-sprite("twitter")
+    .linkedin:before
+      @include icon-large-sprite("linkedin")
     p
       color: #222
       text-transform: uppercase
+      line-height: 1
