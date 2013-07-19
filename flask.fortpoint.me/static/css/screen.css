@@ -411,7 +411,7 @@ section {
           max-height: 90%; }
           /* line 62, ../sass/_home.sass */
           .slider #slides li img.no-margin {
-            margin-left: 0; } }
+            margin-left: 20px; } }
     /* line 66, ../sass/_home.sass */
     .slider #slides li .wrapper {
       text-align: left;
@@ -687,21 +687,23 @@ section {
     /* line 30, ../sass/_team.sass */
     .page-team .credentials {
       border-top: none;
-      padding-left: 20px; }
-      /* line 47, ../sass/_team.sass */
+      padding-left: 20px;
+      border-left: 1px solid #222222;
+      left: -1px; }
+      /* line 50, ../sass/_team.sass */
       .page-team .credentials img {
         float: none;
         padding: 0; }
-      /* line 50, ../sass/_team.sass */
+      /* line 53, ../sass/_team.sass */
       .page-team .credentials div {
         width: auto;
         float: none; } }
-/* line 54, ../sass/_team.sass */
+/* line 57, ../sass/_team.sass */
 .page-team h3 {
   color: #e6e6e6;
   line-height: 1;
   margin-top: 20px; }
-/* line 60, ../sass/_team.sass */
+/* line 63, ../sass/_team.sass */
 .page-team .contact-methods {
   overflow: hidden;
   *zoom: 1;
@@ -710,11 +712,11 @@ section {
   font-family: "bebas-neue", "Bebas Neue", sans-serif;
   padding: 20px 0;
   border-top: 1px solid #222222; }
-  /* line 70, ../sass/_team.sass */
+  /* line 73, ../sass/_team.sass */
   .page-team .contact-methods li {
     display: block;
     color: #d0d2d3; }
-    /* line 73, ../sass/_team.sass */
+    /* line 76, ../sass/_team.sass */
     .page-team .contact-methods li:before {
       content: "";
       display: inline-block;
@@ -722,34 +724,34 @@ section {
       height: 20px;
       margin-right: 4px;
       margin-bottom: -2px; }
-    /* line 80, ../sass/_team.sass */
+    /* line 83, ../sass/_team.sass */
     .page-team .contact-methods li:hover {
       color: white; }
-  /* line 83, ../sass/_team.sass */
+  /* line 86, ../sass/_team.sass */
   .page-team .contact-methods .mobile:before {
     background-position: 0 -60px; }
-  /* line 85, ../sass/_team.sass */
+  /* line 88, ../sass/_team.sass */
   .page-team .contact-methods .email:before {
     background-position: 0 0; }
-  /* line 87, ../sass/_team.sass */
+  /* line 90, ../sass/_team.sass */
   .page-team .contact-methods .twitter:before {
     background-position: 0 -40px; }
-  /* line 89, ../sass/_team.sass */
+  /* line 92, ../sass/_team.sass */
   .page-team .contact-methods .github:before {
     background-position: 0 -20px; }
-  /* line 91, ../sass/_team.sass */
+  /* line 94, ../sass/_team.sass */
   .page-team .contact-methods .linkedin:before {
     background-position: 0 -80px; }
   @media (min-width: 500px) {
-    /* line 95, ../sass/_team.sass */
+    /* line 98, ../sass/_team.sass */
     .page-team .contact-methods li {
       float: left;
       width: 50%; } }
   @media (min-width: 1024px) {
-    /* line 60, ../sass/_team.sass */
+    /* line 63, ../sass/_team.sass */
     .page-team .contact-methods {
       font-size: 20px; }
-      /* line 100, ../sass/_team.sass */
+      /* line 103, ../sass/_team.sass */
       .page-team .contact-methods li {
         width: auto;
         margin-right: 10px; } }
