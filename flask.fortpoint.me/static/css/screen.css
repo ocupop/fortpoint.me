@@ -54,9 +54,9 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 66, icon-large/*.png */
-.icon-large-sprite, .page-connect .contact-methods .fax:before, .page-connect .contact-methods .facebook:before, .page-connect .contact-methods .twitter:before, .page-connect .contact-methods .linkedin:before {
-  background: url('/static/images/icon-large-sdc9511bcc0.png') no-repeat; }
+/* line 74, icon-large/*.png */
+.icon-large-sprite, .page-connect .contact-methods .phone:before, .page-connect .contact-methods .fax:before, .page-connect .contact-methods .facebook:before, .page-connect .contact-methods .twitter:before, .page-connect .contact-methods .linkedin:before {
+  background: url('/static/images/icon-large-s4af1141b00.png') no-repeat; }
 
 /* line 74, icon-small/*.png */
 .icon-small-sprite, .page-team .contact-methods .mobile:before, .page-team .contact-methods .email:before, .page-team .contact-methods .twitter:before, .page-team .contact-methods .github:before, .page-team .contact-methods .linkedin:before {
@@ -614,7 +614,7 @@ section {
     @media (min-width: 500px) {
       /* line 12, ../sass/_connect.sass */
       .page-connect .contact-methods li {
-        width: 50%; } }
+        width: 33.33333%; } }
     @media (min-width: 1024px) {
       /* line 12, ../sass/_connect.sass */
       .page-connect .contact-methods li {
@@ -622,7 +622,7 @@ section {
         padding-right: 20px;
         padding-bottom: 20px; }
         /* line 22, ../sass/_connect.sass */
-        .page-connect .contact-methods li.fax {
+        .page-connect .contact-methods li.phone {
           border-right: 1px solid #222222;
           margin-right: 20px; } }
     @media (min-width: 1255px) {
@@ -630,7 +630,7 @@ section {
       .page-connect .contact-methods li {
         padding-right: 40px; }
         /* line 28, ../sass/_connect.sass */
-        .page-connect .contact-methods li.fax {
+        .page-connect .contact-methods li.phone {
           margin-right: 40px; } }
     /* line 31, ../sass/_connect.sass */
     .page-connect .contact-methods li:last-child {
@@ -647,22 +647,33 @@ section {
       font-size: 32px;
       margin: 0;
       color: #d0d2d3; }
-      /* line 44, ../sass/_connect.sass */
+      @media (min-width: 500px) {
+        /* line 40, ../sass/_connect.sass */
+        .page-connect .contact-methods li h2 {
+          font-size: 26px; } }
+      @media (min-width: 1255px) {
+        /* line 40, ../sass/_connect.sass */
+        .page-connect .contact-methods li h2 {
+          font-size: 28px; } }
+      /* line 48, ../sass/_connect.sass */
       .page-connect .contact-methods li h2:hover {
         color: white; }
-  /* line 47, ../sass/_connect.sass */
-  .page-connect .contact-methods .fax:before {
+  /* line 50, ../sass/_connect.sass */
+  .page-connect .contact-methods .phone:before {
     background-position: 0 -65px; }
-  /* line 49, ../sass/_connect.sass */
+  /* line 52, ../sass/_connect.sass */
+  .page-connect .contact-methods .fax:before {
+    background-position: 0 -130px; }
+  /* line 54, ../sass/_connect.sass */
   .page-connect .contact-methods .facebook:before {
-    background-position: 0 -195px; }
-  /* line 51, ../sass/_connect.sass */
+    background-position: 0 -260px; }
+  /* line 56, ../sass/_connect.sass */
   .page-connect .contact-methods .twitter:before {
     background-position: 0 0; }
-  /* line 53, ../sass/_connect.sass */
+  /* line 58, ../sass/_connect.sass */
   .page-connect .contact-methods .linkedin:before {
-    background-position: 0 -130px; }
-  /* line 55, ../sass/_connect.sass */
+    background-position: 0 -195px; }
+  /* line 60, ../sass/_connect.sass */
   .page-connect .contact-methods p {
     color: #222222;
     text-transform: uppercase;
