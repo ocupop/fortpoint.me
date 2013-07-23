@@ -8,9 +8,9 @@
 
 repo_dir=/home/joelgkinney/fortpoint.me
 static_src=$repo_dir/flask.fortpoint.me/static/
-static_dest=/home/joelgkinney/webapps/static/
+static_dest=/home/joelgkinney/webapps/fpl_static/
 remote_name=origin
-branch_name=master
+branch_name=ocupop-redesign
 
 if [ $1 ]; then
     branch_name=$1

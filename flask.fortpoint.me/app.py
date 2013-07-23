@@ -8,28 +8,30 @@ import re
 
 HERE = dirname(abspath(__file__))
 
-app = Flask(__name__, static_path='/static')
+app = Flask(__name__, static_url_path='/static')
 app.debug = True
-
 
 @app.route('/')
 def home_canonical():
     return render_template('home.html', active='home')
-
 
 @app.route('/home/')
 def home():
     return redirect(url_for('home_canonical'))
 
 
-@app.route('/story/')
-def story():
-    return render_template('story.html', active='story')
-
+@app.route('/clients/')
+def clients():
+    return render_template('clients.html', active='clients')
 
 @app.route('/companies/')
 def companies():
-    return render_template('companies.html', active='companies')
+    return redirect(url_for('clients'))
+
+
+@app.route('/story/')
+def story():
+    return render_template('story.html', active='story')
 
 
 @app.route('/team/')
@@ -39,7 +41,8 @@ def team():
 
 @app.route('/connect/')
 def connect():
-    return render_template('connect.html', active='team')
+    return render_template('connect.html', active='connect')
+
 
 @app.route('/github-webhook', methods=['POST'])
 def pull_latest():
