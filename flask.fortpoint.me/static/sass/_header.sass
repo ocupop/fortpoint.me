@@ -62,28 +62,35 @@
 .site-nav
   ul
     display: none
+
     @media (min-width: $phablet)
       display: block
+
     @media (min-width: $desktop)
       top: 250px
+
   li
     text-align: center
-    font-size: 20px
+    font-size: 16px
     padding: 8px
-    @include transition(all .2s)
     text-transform: uppercase
     background-color: $light-gray
     color: $dark-gray
     margin: 6px 0 0
     font-weight: bold
+    @include transition(all .2s)
+
     &.active, &:hover
       color: $light-gray
       background-color: $dark-gray
+
     a
       display: block
+
     @media (min-width: $phablet)
       text-align: left
       display: inline-block
+
     @media (min-width: $desktop)
       display: block
       padding: 4px 6px 2px
