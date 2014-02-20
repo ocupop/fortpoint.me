@@ -4,7 +4,7 @@
 // team aside p: 19px
 // team contact: 24px
 .page-team
-  .team-members li
+  .team-members .member
     @include clearfix
     @include lump-shadow
     margin-bottom: $gutter
@@ -34,13 +34,22 @@
     line-height: 1.4
     @extend %grid-4
     @media (min-width: $phablet)
+      img
+        float: left
+        padding: 0 $gutter /2 $gutter /2 0
       div
+
         width: 50%
         float: left
     @media (min-width: $desktop)
       border-top: none
-      padding-top: 80px
       padding-left: $aside-gutter
+      border-left: 1px solid #222
+      // force borders to overlap
+      left: -1px
+      img
+        float: none
+        padding: 0
       div
         width: auto
         float: none
@@ -59,25 +68,49 @@
     font-family: $hed-font
     padding: $aside-gutter 0
     border-top: 1px solid #222
-
     @extend %grid-12
+
+    li
+      display: block
+      color: $medium-gray
+      &:before
+        content: ""
+        display: inline-block
+        width: 24px
+        height: 20px
+        margin-right: 4px
+        margin-bottom: -2px
+      &:hover
+        color: $text-light
+
+    .mobile:before
+      @include icon-small-sprite("mobile")
+    .email:before
+      @include icon-small-sprite("email")
+    .twitter:before
+      @include icon-small-sprite("twitter")
+    .github:before
+      @include icon-small-sprite("github")
+    .linkedin:before
+      @include icon-small-sprite("linkedin")
+
     @media (min-width: $phablet)
-      div
+      li
         float: left
         width: 50%
     @media (min-width: $desktop)
       font-size: 20px
-      div
+      li
         width: auto
-        margin-right: 20px
-
-  dt
-    display: inline-block
-    color: #222
-    &:after
-      content: ":"
-  dd
-    display: inline-block
-    color: $medium-gray
-    &:hover
-      color: $text-light
+        margin-right: 10px
+      .mobile:before
+        width: 16px
+      .email:before
+        width: 24px
+      .twitter:before
+        width: 22px
+        margin-right: 2px
+      .github:before
+        width: 14px
+      .linkedin:before
+        width: 18px
