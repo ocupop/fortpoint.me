@@ -1,64 +1,11 @@
-<!DOCTYPE html>
-<!--[if lte IE 8]>     <html class="no-js bad-ie"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Fort Point Legal | Home</title>
-  <meta name="description" content="Fort Point Legal represents the open source, internet startup and entrepreneur communities.  We take pride in partnering with clients providing cost effective legal solutions." />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" />
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <link rel="canonical" href="index.html" />
-  <script type="text/javascript" src="http://use.typekit.net/fzi0ttf.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <!--[if lte IE 8]><script src="/js/respond.min.js"></script><![endif]-->
-</head>
+<?php require_once('_header.php'); ?>
 
-<body class="page-home">
-
-<header class="site-header">
-  <a href="index.html">
-    <h1 class="site-title">Fort Point Legal</h1>
-  </a>
-  <nav class="site-nav">
-    <header class="mobile-nav-header">
-      <label for="show-menu-mobile">Menu</label>
-    </header>
-    <input type="checkbox" id="show-menu-mobile">
-    <ul>
-
-        <li >
-          <a href="clients/index.html">clients</a>
-        </li>
-
-        <li >
-          <a href="story/index.html">story</a>
-        </li>
-
-        <li >
-          <a href="team/index.html">team</a>
-        </li>
-
-        <li >
-          <a href="connect/index.html">connect</a>
-        </li>
-
-    </ul>
-  </nav>
-</header>
-
-<div class="main-content">
-  <div class="page-header">
-    <h1>
-  We have a strong commitment to the open source and entrepreneur communities.
-</h1>
-    <aside>
-      <p>
-  Fort Point Legal represents the open source, internet startup and entrepreneur communities.  We work closely with our clients to offer critical business advice and cost effective legal solutions.
-</p>
-    </aside>
-  </div>
+<div class="page-header">
+  <h1>We have a strong commitment to the open source and entrepreneur communities.</h1>
+  <aside>
+    <p>Fort Point Legal represents the open source, internet startup and entrepreneur communities.  We work closely with our clients to offer critical business advice and cost effective legal solutions.</p>
+  </aside>
+</div>
 
 <section>
   <figure class="slider">
@@ -114,8 +61,6 @@
         </p>
         <p class="company-tagline"></p>
       </li>
-
-
     </ul>
 
     <div id="slider-prev"></div>
@@ -136,26 +81,4 @@
   </div>
 </section>
 
-
-</div>
-
-<footer class="site-footer">
-  <ul class="social-links">
-    <li>
-      <a href="index.html"><img src="img/logo.png" /></a>
-    </li>
-    <li>
-      <a href="http://bostonbuilt.org/" target="_blank"><img src="img/BuiltinBoston.png" /></a>
-    </li>
-    <li>
-      <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="img/cc.small.png" /></a>
-    </li>
-    <li>
-      <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="img/by.small.png"></a>
-    </li>
-  </ul>
-</footer>
-
-<script src="js/script.js"></script>
-</body>
-</html>
+<?php require_once('_footer.php'); ?>

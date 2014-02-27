@@ -1,64 +1,11 @@
-<!DOCTYPE html>
-<!--[if lte IE 8]>     <html class="no-js bad-ie"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Fort Point Legal | Team</title>
-  <meta name="description" content="Fort Point Legal represents the open source, internet startup and entrepreneur communities.  We take pride in partnering with clients providing cost effective legal solutions." />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/screen.css" type="text/css" media="screen" />
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <link rel="canonical" href="../index.html" />
-  <script type="text/javascript" src="http://use.typekit.net/fzi0ttf.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <!--[if lte IE 8]><script src="/js/respond.min.js"></script><![endif]-->
-</head>
+<?php require_once('_header.php'); ?>
 
-<body class="page-team">
-
-<header class="site-header">
-  <a href="../index.html">
-    <h1 class="site-title">Fort Point Legal</h1>
-  </a>
-  <nav class="site-nav">
-    <header class="mobile-nav-header">
-      <label for="show-menu-mobile">Menu</label>
-    </header>
-    <input type="checkbox" id="show-menu-mobile">
-    <ul>
-
-        <li >
-          <a href="../clients/index.html">clients</a>
-        </li>
-
-        <li >
-          <a href="../story/index.html">story</a>
-        </li>
-
-        <li class="active">
-          <a href="index.html">team</a>
-        </li>
-
-        <li >
-          <a href="../connect/index.html">connect</a>
-        </li>
-
-    </ul>
-  </nav>
-</header>
-
-<div class="main-content">
-  <div class="page-header">
-    <h1>
-  As a trusted advisor, we add value to all levels of company decision making.
-</h1>
-    <aside>
-      <p>
-  Most businesses see legal services as an unwanted, but necessary cost. We want our clients to view our legal services as an integral part of their business team.
-</p>
-    </aside>
-  </div>
+<div class="page-header">
+  <h1>As a trusted advisor, we add value to all levels of company decision making.</h1>
+  <aside>
+    <p>Most businesses see legal services as an unwanted, but necessary cost. We want our clients to view our legal services as an integral part of their business team.</p>
+  </aside>
+</div>
 
 <section>
   <ul class="team-members">
@@ -85,14 +32,12 @@
       <ul class="contact-methods">
         <li class="mobile"><a href="tel:857-498-1150">857-498-1150</a></li>
         <li class="email"><a href="mailto:joel@fortpointlegal.com">joel@fortpointlegal.com</a></li>
-        <li class="twitter"><a href="http://twitter.com/hackercounsel/"
-          target="_blank">@hackercounsel</a></li>
-        <li class="github"><a href="http://github.com/joelgkinney/"
-          target="_blank">joelgkinney</a></li>
-        <li class="linkedin"><a href="http://www.linkedin.com/in/joelgkinney"
-          target="_blank">Joel G. Kinney</a></li>
+        <li class="twitter"><a href="http://twitter.com/hackercounsel/" target="_blank">@hackercounsel</a></li>
+        <li class="github"><a href="http://github.com/joelgkinney/" target="_blank">joelgkinney</a></li>
+        <li class="linkedin"><a href="http://www.linkedin.com/in/joelgkinney" target="_blank">Joel G. Kinney</a></li>
       </ul>
     </li>
+
     <li class="member">
       <div class="bio">
         <h2>Daniel Paradis</h2>
@@ -116,10 +61,10 @@
       <ul class="contact-methods">
         <li class="mobile"><a href="tel:617-470-5049">617-470-5049</a></li>
         <li class="email"><a href="mailto:dan@fortpointlegal.com">dan@fortpointlegal.com</a></li>
-        <li class="linkedin"><a href="http://www.linkedin.com/in/danparadis"
-          target="_blank">Daniel Paradis</a></li>
+        <li class="linkedin"><a href="http://www.linkedin.com/in/danparadis" target="_blank">Daniel Paradis</a></li>
       </ul>
     </li>
+
     <li class="member">
       <div class="bio">
         <h2>Thom "T.W." Neale</h2>
@@ -140,34 +85,11 @@
         </div>
       </aside>
       <ul class="contact-methods">
-        <li class="twitter"><a href="https://twitter.com/twneale"
-          target="_blank">@twneale</a></li>
-        <li class="github"><a href="https://github.com/twneale"
-          target="_blank">twneale</a></li>
+        <li class="twitter"><a href="https://twitter.com/twneale" target="_blank">@twneale</a></li>
+        <li class="github"><a href="https://github.com/twneale" target="_blank">twneale</a></li>
       </ul>
     </li>
   </ul>
 </section>
 
-</div>
-
-<footer class="site-footer">
-  <ul class="social-links">
-    <li>
-      <a href="../index.html"><img src="../img/logo.png" /></a>
-    </li>
-    <li>
-      <a href="http://bostonbuilt.org/" target="_blank"><img src="../img/BuiltinBoston.png" /></a>
-    </li>
-    <li>
-      <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="../img/cc.small.png" /></a>
-    </li>
-    <li>
-      <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="../img/by.small.png"></a>
-    </li>
-  </ul>
-</footer>
-
-<script src="../js/script.js"></script>
-</body>
-</html>
+<?php require_once('_footer.php'); ?>
