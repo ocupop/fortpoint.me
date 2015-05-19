@@ -1,0 +1,88 @@
+.page-connect {
+  h1 {
+    strong {
+      display: block;
+      font-size: 36px;
+      margin-top: 0.75em;
+    }
+    address {
+      font-size: 28px;
+      font-family: $body-font;
+      color: $light-gray;
+      line-height: 1.4;
+    }
+  }
+  .contact-methods {
+    @include clearfix;
+    @media (min-width: $desktop) {
+      border-bottom: 1px solid #222;
+    }
+    li {
+      float: left;
+      width: 100%;
+      padding-bottom: 40px;
+      @media (min-width: $phablet) {
+        width: percentage(1 / 3);
+      }
+      @media (min-width: $desktop) {
+        width: auto;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        &.phone {
+          border-right: 1px solid #222;
+          margin-right: 20px;
+        }
+      }
+      @media (min-width: $widescreen) {
+        padding-right: 40px;
+        &.phone {
+          margin-right: 40px;
+        }
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      &:before {
+        content: "";
+        display: block;
+        height: 66px;
+        width: 70px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 32px;
+        @media (min-width: $phablet) {
+          font-size: 26px;
+        }
+        @media (min-width: $widescreen) {
+          font-size: 28px;
+        }
+        margin: 0;
+        color: $medium-gray;
+        &:hover {
+          color: $text-light;
+        }
+      }
+    }
+    .phone:before {
+      @include icon-large-sprite("phone");
+    }
+    .fax:before {
+      @include icon-large-sprite("facsimile");
+    }
+    .facebook:before {
+      @include icon-large-sprite("facebook");
+    }
+    .twitter:before {
+      @include icon-large-sprite("twitter");
+    }
+    .linkedin:before {
+      @include icon-large-sprite("linkedin");
+    }
+    p {
+      color: #222;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+  }
+}

@@ -42,14 +42,16 @@ q, blockquote {
 a img {
   border: none; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
 .icon-large-sprite, .page-connect .contact-methods .phone:before, .page-connect .contact-methods .fax:before, .page-connect .contact-methods .facebook:before, .page-connect .contact-methods .twitter:before, .page-connect .contact-methods .linkedin:before {
-  background: url('../img/icon-large-s4af1141b00.png') no-repeat; }
+  background-image: url('../img/icon-large-sdba6f61482.png');
+  background-repeat: no-repeat; }
 
 .icon-small-sprite, .page-team .contact-methods .mobile:before, .page-team .contact-methods .email:before, .page-team .contact-methods .twitter:before, .page-team .contact-methods .github:before, .page-team .contact-methods .linkedin:before {
-  background: url('../img/icon-small-s2dcff406f3.png') no-repeat; }
+  background-image: url('../img/icon-small-sb7c9be19b5.png');
+  background-repeat: no-repeat; }
 
 @media (min-width: 1024px) {
   .page-header aside, .page-team .credentials, .legal .block, .page-header h1, .page-team .bio, .page-team .contact-methods {
@@ -68,15 +70,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     width: 33.3333%; } }
 * {
   position: relative;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
   font-size: 100%;
   font-family: "futura-pt", "Futura", sans-serif;
-  background-color: #d0d2d3;
-  color: white;
+  background-color: #D0D2D3;
+  color: #FFF;
   height: 100%;
   -webkit-font-smoothing: antialiased; }
 
@@ -124,10 +126,10 @@ p {
 .main-content {
   max-width: 1020px;
   margin: 0 auto;
-  background-color: #4581c2;
+  background-color: #4581C2;
   min-height: 100%;
-  box-shadow: inset 0 4px 10px -4px #444444;
-  border: 2px solid #a7a9ac;
+  box-shadow: inset 0 4px 10px -4px #444;
+  border: 2px solid #A7A9AC;
   border-style: solid none; }
   @media (min-width: 1024px) {
     .main-content {
@@ -135,11 +137,11 @@ p {
       box-shadow: 0 0 black; } }
 
 .page-team .main-content, .page-connect .main-content {
-  background-color: #6d6e71; }
+  background-color: #6D6E71; }
 
 section {
   padding: 40px 20px 20px;
-  box-shadow: 0 40px 30px -50px #222222; }
+  box-shadow: 0 40px 30px -50px #222; }
   @media (min-width: 1024px) {
     section {
       padding: 40px 40px 20px; } }
@@ -149,9 +151,9 @@ section {
 .page-header {
   overflow: hidden;
   *zoom: 1;
-  box-shadow: 0 40px 30px -50px #222222;
+  box-shadow: 0 40px 30px -50px #222;
   padding: 20px;
-  background-color: #4581c2; }
+  background-color: #4581C2; }
   @media (min-width: 1024px) {
     .page-header {
       padding: 70px 40px 20px; } }
@@ -161,7 +163,7 @@ section {
   @media (min-width: 1024px) {
     .page-header aside {
       padding-left: 20px;
-      border-left: 1px solid #2957a4; } }
+      border-left: 1px solid #2957A4; } }
   .page-header aside p {
     font-size: 20px; }
     @media (min-width: 1255px) {
@@ -172,7 +174,7 @@ section {
 .site-header {
   left: 0;
   top: 0;
-  color: #6d6e71; }
+  color: #6D6E71; }
   @media (min-width: 1024px) {
     .site-header {
       position: absolute;
@@ -190,7 +192,8 @@ section {
       text-indent: -119988px;
       overflow: hidden;
       text-align: left;
-      background-image: url('../img/logo-header.svg?1392926478');
+      text-transform: capitalize;
+      background-image: url('../img/logo-header.svg?1431564387');
       background-repeat: no-repeat;
       background-position: 100% 0;
       width: 1000px;
@@ -209,7 +212,7 @@ section {
     width: 37px;
     height: 37px;
     background-size: 100%;
-    background-image: url('../img/logo.png?1392926478'); }
+    background-image: url('../img/logo.png?1431564387'); }
     @media (min-width: 1024px) {
       .site-title:before {
         display: none; } }
@@ -219,7 +222,8 @@ section {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../img/logo-header.png?1392926478');
+    text-transform: capitalize;
+    background-image: url('../img/logo-header.png?1431564387');
     background-repeat: no-repeat;
     background-position: 100% 50px; } }
 
@@ -254,17 +258,17 @@ section {
   font-size: 16px;
   padding: 8px;
   text-transform: uppercase;
-  background-color: #e6e6e6;
-  color: #a7a9ac;
+  background-color: #E6E6E6;
+  color: #A7A9AC;
   margin: 6px 0 0;
   font-weight: bold;
-  -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s; }
   .site-nav li.active, .site-nav li:hover {
-    color: #e6e6e6;
-    background-color: #a7a9ac; }
+    color: #E6E6E6;
+    background-color: #A7A9AC; }
   .site-nav li a {
     display: block; }
   @media (min-width: 500px) {
@@ -280,7 +284,7 @@ section {
 .slider {
   overflow: hidden;
   *zoom: 1;
-  background-color: #2957a4; }
+  background-color: #2957A4; }
   .slider #slider-prev, .slider #slider-next, .slider #slider-nav {
     cursor: pointer;
     z-index: 10; }
@@ -301,16 +305,11 @@ section {
       .slider #slides {
         height: 310px; } }
   .slider #slides li {
-    -webkit-transition: opacity 2s;
     -moz-transition: opacity 2s;
     -o-transition: opacity 2s;
+    -webkit-transition: opacity 2s;
     transition: opacity 2s;
-    background-image: -webkit-gradient(linear, 30% 0%, 70% 100%, color-stop(0%, #e6e6e6), color-stop(50%, #e6e6e6), color-stop(50%, #d0d2d3));
-    background-image: -webkit-linear-gradient(30% 0%, #e6e6e6, #e6e6e6 50%, #d0d2d3 50%);
-    background-image: -moz-linear-gradient(30% 0%, #e6e6e6, #e6e6e6 50%, #d0d2d3 50%);
-    background-image: -o-linear-gradient(30% 0%, #e6e6e6, #e6e6e6 50%, #d0d2d3 50%);
-    background-image: linear-gradient(30% 0%, #e6e6e6, #e6e6e6 50%, #d0d2d3 50%);
-    background-color: #d0d2d3;
+    background-color: #D0D2D3;
     position: absolute;
     width: 100%;
     opacity: 0;
@@ -338,7 +337,7 @@ section {
     .slider #slides li .wrapper {
       text-align: left;
       line-height: 26px;
-      color: #6d6e71;
+      color: #6D6E71;
       position: absolute;
       bottom: 0;
       right: 0;
@@ -351,10 +350,9 @@ section {
           margin-top: -1em;
           width: 312px; }
           .slider #slides li .wrapper figcaption {
-            -webkit-transform: translateY(-50%);
             -moz-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
             transform: translateY(-50%); } }
     .slider #slides li.current {
       z-index: 1;
@@ -363,7 +361,7 @@ section {
     position: absolute;
     font-size: 16px;
     font-weight: bold;
-    color: #e6e6e6;
+    color: #E6E6E6;
     bottom: -24px; }
   .slider .location {
     display: none; }
@@ -386,9 +384,9 @@ section {
     height: 11px;
     width: 11px;
     margin: 0 4px 4px 0;
-    background-color: #4581c2; }
+    background-color: #4581C2; }
     .slider #slider-nav li.current {
-      background-color: #e6e6e6; }
+      background-color: #E6E6E6; }
 
 .legal {
   overflow: hidden;
@@ -398,7 +396,7 @@ section {
     @media (min-width: 1024px) {
       .legal .block {
         padding: 0 20px;
-        border-left: 1px solid #2957a4; }
+        border-left: 1px solid #2957A4; }
         .legal .block:first-child {
           border: none; } }
 
@@ -424,21 +422,21 @@ section {
     display: block;
     height: 213px;
     line-height: 180px;
-    background-color: #e6e6e6;
+    background-color: #E6E6E6;
     overflow: hidden;
     text-align: center; }
   .page-clients .companies li .description {
-    -webkit-transition: top 0.2s;
     -moz-transition: top 0.2s;
     -o-transition: top 0.2s;
+    -webkit-transition: top 0.2s;
     transition: top 0.2s;
     line-height: 1.2;
     text-align: left;
-    color: #6d6e71;
+    color: #6D6E71;
     padding: 20px; }
   .page-clients .companies li .company-name {
     text-align: left;
-    background-color: #2957a4;
+    background-color: #2957A4;
     color: #67a3e4;
     text-transform: uppercase;
     font-size: 12px;
@@ -449,12 +447,12 @@ section {
     bottom: 0;
     left: 0;
     padding: 6px;
-    box-shadow: inset 0 2px 4px #444444; }
+    box-shadow: inset 0 2px 4px #444; }
   .page-clients .companies li img {
-    -webkit-transition: top 0.2s ease;
-    -webkit-transition-delay: 0.3s;
     -moz-transition: top 0.2s ease 0.3s;
     -o-transition: top 0.2s ease 0.3s;
+    -webkit-transition: top 0.2s ease;
+    -webkit-transition-delay: 0.3s;
     transition: top 0.2s ease 0.3s;
     display: inline-block;
     vertical-align: middle;
@@ -468,20 +466,20 @@ section {
       width: auto;
       height: 160px; }
   .page-clients .companies li:hover img {
-    -webkit-transition: top 0.2s;
     -moz-transition: top 0.2s;
     -o-transition: top 0.2s;
+    -webkit-transition: top 0.2s;
     transition: top 0.2s;
     top: -213px; }
   .page-clients .companies li:hover .description {
-    -webkit-transition: top 0.2s ease;
-    -webkit-transition-delay: 0.3s;
     -moz-transition: top 0.2s ease 0.3s;
     -o-transition: top 0.2s ease 0.3s;
+    -webkit-transition: top 0.2s ease;
+    -webkit-transition-delay: 0.3s;
     transition: top 0.2s ease 0.3s;
     top: -180px; }
   .page-clients .companies li:hover .company-name {
-    color: white; }
+    color: #FFF; }
 
 .page-connect h1 strong {
   display: block;
@@ -490,14 +488,14 @@ section {
 .page-connect h1 address {
   font-size: 28px;
   font-family: "futura-pt", "Futura", sans-serif;
-  color: #e6e6e6;
+  color: #E6E6E6;
   line-height: 1.4; }
 .page-connect .contact-methods {
   overflow: hidden;
   *zoom: 1; }
   @media (min-width: 1024px) {
     .page-connect .contact-methods {
-      border-bottom: 1px solid #222222; } }
+      border-bottom: 1px solid #222; } }
   .page-connect .contact-methods li {
     float: left;
     width: 100%;
@@ -511,7 +509,7 @@ section {
         padding-right: 20px;
         padding-bottom: 20px; }
         .page-connect .contact-methods li.phone {
-          border-right: 1px solid #222222;
+          border-right: 1px solid #222;
           margin-right: 20px; } }
     @media (min-width: 1255px) {
       .page-connect .contact-methods li {
@@ -529,7 +527,7 @@ section {
     .page-connect .contact-methods li h2 {
       font-size: 32px;
       margin: 0;
-      color: #d0d2d3; }
+      color: #D0D2D3; }
       @media (min-width: 500px) {
         .page-connect .contact-methods li h2 {
           font-size: 26px; } }
@@ -537,26 +535,26 @@ section {
         .page-connect .contact-methods li h2 {
           font-size: 28px; } }
       .page-connect .contact-methods li h2:hover {
-        color: white; }
+        color: #FFF; }
   .page-connect .contact-methods .phone:before {
-    background-position: 0 -65px; }
-  .page-connect .contact-methods .fax:before {
-    background-position: 0 -130px; }
-  .page-connect .contact-methods .facebook:before {
-    background-position: 0 -260px; }
-  .page-connect .contact-methods .twitter:before {
-    background-position: 0 0; }
-  .page-connect .contact-methods .linkedin:before {
     background-position: 0 -195px; }
+  .page-connect .contact-methods .fax:before {
+    background-position: 0 -65px; }
+  .page-connect .contact-methods .facebook:before {
+    background-position: 0 0; }
+  .page-connect .contact-methods .twitter:before {
+    background-position: 0 -260px; }
+  .page-connect .contact-methods .linkedin:before {
+    background-position: 0 -130px; }
   .page-connect .contact-methods p {
-    color: #222222;
+    color: #222;
     text-transform: uppercase;
     line-height: 1; }
 
 .page-team .team-members .member {
   overflow: hidden;
   *zoom: 1;
-  box-shadow: 0 40px 30px -50px #222222;
+  box-shadow: 0 40px 30px -50px #222;
   margin-bottom: 40px; }
   .page-team .team-members .member:last-child {
     box-shadow: 0 0 0 black; }
@@ -565,20 +563,20 @@ section {
   @media (min-width: 1024px) {
     .page-team .bio {
       padding-right: 20px;
-      border-right: 1px solid #222222; } }
+      border-right: 1px solid #222; } }
   .page-team .bio p {
     line-height: 1.6; }
 .page-team h2 {
   line-height: 0.8; }
 .page-team .title {
-  color: #e6e6e6;
+  color: #E6E6E6;
   text-transform: uppercase;
   margin-bottom: 20px; }
 .page-team .credentials {
   overflow: hidden;
   *zoom: 1;
   padding: 20px 0;
-  border-top: 1px solid #222222;
+  border-top: 1px solid #222;
   line-height: 1.4; }
   @media (min-width: 500px) {
     .page-team .credentials img {
@@ -591,7 +589,7 @@ section {
     .page-team .credentials {
       border-top: none;
       padding-left: 20px;
-      border-left: 1px solid #222222;
+      border-left: 1px solid #222;
       left: -1px; }
       .page-team .credentials img {
         float: none;
@@ -600,7 +598,7 @@ section {
         width: auto;
         float: none; } }
 .page-team h3 {
-  color: #e6e6e6;
+  color: #E6E6E6;
   line-height: 1;
   margin-top: 20px; }
 .page-team .contact-methods {
@@ -610,10 +608,10 @@ section {
   text-transform: uppercase;
   font-family: "bebas-neue", "Bebas Neue", sans-serif;
   padding: 20px 0;
-  border-top: 1px solid #222222; }
+  border-top: 1px solid #222; }
   .page-team .contact-methods li {
     display: block;
-    color: #d0d2d3; }
+    color: #D0D2D3; }
     .page-team .contact-methods li:before {
       content: "";
       display: inline-block;
@@ -622,17 +620,17 @@ section {
       margin-right: 4px;
       margin-bottom: -2px; }
     .page-team .contact-methods li:hover {
-      color: white; }
+      color: #FFF; }
   .page-team .contact-methods .mobile:before {
     background-position: 0 -60px; }
   .page-team .contact-methods .email:before {
     background-position: 0 0; }
   .page-team .contact-methods .twitter:before {
-    background-position: 0 -40px; }
+    background-position: 0 -80px; }
   .page-team .contact-methods .github:before {
     background-position: 0 -20px; }
   .page-team .contact-methods .linkedin:before {
-    background-position: 0 -80px; }
+    background-position: 0 -40px; }
   @media (min-width: 500px) {
     .page-team .contact-methods li {
       float: left;
