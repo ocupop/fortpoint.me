@@ -52,9 +52,11 @@ $body_class = $body_class[0];
     </header>
     <input type="checkbox" id="show-menu-mobile">
     <ul>
+      <li><a <?php echo current_nav('about') ?>>About</a></li>
+      <li><a <?php echo current_nav('practices') ?>>Practices</a></li>
       <li><a <?php echo current_nav('clients') ?>>Clients</a></li>
-      <li><a <?php echo current_nav('story') ?>>Story</a></li>
       <li><a <?php echo current_nav('team') ?>>Team</a></li>
+      <li><a <?php echo current_nav('news') ?>>News & Events</a></li>
       <li><a <?php echo current_nav('connect') ?>>Connect</a></li>
     </ul>
   </nav>
