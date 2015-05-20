@@ -17,7 +17,7 @@
       </div>
       <aside class="credentials">
         <div>
-          <img src="../img/team/joel.jpg">
+          <img src="img/team/joel.jpg">
           <h3>Education</h3>
           Northeastern University<br>
           School of Law, JD 2001<br>
@@ -45,7 +45,7 @@
       </div>
       <aside class="credentials">
         <div>
-          <img src="../img/team/steve.jpg">
+          <img src="img/team/steve.jpg">
           <h3>Education</h3>
           Boston College, BA 2005<br/>
           Catholic University, JD 2008<br/>
@@ -69,7 +69,7 @@
       </div>
       <aside class="credentials">
         <div>
-          <img src="../img/team/daniel.jpg">
+          <img src="img/team/daniel.jpg">
           <h3>Education</h3>
           Northwestern University<br>
           School of Law, LLM 2004<br>
@@ -96,7 +96,7 @@
       </div>
       <aside class="credentials">
         <div>
-          <img src="../img/team/rebecca.jpg">
+          <img src="img/team/rebecca.jpg">
           <h3>Education</h3>
           University of Rochester, BA 2000<br/>
           University of California, Hastings College of the Law, JD 2007
@@ -121,7 +121,7 @@
       </div>
       <aside class="credentials">
         <div>
-          <img src="../img/team/thom.jpg">
+          <img src="img/team/thom.jpg">
           <h3>Education</h3>
           University of California, Hastings College of the Law, JD 2007<br/>
           Point Loma Nazarene University, BA 2003

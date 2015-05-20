@@ -1,6 +1,6 @@
 </div>
 
-<footer class="site-footer">
+<footer id="contact" class="site-footer">
   <h2>Come meet with us and develop a legal plan for your business</h2>
   <hr>
   <div class="row">
@@ -47,7 +47,34 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+  // Scrolling to anchor points
 
+  function tastyScroll(target){
+   var $target = $(target);
+   if(!$target.offset()) {
+    return;
+   }
+   var offset = $target.offset().top - 200;
+   $('html, body').stop().animate({
+       'scrollTop': offset
+   }, 900, 'swing', function () {
+       window.location.hash = target;
+   });
+  }
+  // Scrolling to anchor points
+  $('a[href^="#"]').on('click',function (e) {
+   e.preventDefault();
+   var target = this.hash;
+   tastyScroll(target);
+  });
+  $(window).on('load', function (e){
+    if (window.location.hash) {
+      tastyScroll(window.location.hash);
+    }
+  });
+</script>
 </body>
 
 </html>

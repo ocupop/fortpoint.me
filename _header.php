@@ -58,7 +58,7 @@ $body_class = $body_class[0];
       <li><a <?php echo current_nav('clients') ?>>Clients</a></li>
       <li><a <?php echo current_nav('team') ?>>Team</a></li>
       <li><a <?php echo current_nav('news') ?>>News & Events</a></li>
-      <li><a <?php echo current_nav('connect') ?>>Connect</a></li>
+      <li><a href="#contact">Connect</a></li>
     </ul>
   </nav>
 </header>

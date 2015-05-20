@@ -108,6 +108,9 @@ p {
   margin-bottom: 15px;
   font-size: 16px;
   line-height: 1.66;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 img {
@@ -133,6 +136,9 @@ section {
     box-shadow: 0 0 0 black;
   }
 }
+// figcaption {
+//   font-size: 16px;
+// }
 ul.dash {
   margin-left: 20px;
   margin-bottom: 15px;

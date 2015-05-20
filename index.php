@@ -7,6 +7,8 @@
 <section>
   <figure class="slider">
     <ul id="slides">
+
+
       <li class="current">
         <img src="img/clients/jquery.png" alt="jQuery" class="no-margin"/>
         <div class="wrapper">
