@@ -32,7 +32,7 @@ html {
   font-size: 100%;
   font-family: $body-font;
   background-color: $medium-gray;
-  color: $text-light;
+  color: $black;
   height: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -93,8 +93,15 @@ h4 {
 }
 
 p {
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.66;
+}
+em {
+  font-style: normal;
+  color:  $blue;
+  a:hover {
+    color: $dark-blue;
+  }
 }
 img {
   max-width: 100%;
@@ -115,6 +122,16 @@ hr {
   width: 100%;
   @include clearfix;
 }
+[class*='grid-']{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.grid-3 { @extend %grid-3; }
+.grid-4 { @extend %grid-4; }
+.grid-6 { @extend %grid-6; }
+.grid-8 { @extend %grid-8; }
+.grid-12 { @extend %grid-12; }
+
 .right {
   float: right !important;
 }
@@ -163,29 +180,27 @@ section {
 .page-header {
   @include clearfix;
   @include lump-shadow;
-  padding: $gutter $aside-gutter;
+  padding: $gutter;
   background-color: $blue;
   // @media (min-width: $desktop) {
   //   padding: $top-padding $gutter $aside-gutter;
   // }
   h1 {
-    @media (min-width: $desktop) {
-      padding-right: $aside-gutter;
-    }
-    &.share {
-      @extend %grid-8;
-    }
+    color: #fff;
+    // @media (min-width: $desktop) {
+    //   padding-right: $aside-gutter;
+    // }
   }
   aside {
-    @extend %grid-4;
-    @media (min-width: $desktop) {
-      padding-left: $aside-gutter;
-    }
+    // @media (min-width: $desktop) {
+    //   padding-left: $aside-gutter;
+    // }
     p {
       font-size: 16px;
       line-height: 1.66em;
+      color: #ffffff;
       @media (min-width: $widescreen) {
-        font-size: 22px;
+        font-size: 16px;
         // line-height: 29px;
       }
     }

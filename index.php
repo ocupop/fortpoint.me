@@ -64,7 +64,14 @@
     <div id="slider-next"></div>
     <ul id="slider-nav"></ul>
   </figure>
-
+  <div class="row">
+    <div class="grid-8">
+      <p>Our clients regard Fort Point Legal...</p>
+    </div>
+    <div class="grid-4">
+      <p>For more information about Fort Point Legal, please email: <em><a href="mailto:info@fortpointlegal.com">info@fortpointlegal.com</a></em></p>
+    </div>
+  </div>
 </section>
 
 <?php require_once('_footer.php'); ?>

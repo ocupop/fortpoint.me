@@ -1,6 +1,7 @@
 // slider
 .slider {
   @include clearfix;
+  margin-bottom: 30px;
   background-color: $charcoal;
   #slider-prev, #slider-next, #slider-nav {
     cursor: pointer;

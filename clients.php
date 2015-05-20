@@ -1,8 +1,8 @@
 <?php require_once('_header.php'); ?>
 
 <div class="page-header">
-  <h1>Our clients are innovative companies and entrepreneurs focused on new technologies.</h1>
-  <aside>
+  <h1 class="grid-8">Our clients are innovative companies and entrepreneurs focused on new technologies.</h1>
+  <aside class="grid-4">
     <p>As a trusted advisor to founders, we ensure that legal decisions promote the business and strategy goals of our clients.</p>
   </aside>
 </div>
