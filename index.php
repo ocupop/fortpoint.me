@@ -64,12 +64,14 @@
     <div id="slider-next"></div>
     <ul id="slider-nav"></ul>
   </figure>
+</section>
+<section class="page-content">
   <div class="row">
-    <div class="grid-8">
-      <p>Our clients regard Fort Point Legal...</p>
+    <div class="primary-col">
+      <p>Our clients regard Fort Point Legal as a business collaborator because of the long-term, strategic relationships we enjoy with them. The firm has a Business & Corporate Practice (More details) and a Commercial Real Estate Practice (More details).</p>
     </div>
-    <div class="grid-4">
-      <p>For more information about Fort Point Legal, please email: <em><a href="mailto:info@fortpointlegal.com">info@fortpointlegal.com</a></em></p>
+    <div class="secondary-col">
+      <p>For more information about Fort Point Legal, please email: <a href="mailto:info@fortpointlegal.com">info@fortpointlegal.com</a></p>
     </div>
   </div>
 </section>
