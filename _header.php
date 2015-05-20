@@ -44,7 +44,7 @@ $body_class = $body_class[0];
 <body class="page-<?php echo $body_class ?>">
 
 <header class="site-header">
-  <a href="./">
+  <a href="./" class="brand">
     <h1 class="site-title">Fort Point Legal</h1>
   </a>
   <nav class="site-nav">

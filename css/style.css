@@ -254,7 +254,9 @@ ul.dash {
       position: absolute;
       width: 172px; }
       .site-header a {
-        display: block; } }
+        display: block; }
+      .site-header a.brand {
+        height: 250px; } }
   @media (min-width: 1255px) {
     .site-header {
       width: 235px; } }
@@ -325,13 +327,10 @@ ul.dash {
   @media (min-width: 600px) {
     .site-nav ul {
       display: block; } }
-  @media (min-width: 1024px) {
-    .site-nav ul {
-      top: 250px; } }
 .site-nav li {
   text-align: center;
-  font-size: 16px;
-  padding: 8px;
+  font-size: 15px;
+  padding: 6px 10px 6px;
   text-transform: uppercase;
   background-color: #E6E6E6;
   color: #6D6E71;
@@ -362,7 +361,7 @@ ul.dash {
 
 .social-nav {
   position: absolute;
-  right: -35px;
+  right: -40px;
   top: 250px; }
   .social-nav i {
     font-size: 22px;
