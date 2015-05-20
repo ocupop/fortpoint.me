@@ -35,6 +35,7 @@ $body_class = $body_class[0];
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
   <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="canonical" href="index.html">
+  <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/327ebec5-004e-414a-90e9-14340b2bc440.css"/>
   <script type="text/javascript" src="http://use.typekit.net/fzi0ttf.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <!--[if lte IE 8]><script src="/js/respond.min.js"></script><![endif]-->
@@ -63,3 +64,10 @@ $body_class = $body_class[0];
 </header>
 
 <div class="main-content">
+  <nav class="social-nav">
+    <ul>
+      <li><a href="http://twitter.com/fortpointlegal/"><i class="icon-twitter"></i></a></li>
+      <li><a href="http://www.facebook.com/fortpointlegal"><i class="icon-facebook"></i></a></li>
+      <li><a href="http://www.linkedin.com/company/fort-point-legal"><i class="icon-linkedin"></i></a></li>
+    </ul>
+  </nav>
