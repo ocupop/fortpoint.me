@@ -1,17 +1,32 @@
 .site-footer {
-  bottom: 0;
-  left: 0;
-  padding: $aside-gutter 0;
-  text-align: center;
-  @media (min-width: $desktop) {
-    margin: $aside-gutter;
-    position: fixed;
+  padding: 30px;
+  background-color: $charcoal;
+  box-shadow: inset 0 0 12px rgba(0,0,0,0.15);
+  // @media (min-width: $desktop) {
+  //   margin: $aside-gutter;
+  //   position: fixed;
+  // }
+  .physical-address {
+    @extend %grid-3;
+  }
+  .postal-address {
+    @extend %grid-3;
+  }
+  .map {
+    @extend %grid-6;
   }
   li {
     display: inline-block;
     height: 20px;
+    line-height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    color: $black;
     img {
       height: 100%;
     }
+  }
+  p {
+    font-size: 16px;
   }
 }

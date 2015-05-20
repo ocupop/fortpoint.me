@@ -1,7 +1,7 @@
 // slider
 .slider {
   @include clearfix;
-  background-color: $dark-blue;
+  background-color: $charcoal;
   #slider-prev, #slider-next, #slider-nav {
     cursor: pointer;
     z-index: 10;
@@ -113,7 +113,10 @@
     height: 11px;
     width: 11px;
     margin: 0 4px 4px 0;
-    background-color: $blue;
+    background-color: $dark-gray;
+    &:hover {
+      background-color: $black;
+    }
     &.current {
       background-color: $light-gray;
     }

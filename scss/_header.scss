@@ -89,13 +89,17 @@
     padding: 8px;
     text-transform: uppercase;
     background-color: $light-gray;
-    color: $dark-gray;
+    color: $charcoal;
     margin: 6px 0 0;
     font-weight: bold;
     @include transition(all 0.2s);
-    &.active, &:hover {
-      color: $light-gray;
-      background-color: $dark-gray;
+    &:hover {
+      color: $charcoal;
+      background-color: #ffffff;
+    }
+    &.active {
+      color: #ffffff;
+      background-color: $charcoal;
     }
     a {
       display: block;
