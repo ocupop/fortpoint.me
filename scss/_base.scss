@@ -5,11 +5,20 @@
   %grid-12 {
     width: 100%;
   }
+  %grid-9 {
+    width: 75%;
+  }
   %grid-8 {
     width: 66.6666%;
   }
+  %grid-7 {
+    width: 60%;
+  }
   %grid-6 {
     width: 50%;
+  }
+  %grid-5 {
+    width: 40%;
   }
   %grid-4 {
     width: 33.3333%;
@@ -20,7 +29,7 @@
 }
 
 @mixin lump-shadow {
-  box-shadow: 0 40px 30px -50px #222;
+  box-shadow: inset 0 -40px 30px -50px #222;
 }
 
 * {
@@ -55,8 +64,11 @@ a {
   color: inherit;
 }
 
-h1, h2, h3 {
-  font-family: $hed-font;
+h1, h2 {
+  font-family: $primary-heading-font;
+}
+h3, h4 {
+  font-family: $secondary-heading-font;
 }
 
 h1 {
@@ -85,24 +97,19 @@ h3 {
 }
 h4 {
   font-size: 20px;
-  line-height: 1.25;
+  line-height: 1.25em;
+  margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: $black;
-  font-family: $body-font;
+  color: $charcoal;
 }
 
 p {
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 1.66;
 }
-em {
-  font-style: normal;
-  color:  $blue;
-  a:hover {
-    color: $dark-blue;
-  }
-}
+
 img {
   max-width: 100%;
   height: auto;
@@ -114,23 +121,40 @@ address {
 }
 hr {
   border-width: 1px 0 0 0;
-  border-color: $black;
+  border-color: $medium-gray;
   margin: 25px auto;
+}
+section {
+  padding: $gutter $aside-gutter $aside-gutter;
+  @media (min-width: $desktop) {
+    padding: $gutter $gutter $aside-gutter;
+  }
+  &:last-child {
+    box-shadow: 0 0 0 black;
+  }
+}
+ul.dash {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  list-style-position: outside;
+  li {
+    line-height: 1.25em;
+    margin-top: 7px;
+    &:before {
+      content: "- ";
+      position: absolute;
+      top: 0;
+      left: -10px;
+    }
+  }
 }
 .row {
   position: relative;
   width: 100%;
   @include clearfix;
 }
-[class*='grid-']{
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .grid-3 { @extend %grid-3; }
-.grid-4 { @extend %grid-4; }
 .grid-6 { @extend %grid-6; }
-.grid-8 { @extend %grid-8; }
-.grid-12 { @extend %grid-12; }
 
 .right {
   float: right !important;
@@ -153,6 +177,7 @@ hr {
   background-color: #fff;
   // min-height: 100%;
   box-shadow: inset 0 4px 10px -4px #444;
+  border: 1px solid $medium-gray;
   // border: 2px solid $dark-gray;
   // border-style: solid none;
   // @media (min-width: $desktop) {
@@ -161,27 +186,11 @@ hr {
   // }
 }
 
-.page-team, .page-connect {
-  .main-content {
-    background-color: $charcoal;
-  }
-}
-
-section {
-  padding: $gutter $aside-gutter $aside-gutter;
-  @media (min-width: $desktop) {
-    padding: $gutter $gutter $aside-gutter;
-  }
-  &:last-child {
-    box-shadow: 0 0 0 black;
-  }
-}
-
 .page-header {
   @include clearfix;
-  @include lump-shadow;
   padding: $gutter;
   background-color: $blue;
+  box-shadow: inset 0 -40px 30px -50px #222;
   // @media (min-width: $desktop) {
   //   padding: $top-padding $gutter $aside-gutter;
   // }
@@ -205,4 +214,35 @@ section {
       }
     }
   }
+}
+.page-content {
+  box-shadow: inset 0 -40px 30px -50px #222;
+  a {
+    color: $blue;
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}
+.primary-col {
+  @extend %grid-8;
+  padding-left: 0;
+  padding-right: 30px;
+  @media (max-width: $desktop) {
+    padding: 0;
+  }
+}
+.secondary-col {
+  @extend %grid-4;
+  padding-right: 0;
+  padding-left: 30px;
+  @media (max-width: $desktop) {
+    padding: 0;
+  }
+}
+.half-col {
+  @extend %grid-6;
+}
+.content {
+  padding: 20px;
 }

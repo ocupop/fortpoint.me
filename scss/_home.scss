@@ -1,8 +1,11 @@
 // slider
 .slider {
   @include clearfix;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   background-color: $charcoal;
+  p {
+    margin-bottom: 0;
+  }
   #slider-prev, #slider-next, #slider-nav {
     cursor: pointer;
     z-index: 10;
@@ -12,6 +15,9 @@
     background-image: inline-image("arrows.png");
     height: 20px;
     width: 16px;
+    &:hover {
+      background-image: inline-image("arrows_hover.png");
+    }
   }
   #slider-prev {
     background-position: (-2px) -8px;

@@ -1,0 +1,19 @@
+.post, .event {
+  h3 {
+    font-size: 20px;
+    line-height: 2.13em;
+    color: $charcoal;
+  }
+  .date {
+    font-size: 16px;
+    line-height: 0.88em;
+    color: $charcoal;
+  }
+  .summary {
+    color: $black;
+  }
+  border-bottom: 1px solid $medium-gray;
+  &:last-child {
+    border-bottom: none;
+  }
+}

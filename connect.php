@@ -1,27 +1,23 @@
 <?php require_once('_header.php'); ?>
 
 <div class="page-header">
-  <h1>
-    Fort Point Legal PC
-
-    <strong>Physical</strong>
-    <address>
-      51 Melcher Street<br>
-      First Floor<br>
-      Boston, MA 02210
-    </address>
-
-    <strong>Postal</strong>
-    <address>
-      PO Box 51476<br>
-      Boston, MA 02205
-    </address>
-  </h1>
+  <h1>Fort Point Legal PC</h1>
   <aside>
     <p>Come meet with us and develop a scope of work for our services.</p>
   </aside>
 </div>
+<strong>Physical</strong>
+<address>
+  51 Melcher Street<br>
+  First Floor<br>
+  Boston, MA 02210
+</address>
 
+<strong>Postal</strong>
+<address>
+  PO Box 51476<br>
+  Boston, MA 02205
+</address>
 <section>
   <ul class="contact-methods">
     <li class="phone">

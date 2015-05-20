@@ -6,35 +6,36 @@
 .page-team {
   .team-members .member {
     @include clearfix;
-    @include lump-shadow;
     margin-bottom: $gutter;
-    &:last-child {
-      box-shadow: 0 0 0 black;
-    }
+    border-bottom: 1px solid $medium-gray;
   }
   .bio {
     padding: $aside-gutter 0;
     @extend %grid-8;
     @media (min-width: $desktop) {
       padding-right: $aside-gutter;
-      border-right: 1px solid #222;
+      border-right: 1px solid $medium-gray;
     }
     p {
       line-height: 1.6;
     }
   }
   h2 {
-    line-height: 0.8;
+    font-size: 34px;
+    line-height: 1em;
+    color: $charcoal;
   }
   .title {
-    color: $light-gray;
+    font-size: 18px;
+    line-height: 1.13em;
+    color: $charcoal;
     text-transform: uppercase;
     margin-bottom: $aside-gutter;
   }
   .credentials {
     @include clearfix;
     padding: $aside-gutter 0;
-    border-top: 1px solid #222;
+    border-top: 1px solid $medium-gray;
     line-height: 1.4;
     @extend %grid-4;
     @media (min-width: $phablet) {
@@ -50,7 +51,7 @@
     @media (min-width: $desktop) {
       border-top: none;
       padding-left: $aside-gutter;
-      border-left: 1px solid #222;
+      border-left: 1px solid $medium-gray;
       // force borders to overlap
       left: -1px;
       img {
@@ -64,21 +65,22 @@
     }
   }
   h3 {
-    color: $light-gray;
-    line-height: 1;
+    color: $charcoal;
+    font-size: 22px;
+    line-height: 1.38em;
     margin-top: 20px;
   }
   .contact-methods {
     @include clearfix;
-    font-size: 24px;
+    font-size: 18px;
     text-transform: uppercase;
-    font-family: $hed-font;
+    font-family: $primary-heading-font;
     padding: $aside-gutter 0;
-    border-top: 1px solid #222;
+    border-top: 1px solid $medium-gray;
     @extend %grid-12;
     li {
       display: block;
-      color: $medium-gray;
+      color: $charcoal;
       &:before {
         content: "";
         display: inline-block;
@@ -88,8 +90,11 @@
         margin-bottom: -2px;
       }
       &:hover {
-        color: $text-light;
+        color: $charcoal;
       }
+    }
+    a {
+      color: $charcoal;
     }
     .mobile:before {
       @include icon-small-sprite("mobile");

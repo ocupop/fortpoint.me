@@ -76,6 +76,7 @@
 .site-nav {
   ul {
     display: none;
+    list-style: none;
     @media (min-width: $phablet) {
       display: block;
     }
@@ -91,7 +92,7 @@
     background-color: $light-gray;
     color: $charcoal;
     margin: 6px 0 0;
-    font-weight: bold;
+    font-family: $secondary-heading-font;
     @include transition(all 0.2s);
     &:hover {
       color: $charcoal;
@@ -113,6 +114,33 @@
       display: block;
       padding: 4px 6px 2px;
       font-size: 16px;
+    }
+  }
+}
+
+.social-nav {
+  position: absolute;
+  right: -35px;
+  top: 250px;
+  i {
+    font-size: 22px;
+    color: #fff;
+    &.icon-facebook {
+      margin-left: -2px;
+    }
+  }
+  ul {
+    li {
+
+      a {
+        display: block;
+        padding: 5px;
+        &:hover {
+          i {
+            color: $black;
+          }
+        }
+      }
     }
   }
 }

@@ -4,6 +4,7 @@
   <h2>Come meet with us and develop a legal plan for your business</h2>
   <hr>
   <div class="row">
+    <div class='map'><a href="https://www.google.ca/maps/search/51+Melcher+Street+First+Floor+Boston,+MA+02210/@42.3498416,-71.0502411,17z/data=!3m1!4b1?hl=en">Map</a></div>
     <div class='physical-address'>
       <h4>Physical Address</h4>
       <address>
@@ -11,8 +12,6 @@
         First Floor<br>
         Boston, MA 02210
       </address>
-      <h4>Telephone</h4>
-      <p><a href="tel:617.765.4222">617-765-4222</a></p>
     </div>
     <div class='postal-address'>
       <h4>Postal Address</h4>
@@ -21,11 +20,14 @@
         Boston, MA 02205<br>
         &nbsp;
       </address>
+    </div>
+    <div class="grid-3">
+      <h4>Telephone</h4>
+      <p><a href="tel:617.765.4222">617-765-4222</a></p>
+    </div>
+    <div class="grid-3">
       <h4>Facsimile</h4>
       <p><a href="tel:484.993.2271">484-993-2271</a></p>
-    </div>
-    <div class='map'>
-      <img src="http://placehold.it/500x230/000000/ffffff">
     </div>
   </div>
   <hr>

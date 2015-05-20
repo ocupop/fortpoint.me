@@ -2,8 +2,10 @@
 @import "compass/reset";
 
 // FONTS
-$hed-font: "bebas-neue", "Bebas Neue", sans-serif;
-$body-font: "futura-pt", "Futura", sans-serif;
+$primary-heading-font: "bebas-neue", "Bebas Neue", sans-serif;
+$secondary-heading-font: 'Futura W01 Bold', sans-serif;
+$body-font: 'Futura W01 Book', sans-serif;
+
 
 // COLORS
 $medium-gray: #D0D2D3;
@@ -27,7 +29,7 @@ $container-min: 852px;
 $container-max: 1020px;
 
 // BREAKPOINTS
-$phablet: 500px;
+$phablet: 600px;
 $desktop: $nav-min + $container-min;
 $widescreen: $nav-max + $container-max;
 
@@ -41,4 +43,6 @@ $widescreen: $nav-max + $container-max;
 @import "clients";
 @import "connect";
 @import "team";
+@import "news";
+@import "icons";
 @import "footer";
