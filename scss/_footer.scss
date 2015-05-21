@@ -38,6 +38,11 @@
       height: 100%;
     }
   }
+  .social-links {
+    a {
+      &:hover { color: #fff; }
+    }
+  }
   h2 {
     color: #fff;
     font-size: 46px;

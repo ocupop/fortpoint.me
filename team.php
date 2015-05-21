@@ -1,7 +1,7 @@
 <?php require_once('_header.php'); ?>
 
 <div class="page-header">
-  <h1 class="primary-col">As a trusted advisor, we add value to all levels of company decision making.</h1>
+  <h1 class="primary-col">As a trusted advisor, we add value to all levels of company decision making</h1>
   <aside class="secondary-col">
     <p>Most businesses see legal services as an unwanted, but necessary cost. We want our clients to view our legal services as an integral part of their business team.</p>
   </aside>

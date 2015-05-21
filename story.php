@@ -1,7 +1,7 @@
 <?php require_once('_header.php'); ?>
 
 <div class="page-header">
-  <h1>Entrepreneurs are best served by those who understand their vision.</h1>
+  <h1>Entrepreneurs are best served by those who understand their vision</h1>
   <aside>
     <p>We focus on delivering legal services in the new economy, taking into account the way businesses are now formed, grown and exited.</p>
   </aside>

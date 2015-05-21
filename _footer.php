@@ -42,7 +42,7 @@
       <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="img/by.small.png"></a>
     </li>
     <li>Copyright 2015, Fort Point Legal PC</li>
-    <li class='right'><a href="/policy">Policy & Disclaimer</a></li>
+    <li class='right'><a href="policy">Policy & Disclaimer</a></li>
   </ul>
 </footer>
 

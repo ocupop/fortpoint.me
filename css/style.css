@@ -358,8 +358,8 @@ ul.dash {
   @media (min-width: 1024px) {
     .site-nav li {
       display: block;
-      padding: 4px 6px 2px;
-      font-size: 16px; } }
+      padding: 6px 10px 6px;
+      font-size: 15px; } }
 
 .social-nav {
   position: absolute;
@@ -397,7 +397,9 @@ ul.dash {
   .slider #slider-next {
     background-position: -18px -8px; }
   .slider #slider-nav {
-    float: right; }
+    float: right;
+    margin-right: 5px;
+    margin-top: 1px; }
   .slider #slides {
     height: 410px; }
     @media (min-width: 600px) {
@@ -769,7 +771,7 @@ ul.dash {
         width: 18px; } }
 
 .post, .event {
-  padding: 22px 0px 18px 0px;
+  padding: 22px 0px 30px 0px;
   border-bottom: 1px solid #D0D2D3; }
   .post h3, .event h3 {
     font-size: 20px;
@@ -837,6 +839,8 @@ i {
       display: block;
       width: 100%;
       height: 100%; }
+  .site-footer .social-links a:hover {
+    color: #fff; }
   .site-footer h2 {
     color: #fff;
     font-size: 46px; }
