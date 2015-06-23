@@ -4,6 +4,11 @@
 </div>
 <section class="page-content">
   <div class="post">
+    <h3>Coming Soon</h3>
+  </div>
+  <!-- 
+  Examples of Content Markup
+  <div class="post">
     <h3>New Fort Point Legal Website Announcement</h3>
     <p class="date">May 11, 2015</p>
     <div class="summary">
@@ -52,5 +57,6 @@
       <p><a href="http://www.globest.com/events/realshare_event/boston/RealShare-Boston-2015-356121-1.html">Click here to view event</a></p>
     </div>
   </div>
+   -->
 </section>
 <?php require_once('_footer.php'); ?>

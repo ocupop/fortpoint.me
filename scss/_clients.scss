@@ -59,7 +59,8 @@
       }
       &.tall {
         width: auto;
-        height: 160px;
+        height: auto;
+        max-height: 160px;
       }
     }
     &:hover {

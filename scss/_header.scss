@@ -104,6 +104,9 @@
     &.active {
       color: #ffffff;
       background-color: $charcoal;
+      a {
+        color: #ffffff;
+      }
     }
     a {
       color: $charcoal;

@@ -57,6 +57,7 @@
       </aside>
       <ul class="contact-methods">
         <li class="mobile"><a href="tel:617-765-2233">617-765-2233</a></li>
+        <li class="email"><a href="mailto:steve@fortpointlegal.com">steve@fortpointlegal.com</a></li>
         <li class="twitter"><a href="http://twitter.com/stevenayr/" target="_blank">@stevenayr</a></li>
         <li class="linkedin"><a href="http://www.linkedin.com/in/stevenayr" target="_blank">Steven M. Ayr</a></li>
       </ul>
@@ -108,33 +109,9 @@
       </aside>
       <ul class="contact-methods">
         <li class="mobile"><a href="tel:617-765-2253">617-765-2253</a></li>
+        <li class="email"><a href="mailto:rebecca@fortpointlegal.com">rebecca@fortpointlegal.com</a></li>
         <li class="twitter"><a href="http://twitter.com/RGreenNeale/" target="_blank">@RGreenNeale</a></li>
         <li class="linkedin"><a href="http://www.linkedin.com/in/rebeccaneale" target="_blank">Rebecca Green Neale</a></li> 
-      </ul>
-    </li>
-
-    <li class="member">
-      <div class="bio">
-        <h2>Thom "T.W." Neale</h2>
-        <p class="title">Technologist</p>
-        <p>Thom is an attorney and software engineer available to discuss technical issues and strategies related to e-discovery, data-mining, computer forensic analysis, workflow engineering and automation, and contract drafting. His experience includes work as a legislative analyst in the New York State Assembly, as a legal editor for the New York State Court of Appeals, and as a web developer for a large-scale, open source public information project.</p>
-      </div>
-      <aside class="credentials">
-        <div>
-          <img src="img/team/thom.jpg">
-          <h3>Education</h3>
-          University of California, Hastings College of the Law, JD 2007<br/>
-          Point Loma Nazarene University, BA 2003
-        </div>
-        <div>
-          <h3>Admissions</h3>
-          Commonwealth of Massachusetts<br>
-          State of New York
-        </div>
-      </aside>
-      <ul class="contact-methods">
-        <li class="twitter"><a href="https://twitter.com/twneale" target="_blank">@twneale</a></li>
-        <li class="github"><a href="https://github.com/twneale" target="_blank">twneale</a></li>
       </ul>
     </li>
   </ul>

@@ -10,7 +10,7 @@
 <section class="page-content">
   <ul class="companies">
     <li>
-      <a href="http://bocoup.com/" class="company">
+      <a href="http://bocoup.com/" target="_blank" class="company">
         <img src="img/clients/bocoup.png" class="tall"/>
         <p class="description">moving the open web forward</p>
         <p class="company-name">Bocoup</p>
@@ -18,85 +18,85 @@
     </li>
 
     <li>
-      <a href="http://www.bucaboot.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://www.bucaboot.com/" target="_blank" class="company">
+        <img src="img/clients/bucaboot.png" class="tall"/>
         <p class="description">secure, flexible storage for the practical biker, stop worrying about your stuff and go!</p>
         <p class="company-name">Buca Boot</p>
       </a>
     </li>
     <li>
-      <a href="http://www.thecoffeetrike.com/The_Coffee_Trike/Home.html" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://www.thecoffeetrike.com/The_Coffee_Trike/Home.html" target="_blank" class="company">
+        <img src="img/clients/TheCoffeeTrikeLogoColor_Bigcropped.jpg" class="tall"/>
         <p class="description">a completely self-contained and mobile, fine coffee tricycle</p>
         <p class="company-name">The Coffee Trike</p>
       </a>
     </li>
     <li>
-      <a href="http://clothbound.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://clothbound.com/" target="_blank" class="company">
+        <img src="img/clients/cb-landing-logo.png" class="tall"/>
         <p class="description">discover the best jobs in the restaurant industry</p>
         <p class="company-name">Clothbound</p>
       </a>
     </li>
 
     <li>
-      <a href="http://everybodyfights.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://everybodyfights.com/" target="_blank" class="company">
+        <img src="img/clients/theclub.png" class="tall"/>
         <p class="description">the boxing fitness authority</p>
         <p class="company-name">The Club by George Foreman III</p>
       </a>
     </li>
 
     <li>
-      <a href="http://www.cuppow.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://www.cuppow.com/" target="_blank" class="company">
+        <img src="img/clients/cuppow.png" class="tall"/>
         <p class="description">a simple eco-friendly alternative to poor-performing and messy disposable hot cups, and over-built and expensive travel mugs</p>
         <p class="company-name">Cuppow!</p>
       </a>
     </li>
 
     <li>
-      <a href="http://downtheroadbrewery.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://downtheroadbrewery.com/" target="_blank" class="company">
+        <img src="img/clients/DTR.png" class="tall"/>
         <p class="description">combining time-tested traditional European recipes with both historical and innovative brewing processes to produce locally brewed beers you’ll want to enjoy again and again</p>
         <p class="company-name">Down the Road Brewery</p>
       </a>
     </li>
 
     <li>
-      <a href="http://fireflybicycles.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://fireflybicycles.com/" target="_blank" class="company">
+        <img src="img/clients/FireflyBicycles.png" class="tall"/>
         <p class="description">world-class bicycles, handmade in boston, mass</p>
         <p class="company-name">Firefly Bicycles</p>
       </a>
     </li>
 
     <li>
-      <a href="http://www.geekhousebikes.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://www.geekhousebikes.com/" target="_blank" class="company">
+        <img src="img/clients/geekhouse.png" class="tall"/>
         <p class="description">custom fit TIG welded steel frames and forks</p>
         <p class="company-name">Geekhouse Bikes</p>
       </a>
     </li>
 
     <li>
-      <a href="http://goodnip.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://goodnip.com/" target="_blank" class="company">
+        <img src="img/clients/Goodnip_logo.png" class="tall"/>
         <p class="description">not your mom’s catnip</p>
         <p class="company-name">Goodnip</p>
       </a>
     </li>
 
     <li>
-      <a href="https://www.grapevinelogic.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="https://www.grapevinelogic.com/" target="_blank" class="company">
+        <img src="img/clients/grapevine.png" class="tall"/>
         <p class="description">collaborate with the best creators on Youtube</p>
         <p class="company-name">Grapevine Logic</p>
       </a>
     </li>
 
     <li>
-      <a href="http://www.headquartersboston.com/" class="company">
+      <a href="http://www.headquartersboston.com/" target="_blank" class="company">
         <img src="img/clients/headquarters8.png" class="wide">
         <p class="description">a 25,000 sq ft cowering space for artisans and creative</p>
         <p class="company-name">Headquarters Boston</p>
@@ -104,7 +104,7 @@
     </li>
 
     <li>
-      <a href="http://jquery.com/" class="company">
+      <a href="http://jquery.com/" target="_blank" class="company">
         <img src="img/clients/jquery.png" class="wide"/>
         <p class="description">moving the open web forward </p>
         <p class="company-name">The jQuery Foundation</p>
@@ -112,7 +112,7 @@
     </li>
 
     <li>
-      <a href="http://www.localmissioneatery.com/" class="company">
+      <a href="http://www.localmissioneatery.com/" ctarget="_blank" lass="company">
         <img src="img/clients/local_mission.png"/>
         <p class="description">San Francisco’s first, locally-sourced, handmade-only grocery</p>
         <p class="company-name">Local Mission Eatery</p>
@@ -120,23 +120,23 @@
     </li>
 
     <li>
-      <a href="http://www.localtable.co/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://www.localtable.co/" target="_blank" class="company">
+        <img src="img/clients/localtable.png" class="tall"/>
         <p class="description">a simple turnkey web and mobile application to help you manage, schedule and optimize your workforce</p>
         <p class="company-name">Local Table</p>
       </a>
     </li>
 
     <li>
-      <a href="http://www.nortonpoint.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://www.nortonpoint.com/" target="_blank" class="company">
+        <img src="img/clients/NortonPoint.png" class="tall"/>
         <p class="description">high quality eyewear inspired by an era, designed for generations, and headquartered on martha’s vineyard</p>
         <p class="company-name">Norton Point</p>
       </a>
     </li>
 
     <li>
-      <a href="http://www.opencfmlfoundation.org/" class="company">
+      <a href="http://www.opencfmlfoundation.org/" target="_blank" class="company">
         <img src="img/clients/opencfml.png">
         <p class="description">increasing the adoption of open source CFML solutions via advocacy and education</p>
         <p class="company-name">Open CFML</p>
@@ -144,7 +144,7 @@
     </li>
 
     <li>
-      <a href="https://www.onsourceonline.com/" class="company">
+      <a href="https://www.onsourceonline.com/" target="_blank" class="company">
         <img src="img/clients/onsource.png" alt="OnSource">
         <p class="description">digital photos or HD video of anything, anywhere across the nation within 24 hours</p>
         <p class="company-name">OnSource Online</p>
@@ -152,38 +152,38 @@
     </li>
 
     <li>
-      <a href="http://www.prismhr.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://www.prismhr.com/" target="_blank" class="company">
+        <img src="img/clients/prismhr_logo1-white.png" class="tall"/>
         <p class="description">comprehensive, enterprise software solutions to help human resource outsourcing organizations stay at the cutting edge of the industry</p>
         <p class="company-name">Prism HR</p>
       </a>
     </li>
 
     <li>
-      <a href="http://simplecitystudio.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://simplecitystudio.com/" target="_blank" class="company">
+        <img src="img/clients/SimpleCityStudio.png" class="tall"/>
         <p class="description">architecture and planning in union square, Somerville</p>
         <p class="company-name">Simple City Studio</p>
       </a>
     </li>
 
     <li>
-      <a href="http://www.parkeasier.com" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://www.parkeasier.com" target="_blank" class="company">
+        <img src="img/clients/NewLogo.White.512.png" class="tall"/>
         <p class="description">access thousands of privately-owned parking spots that are cheaper than garages and closer to where you want to be</p>
         <p class="company-name">SPOT</p>
       </a>
     </li>
 
     <li>
-      <a href="http://www.tablr.com/" class="company">
-        <img src="http://placehold.it/250x250" class="tall"/>
+      <a href="http://www.tablr.com/" target="_blank" class="company">
+        <img src="img/clients/tablr.png" class="tall"/>
         <p class="description">a powerful table management system, allowing you to put all of your focus and energy into delighting your customers</p>
         <p class="company-name">Tablr</p>
       </a>
     </li>
     <li>
-      <a href="http://www.pool.ntp.org/en/" class="company">
+      <a href="http://www.pool.ntp.org/en/" target="_blank" class="company">
         <img src="img/clients/ntp_pool.png" alt="NTP Pool Project">
         <p class="description">a big virtual cluster of timeservers providing reliable easy to use NTP service for millions of clients</p>
         <p class="company-name">NTP Pool Project</p>

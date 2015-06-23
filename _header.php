@@ -5,14 +5,20 @@ function current_url(){
   return $current[0];
 }
 
-function current_nav($url){
+function current_nav($url, $copy){
   $current_url = current_url();
-  $href = "href=\"$url\"";
+  $link = '';
+  if ($current_url == $url.".php") {
+    $link .= '<li class="active"><a href="'.$url.'" title="'.$copy.'">'.$copy.'</a></li>';
+  } else {
+    $link .= '<li><a href="'.$url.'" title="'.$copy.'">'.$copy.'</a></li>';
+  }
+  // $href = "href=\"$url\"";
 
-  if ($current_url == $url)
-    $href .= 'class="active"';
+  // if ($current_url == $url.".php")
+  //   $href .= 'class="active"';
 
-  return $href;
+  return $link;
 }
 
 $current_url = current_url();
@@ -42,7 +48,6 @@ $body_class = $body_class[0];
 </head>
 
 <body class="page-<?php echo $body_class ?>">
-
 <header class="site-header">
   <a href="./" class="brand">
     <h1 class="site-title">Fort Point Legal</h1>
@@ -53,11 +58,11 @@ $body_class = $body_class[0];
     </header>
     <input type="checkbox" id="show-menu-mobile">
     <ul>
-      <li><a <?php echo current_nav('about') ?>>About</a></li>
-      <li><a <?php echo current_nav('practices') ?>>Practices</a></li>
-      <li><a <?php echo current_nav('clients') ?>>Clients</a></li>
-      <li><a <?php echo current_nav('team') ?>>Team</a></li>
-      <li><a <?php echo current_nav('news') ?>>News & Events</a></li>
+      <?php echo current_nav('about', 'About') ?>
+      <?php echo current_nav('practices', 'Practices') ?>
+      <?php echo current_nav('clients', 'Clients') ?>
+      <?php echo current_nav('team', 'Team') ?>
+      <?php echo current_nav('news', 'News & Events') ?>
       <li><a href="#contact">Connect</a></li>
     </ul>
   </nav>

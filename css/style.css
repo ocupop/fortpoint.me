@@ -348,6 +348,8 @@ ul.dash {
   .site-nav li.active {
     color: #ffffff;
     background-color: #6D6E71; }
+    .site-nav li.active a {
+      color: #ffffff; }
   .site-nav li a {
     color: #6D6E71;
     display: block; }
@@ -572,7 +574,8 @@ ul.dash {
       padding: 10px; }
     .page-clients .companies li img.tall {
       width: auto;
-      height: 160px; }
+      height: auto;
+      max-height: 160px; }
   .page-clients .companies li:hover img {
     -moz-transition: top 0.2s;
     -o-transition: top 0.2s;

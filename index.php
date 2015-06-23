@@ -7,9 +7,54 @@
 <section>
   <figure class="slider">
     <ul id="slides">
-
-
       <li class="current">
+        <img src="img/clients/NewLogo.White.512.png" alt="SPOT" class="no-margin"/>
+        <div class="wrapper">
+          <figcaption>
+            Access thousands of privately-owned parking spots that are cheaper than garages and closer to where you want to be
+          </figcaption>
+        </div>
+        <p class="company-link">
+          <a href="http://www.parkeasier.com/">SPOT</a><span class="location">| Boston, MA</span>
+        </p>
+        <p class="company-tagline">park easier</p>
+      </li>
+      <li>
+        <img src="img/clients/cuppow.png" alt="Cuppow" class="no-margin"/>
+        <div class="wrapper">
+          <figcaption>
+           A simple eco-friendly alternative to poor-performing and messy disposable hot cups, and over-built and expensive travel mugs
+          </figcaption>
+        </div>
+        <p class="company-link">
+          <a href="http://www.cuppow.com/">Cuppow</a><span class="location">| Somerville, MA</span>
+        </p>
+        <p class="company-tagline">products that help us live a low-impact life.</p>
+      </li>
+      <li>
+        <img src="img/clients/prismhr_logo1-white.png" alt="Prism HR" class="no-margin"/>
+        <div class="wrapper">
+          <figcaption>
+           comprehensive, enterprise software solutions to help human resource outsourcing organizations stay at the cutting edge of the industry
+          </figcaption>
+        </div>
+        <p class="company-link">
+          <a href="http://www.prismhr.com/">Prism HR</a><span class="location">| Plymouth, MA</span>
+        </p>
+        <p class="company-tagline">unleash your potential</p>
+      </li>
+      <li>
+        <img src="img/clients/DTR.png" alt="Down the Road Brewery" class="no-margin"/>
+        <div class="wrapper">
+          <figcaption>
+            combining time-tested traditional European recipes with both historical and innovative brewing processes to produce locally brewed beers you’ll want to enjoy again and again          </figcaption>
+        </div>
+        <p class="company-link">
+          <a href="http://downtheroadbrewery.com/">Down the Road Brewery</a><span class="location">| Everett, MA</span>
+        </p>
+        <p class="company-tagline">historical and innovative brewing</p>
+      </li>
+      <li>
         <img src="img/clients/jquery.png" alt="jQuery" class="no-margin"/>
         <div class="wrapper">
           <figcaption>
@@ -20,45 +65,6 @@
           <a href="http://jquery.org/">jQuery.org</a><span class="location">| Cambridge, MA</span>
         </p>
         <p class="company-tagline">The write less, do more, Javascript Library</p>
-      </li>
-
-      <li>
-        <img src="img/clients/opencfml.png" alt="Open CFML">
-        <div class="wrapper">
-          <figcaption>
-            CFML has a nearly twenty-year history of making difficult development tasks simple. As the community gathered to move the language into a sustainable open source project, it turned to us to handle the difficult legal tasks so it can focus on its mission.
-          </figcaption>
-        </div>
-        <p class="company-link">
-          <a href="http://www.opencfmlfoundation.org/">Open CFML</a><span class="location"> | Rancho Cordova, CA</span>
-        </p>
-        <p class="company-tagline"></p>
-      </li>
-
-      <li>
-        <img src="img/clients/onsource.png" alt="OnSource">
-        <div class="wrapper">
-          <figcaption>
-            Utilizing a nationwide network, OnSource provides clients with a collection of visual information on any requested property asset. Our task was to develop a comprehensive legal framework for their service model so that they are able to concentrate on providing clients with the information they need.
-          </figcaption>
-        </div>
-        <p class="company-link">
-          <a href="http://www.onsourceonline.com/">OnSource</a><span class="location"> | Braintree, MA</span>
-        </p>
-        <p class="company-tagline">Information in focus</p>
-      </li>
-
-      <li>
-        <img src="img/clients/local_mission.png">
-        <div class="wrapper">
-          <figcaption>
-            The small kitchens of Local Mission Eatery and its sister restaurants serve up big local taste. We worked closely with the owners to prepare its organization documents that were simple yet elegant &mdash; just like the dishes they serve.
-          </figcaption>
-        </div>
-        <p class="company-link">
-          <a href="http://www.localmissioneatery.com/">Local Mission Eatery</a><span class="location"> | San Fransisco, CA</span>
-        </p>
-        <p class="company-tagline"></p>
       </li>
     </ul>
 
