@@ -829,7 +829,8 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    cursor: pointer; }
+    cursor: pointer;
+    text-indent: -999em; }
     @media (max-width: 1024px) {
       .site-footer .map {
         margin-bottom: 30px; } }

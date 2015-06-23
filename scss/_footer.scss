@@ -23,6 +23,7 @@
     background-size: cover;
     background-position: center center;
     cursor: pointer;
+    text-indent: -999em;
     @media (max-width: $desktop) {
       margin-bottom: 30px;
     }
